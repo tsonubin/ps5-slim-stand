@@ -1,0 +1,11 @@
+== TIPPING ==
+ left (plain side)   lever  70.3 mm | this stand 19.5 deg,  6.0 N,  403 mJ | no stand 10.2 deg,  2.8 N | Sony ring 23.4 deg,  6.9 N
+ right (drive side)  lever  79.8 mm | this stand 21.9 deg,  6.9 N,  516 mJ | no stand  7.3 deg,  2.0 N | Sony ring 21.0 deg,  6.1 N
+ forward             lever 101.4 mm | this stand 27.1 deg,  8.7 N,  815 mJ | no stand 20.5 deg,  5.9 N | Sony ring 22.2 deg,  6.5 N
+ backward            lever 113.4 mm | this stand 29.8 deg,  9.7 N, 1006 mJ | no stand 20.5 deg,  5.9 N | Sony ring 22.2 deg,  6.5 N
+
+== WALL STRENGTH (hand calculation, not FEA) ==
+ knock toward left , console leaning on rear peak:   27 N on rim ->  1.6 MPa in the wall (across layers, allow 20) -> safety factor 12.2
+ knock toward left , console leaning on mid rim  :   72 N on rim ->  2.7 MPa in the wall (across layers, allow 20) -> safety factor  7.4
+ knock toward right, console leaning on rear peak:   41 N on rim ->  2.5 MPa in the wall (across layers, allow 20) -> safety factor  8.1
+ knock toward right, console leaning on mid rim  :  108 N on rim ->  4.1 MPa in the wall (across layers, allow 20) -> safety factor  4.9

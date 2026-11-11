@@ -1,0 +1,50 @@
+[
+  {
+    "library_file_id": "libfile_4966a5eb1f648191809e21132ef38fde",
+    "file_id": "file_00000000b2c481f58e8e038379cc6811",
+    "version": 0,
+    "file_name": "ps5_veil_stand_v5.zip",
+    "size_bytes": 14506942,
+    "relative_path": "references/user-imports/ps5_veil_stand_v5.zip",
+    "actual_size_bytes": 14506942,
+    "sha256": "21b39ced52a5ff1058f97936003fcfa7283b0dfa0d7b4560d396dad9ef7e5a8f",
+    "persisted_library_file_id": "libfile_4966a5eb1f648191809e21132ef38fde",
+    "persisted_version": "0"
+  },
+  {
+    "library_file_id": "libfile_0e20e480167c8191bd7941253e001168",
+    "file_id": "file_00000000dc3c81f59edf72478ddff8ae",
+    "version": 0,
+    "file_name": "ps5_slim_disc_veil_stand.3mf",
+    "size_bytes": 5979676,
+    "relative_path": "references/user-imports/ps5_slim_disc_veil_stand.3mf",
+    "actual_size_bytes": 5979676,
+    "sha256": "4261a8ccf041fcd586240c1403d283c9f52efd8a15ed7e56a33ea27aeb552542",
+    "persisted_library_file_id": "libfile_0e20e480167c8191bd7941253e001168",
+    "persisted_version": "0"
+  },
+  {
+    "library_file_id": "libfile_f6f83ea74b848191b2d06b59920bb47d",
+    "file_id": "file_000000001bc081f5a5f0df88091934c6",
+    "version": 0,
+    "file_name": "preview.png",
+    "size_bytes": 2066417,
+    "relative_path": "references/user-imports/preview.png",
+    "actual_size_bytes": 2066417,
+    "sha256": "34187da8ba07ab36179db7fde1529e409d87086ef2f0db645f86c2c85b471b9b",
+    "persisted_library_file_id": "libfile_f6f83ea74b848191b2d06b59920bb47d",
+    "persisted_version": "0"
+  },
+  {
+    "library_file_id": "libfile_4710c6bcaba481919d6ca91b0f848cbb",
+    "file_id": "file_00000000d1f881f5ad7065d6677cb33e",
+    "version": 0,
+    "file_name": "PS5_Slim-a48efc06.zip",
+    "size_bytes": 1044950,
+    "relative_path": "references/user-imports/PS5_Slim-a48efc06.zip",
+    "actual_size_bytes": 1044950,
+    "sha256": "cc099e133ed85119084d7729c94e92885197b48ff79c07eb549d5be81edb7386",
+    "persisted_library_file_id": "libfile_4710c6bcaba481919d6ca91b0f848cbb",
+    "persisted_version": "0"
+  }
+]

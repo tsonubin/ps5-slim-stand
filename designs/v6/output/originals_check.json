@@ -1,0 +1,32 @@
+{
+  "uploads": [
+    {
+      "file": "references/user-imports/ps5_veil_stand_v5.zip",
+      "sha256_matches_import": true
+    },
+    {
+      "file": "references/user-imports/ps5_slim_disc_veil_stand.3mf",
+      "sha256_matches_import": true
+    },
+    {
+      "file": "references/user-imports/preview.png",
+      "sha256_matches_import": true
+    },
+    {
+      "file": "references/user-imports/PS5_Slim-a48efc06.zip",
+      "sha256_matches_import": true
+    }
+  ],
+  "extracted_files_matching_zip": [
+    "designs/imported/ps5_veil_stand_v5/ps5_slim_disc_veil_stand.stl",
+    "designs/imported/ps5_veil_stand_v5/preview.png",
+    "designs/imported/ps5_veil_stand_v5/source/ps5_veil_stand.py",
+    "designs/imported/ps5_veil_stand_v5/source/preview.py",
+    "designs/imported/ps5_veil_stand_v5/source/outline.json",
+    "designs/imported/ps5_veil_stand_v5/source/splat.py",
+    "designs/imported/ps5_veil_stand_v5/source/checks.py",
+    "designs/imported/ps5_veil_stand_v5/checks.txt",
+    "designs/imported/ps5_veil_stand_v5/GAUGE_cavity_outline_1.6mm.stl",
+    "designs/imported/ps5_veil_stand_v5/ps5_slim_disc_veil_stand.3mf"
+  ]
+}

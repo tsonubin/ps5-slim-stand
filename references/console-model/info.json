@@ -1,0 +1,28 @@
+{
+  "uid": "a48efc06663541a1bc19297995fea91d",
+  "name": "PS5 Slim",
+  "author": "rtql8d",
+  "source_url": "https://sketchfab.com/3d-models/ps5-slim-a48efc06663541a1bc19297995fea91d",
+  "project": "https://github.com/seryi882/sketchfab-downloader-extension",
+  "format": "glb+gltf+osgjs",
+  "geometry_count": 8,
+  "skipped_geometries": [],
+  "textures_downloaded": 0,
+  "textures_skipped": true,
+  "pack_mode": "full",
+  "max_texture_edge": "original",
+  "textures_embedded_in_glb": 0,
+  "animation_count": 0,
+  "skeleton_count": 0,
+  "bone_count": 0,
+  "files": [
+    "PS5_Slim.glb",
+    "model.gltf",
+    "model.bin",
+    "file.osgjs",
+    "model_file.bin",
+    "model_file_wireframe.bin",
+    "README.txt"
+  ],
+  "note": "Open .glb (textures packed inside when enabled) or model.gltf. See README.txt."
+}

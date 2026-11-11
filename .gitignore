@@ -1,0 +1,17 @@
+.venv*/
+__pycache__/
+*.pyc
+.DS_Store
+*_skipped.face
+*_skipped.node
+designs/*/analysis/*.npz
+designs/*/analysis/*.stl
+designs/*/analysis/*.log
+designs/*/analysis/*.vtu
+designs/*/analysis/*.vtk
+designs/*/output/*.vtu
+designs/*/output/*.npz
+designs/*/output/*.zip
+designs/*/output/*.log
+designs/*/baseline/*.npz
+designs/*/baseline/*.log
