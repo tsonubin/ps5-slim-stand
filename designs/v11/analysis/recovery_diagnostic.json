@@ -1,0 +1,7 @@
+{
+  "tolerance_mm": 0.008,
+  "faces_before_quantization": 1199162,
+  "merge_hints": 0,
+  "transitive_remap_chains_resolved": 0,
+  "float64_watertight": false
+}

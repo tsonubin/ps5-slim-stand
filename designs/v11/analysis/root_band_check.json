@@ -1,0 +1,102 @@
+{
+  "scope": "Sampled actual root-only surface at recorded patch boundary zones, excluding any analytically active root fillet. Original preblend skin comparison; not a global Hausdorff or continuity certificate.",
+  "samples": 74,
+  "distance_p50_mm": 0.0017339358958316175,
+  "distance_p95_mm": 0.006898912604611132,
+  "distance_max_mm": 0.00845453590388069,
+  "outward_normal_projection_max_mm": 0.00845453590727574,
+  "theoretical_48gon_sagitta_base_mm": 0.006423230284189563,
+  "largest_samples": [
+    {
+      "point": [
+        -55.593177795410156,
+        94.80959065755208,
+        2.933333396911621
+      ],
+      "distance_mm": 0.005640771249242357,
+      "signed_normal_projection_mm": 0.005640771310376056
+    },
+    {
+      "point": [
+        85.38565826416016,
+        3.3999991416931152,
+        0.5999999046325684
+      ],
+      "distance_mm": 0.005650352015766779,
+      "signed_normal_projection_mm": 0.0056503520189149625
+    },
+    {
+      "point": [
+        -25.866666158040363,
+        112.73333485921223,
+        39.898668924967446
+      ],
+      "distance_mm": 0.006362108977140229,
+      "signed_normal_projection_mm": 0.006362108969631958
+    },
+    {
+      "point": [
+        -43.49166488647461,
+        18.19999885559082,
+        43.79999923706055
+      ],
+      "distance_mm": 0.006404800062340005,
+      "signed_normal_projection_mm": 0.0064047999423039875
+    },
+    {
+      "point": [
+        51.79999923706055,
+        65.5999984741211,
+        48.09364318847656
+      ],
+      "distance_mm": 0.006629261423757626,
+      "signed_normal_projection_mm": 0.006629261447638363
+    },
+    {
+      "point": [
+        85.49542999267578,
+        4.8000006675720215,
+        3.0
+      ],
+      "distance_mm": 0.006737972856174046,
+      "signed_normal_projection_mm": 0.006737972824867594
+    },
+    {
+      "point": [
+        -45.0,
+        62.79999923706055,
+        53.14724349975586
+      ],
+      "distance_mm": 0.007197800708851442,
+      "signed_normal_projection_mm": 0.0071978005968349095
+    },
+    {
+      "point": [
+        33.333333333333336,
+        111.22651672363281,
+        37.71836725870768
+      ],
+      "distance_mm": 0.007427457685332312,
+      "signed_normal_projection_mm": 0.00742745756342394
+    },
+    {
+      "point": [
+        54.0,
+        47.79999923706055,
+        47.54243469238281
+      ],
+      "distance_mm": 0.007768925987068185,
+      "signed_normal_projection_mm": 0.007768925870407721
+    },
+    {
+      "point": [
+        85.80000305175781,
+        -16.083660125732422,
+        2.1999998092651367
+      ],
+      "distance_mm": 0.00845453590388069,
+      "signed_normal_projection_mm": 0.00845453590727574
+    }
+  ],
+  "root_sha256": "6bd54329c5e03b110626673e49631c90bbf0d3d4f00809788ebd100cd1b50cc9"
+}

@@ -16,3 +16,7 @@ designs/*/*.zip
 designs/*/output/*.log
 designs/*/baseline/*.npz
 designs/*/baseline/*.log
+designs/*/output/preblend_skin.stl
+designs/*/output/root_only.stl
+# v11 binary STL exceeds GitHub's per-file limit; its gzip and 3MF are tracked.
+designs/v11/output/veil_v11_prototype.stl
