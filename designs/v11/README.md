@@ -2,7 +2,7 @@
 
 v11 refines the dense round-strand nest with periodic spline guides, eased strand endpoints, rounded top/base rings and dedicated local blends at ring roots and middle-web crossings. The exterior follows the lower console silhouette; three curved rails and two ties form the underside.
 
-**Development candidate for review, not a qualified console support. No v11 FEA or physical fit, print, strength or thermal testing has been completed.** Historical v7 stress fields do not validate this geometry.
+**Historical geometry candidate; the user requested an aesthetic redesign as v12. Not a qualified console support. No v11 FEA or physical fit, print, strength or thermal testing has been completed.** Historical v7 stress fields do not validate this geometry.
 
 ![Actual v11 mesh](output/preview_v11_clean.png)
 
@@ -48,7 +48,7 @@ From the project root with Python 3.13 and the project's `.venv-cad` environment
 .venv-cad/bin/python designs/v11/source/render_clean.py
 ```
 
-The first stage writes the root-only model, gauge and guide caches. The second writes the complete crossing-blended body and the relevant coupon. Do not distribute first-stage manufacturing filenames as final while the second stage is still running. The delivered build used the independently repaired full-precision crossing cache via `recover_crossing_export.py`; its provenance is documented in [the method](GEOMETRY_METHOD.md). Caches are not included in Git, and exact byte identity across library versions is not promised.
+The first stage writes the root-only model, gauge and guide caches. The second writes the complete crossing-blended body and the relevant coupon. Do not distribute first-stage manufacturing filenames as final while the second stage is still running. The delivered build used the independently repaired full-precision crossing cache via `recover_crossing_export.py`; its provenance is documented in [the method](GEOMETRY_METHOD.md). The standard build now includes bounded repair and automatic fine-cache recovery when needed. That integration was syntax-checked and audited after delivery, but not rerun end to end; the completed run used the independently reviewed recovery path. Caches are not included in Git, and exact byte identity across library versions is not promised.
 
 To inspect the delivered mesh without regenerating geometry:
 

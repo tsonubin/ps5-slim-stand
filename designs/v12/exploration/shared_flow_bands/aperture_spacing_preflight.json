@@ -1,0 +1,278 @@
+{
+  "scope": "Pre-Boolean maximum-face-bevel polygon boundaries mapped to outer and inner shell; exact distances between sampled straight boundary segments, not analytic surface or finished mesh certification",
+  "apertures": 68,
+  "warp": {
+    "sample_grid": [
+      121,
+      361
+    ],
+    "minimum_jacobian_determinant": 0.9430265805796589,
+    "minimum_jacobian_singular_value": 0.38475130447731914,
+    "maximum_jacobian_singular_value": 2.6223118654857207
+  },
+  "mapped_boundaries": [
+    {
+      "shell_depth_mm": 0.0,
+      "minimum_sampled_segment_gap_mm": 2.811139390150041,
+      "maximum_mapped_segment_length_mm": 0.14193756545839165,
+      "lowest_opening_z_mm": 3.769718270614075,
+      "minimum_top_lip_z_clearance_mm": 3.6470621205850335,
+      "nearest_distinct_pairs": [
+        {
+          "apertures": [
+            9,
+            10
+          ],
+          "gap_mm": 2.811139390150041,
+          "near_mm": [
+            15.34802030036973,
+            -114.03233706067904,
+            10.461553213284542
+          ]
+        },
+        {
+          "apertures": [
+            8,
+            9
+          ],
+          "gap_mm": 2.8768601902351185,
+          "near_mm": [
+            -2.4139499440305467,
+            -115.13896321245792,
+            10.698065613442012
+          ]
+        },
+        {
+          "apertures": [
+            41,
+            42
+          ],
+          "gap_mm": 2.886049407092056,
+          "near_mm": [
+            30.253744908264046,
+            -105.6685230175656,
+            26.066332176031562
+          ]
+        },
+        {
+          "apertures": [
+            40,
+            41
+          ],
+          "gap_mm": 2.892851805699283,
+          "near_mm": [
+            13.530199179185974,
+            -113.66699982854678,
+            25.01833085382128
+          ]
+        },
+        {
+          "apertures": [
+            10,
+            11
+          ],
+          "gap_mm": 2.9703772708642213,
+          "near_mm": [
+            31.75589129739773,
+            -107.85841113197766,
+            10.609342154998112
+          ]
+        },
+        {
+          "apertures": [
+            42,
+            43
+          ],
+          "gap_mm": 3.0193683912825073,
+          "near_mm": [
+            46.79949606491688,
+            -99.18447632464932,
+            28.031036845859802
+          ]
+        },
+        {
+          "apertures": [
+            7,
+            8
+          ],
+          "gap_mm": 3.0753416552006607,
+          "near_mm": [
+            -17.819450326005956,
+            -110.16272656566704,
+            11.72308530834901
+          ]
+        },
+        {
+          "apertures": [
+            39,
+            40
+          ],
+          "gap_mm": 3.085879034011129,
+          "near_mm": [
+            -4.331303125342438,
+            -114.16092464203335,
+            25.56349029444719
+          ]
+        },
+        {
+          "apertures": [
+            11,
+            12
+          ],
+          "gap_mm": 3.2377936898852284,
+          "near_mm": [
+            48.97671281541909,
+            -101.51721728435945,
+            11.411056683792282
+          ]
+        },
+        {
+          "apertures": [
+            43,
+            44
+          ],
+          "gap_mm": 3.2653379878924307,
+          "near_mm": [
+            61.03774165916336,
+            -90.45987425965868,
+            30.08945558626899
+          ]
+        }
+      ]
+    },
+    {
+      "shell_depth_mm": -2.8,
+      "minimum_sampled_segment_gap_mm": 2.8019224082583554,
+      "maximum_mapped_segment_length_mm": 0.14242048582493713,
+      "lowest_opening_z_mm": 3.769718270614075,
+      "minimum_top_lip_z_clearance_mm": 3.6470621205850335,
+      "nearest_distinct_pairs": [
+        {
+          "apertures": [
+            9,
+            10
+          ],
+          "gap_mm": 2.8019224082583554,
+          "near_mm": [
+            15.163278108213532,
+            -111.16607473365023,
+            10.461553213284542
+          ]
+        },
+        {
+          "apertures": [
+            8,
+            9
+          ],
+          "gap_mm": 2.8688305996151704,
+          "near_mm": [
+            -2.1797862625887716,
+            -112.31692151297165,
+            10.69068144097242
+          ]
+        },
+        {
+          "apertures": [
+            41,
+            42
+          ],
+          "gap_mm": 2.8708008185427225,
+          "near_mm": [
+            29.661792978320136,
+            -102.85788309021575,
+            26.06632392561426
+          ]
+        },
+        {
+          "apertures": [
+            40,
+            41
+          ],
+          "gap_mm": 2.8834604187752984,
+          "near_mm": [
+            13.411849197989236,
+            -110.83367366696133,
+            25.026492136689953
+          ]
+        },
+        {
+          "apertures": [
+            10,
+            11
+          ],
+          "gap_mm": 2.9546153861998308,
+          "near_mm": [
+            31.188267906891816,
+            -104.99140410676713,
+            10.636029074009672
+          ]
+        },
+        {
+          "apertures": [
+            42,
+            43
+          ],
+          "gap_mm": 2.998520014195815,
+          "near_mm": [
+            45.79043534746425,
+            -96.5501800340108,
+            28.042672543437494
+          ]
+        },
+        {
+          "apertures": [
+            39,
+            40
+          ],
+          "gap_mm": 3.0789203740541398,
+          "near_mm": [
+            -4.044922086145507,
+            -111.31160189875506,
+            25.556834566416107
+          ]
+        },
+        {
+          "apertures": [
+            7,
+            8
+          ],
+          "gap_mm": 3.113893912497552,
+          "near_mm": [
+            -16.89637305570146,
+            -106.22560760360048,
+            11.72308530834901
+          ]
+        },
+        {
+          "apertures": [
+            11,
+            12
+          ],
+          "gap_mm": 3.2191743779127364,
+          "near_mm": [
+            47.932499581911195,
+            -98.82083453740442,
+            11.430454925798472
+          ]
+        },
+        {
+          "apertures": [
+            44,
+            45
+          ],
+          "gap_mm": 3.273594231159274,
+          "near_mm": [
+            59.363599574809925,
+            -64.43747689307229,
+            31.846655165975633
+          ]
+        }
+      ]
+    }
+  ],
+  "target_minimum_ligament_mm": 2.4,
+  "minimum_gap_mm": 2.8019224082583554,
+  "round_termini": "Base aperture domain uses rounded LineString buffers before a common warp; no clipped or zero-width endpoints. This does not establish a minimum physical tip radius.",
+  "limitations": "Polygonal/chord approximation and mesh cutting still require final inspection. A positive sampled Jacobian is not a global proof, though the same shared periodic map is applied to all cells. No FEA or production slicing.",
+  "generator_source_sha256": "a1b68c11804edecce51377bda4c325c0ed0a8a8d21e30c58295b9560ee4fd7df"
+}

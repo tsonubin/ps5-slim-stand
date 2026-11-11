@@ -1,6 +1,6 @@
 # PS5 Slim dock
 
-A one-piece, sculptural vertical stand for the PS5 Slim Disc. **[Start with v11: smoother guides and blended connections](designs/v11/README.md)** — a dense rounded weave with tangential ring connections and locally blended crossings, ready for review. Earlier designs and their validation remain preserved below.
+A one-piece, sculptural vertical stand for the PS5 Slim Disc. **[Start with v12: a continuous sculpted shell](designs/v12/README.md)** — irregular rounded openings and integrated edges, ready for aesthetic review. Physical qualification is pending. Earlier designs and their validation remain preserved below.
 
 ## Start here
 - Read `docs/CONTINUE.md` for the current task and exact stopping point.
@@ -14,9 +14,19 @@ Source chat: https://claude.ai/chat/f4d270b2-2594-4b75-a828-277e58a32ab0
 v6 is generated and geometry-checked in `designs/v6/`. Start with [the v6 preview and files](designs/v6/README.md), [validation](designs/v6/VALIDATION.md), and [print-service brief](designs/v6/PRINT_SERVICE.md). No physical fit, print, strength or thermal validation has been performed.
 
 
-## Current candidate: v11
+## Current candidate: v12
 
-[Veil v11](designs/v11/README.md) refines the dense nest with periodic spline guides, eased strand roots, rounded rings and dedicated local blends at roots and crossings. It measures **151.71 × 244.56 × 53.22 mm** and remains a development candidate for review.
+[Veil v12](designs/v12/README.md) is a continuous sculpted shell with **72 irregular flowing openings**, integrated edges and a lower internal support web. The **150.40 × 240.62 × 48.04 mm** candidate is ready for aesthetic review; it is not yet a qualified console support.
+
+- [Actual hero view](designs/v12/output/hero_v12.png), [console–shell transition](designs/v12/output/assembly_base_detail.png) and [reference assembly](designs/v12/output/reference_assembly_clean.png).
+- [STL](designs/v12/output/veil_v12_prototype.stl), [3MF](designs/v12/output/veil_v12_prototype.3mf), [editable source](designs/v12/source/veil_v12.py) and [geometry method](designs/v12/GEOMETRY_METHOD.md).
+- [English/Chinese vendor brief](designs/v12/PRINT_SERVICE.md) and [lightweight geometry checks](designs/v12/analysis/light_geometry_review.json).
+
+The final mesh and reference-envelope checks pass. **No FEA has been run for v12**; historical stress results do not establish its strength. Physical fit, process-specific slicing and load/thermal checks remain unperformed.
+
+## Preserved v11 geometry study
+
+[Veil v11](designs/v11/README.md) refines the dense nest with periodic spline guides, eased strand roots, rounded rings and dedicated local blends at roots and crossings. It measures **151.71 × 244.56 × 53.22 mm** and is preserved as a historical geometry study. Its smoother connections did not satisfy the user's aesthetic request.
 
 - [Actual mesh preview](designs/v11/output/preview_v11_clean.png) and [reference console assembly](designs/v11/output/reference_assembly_clean.png).
 - [Flat-shaded junction comparison](designs/v11/output/junction_comparison_flat.png), [geometry method](designs/v11/GEOMETRY_METHOD.md) and [editable source](designs/v11/source/veil_v11.py).
