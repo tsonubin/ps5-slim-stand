@@ -1,0 +1,53 @@
+{
+  "veil_v13_prototype.stl": {
+    "sha256": "bea7633ae9056bdd5e5f3f4c0e4ced1c9958bf9ea5c77ac0db26fd036f9fed11",
+    "extents_mm": [
+      150.3393096923828,
+      241.277099609375,
+      40.699764251708984
+    ],
+    "volume_cm3": 74.6052818463993,
+    "faces": 170792,
+    "watertight": true,
+    "winding_consistent": true,
+    "components": 1
+  },
+  "GAUGE_v13_cavity_1.6mm.stl": {
+    "sha256": "088d6f857eb1504d9d38e7b13843e17f6aea5ede7a48b562bb09fddbae7ed3f4",
+    "extents_mm": [
+      106.91394805908203,
+      227.0,
+      1.600000023841858
+    ],
+    "volume_cm3": 3.7726204883454324,
+    "faces": 1500,
+    "watertight": true,
+    "winding_consistent": true,
+    "components": 1
+  },
+  "PRINT_TEST_v13_section.stl": {
+    "sha256": "eb6de0c236e3bfa226a42ee0dc9de2c76fee9100cdadfaacf2db370817a721b7",
+    "extents_mm": [
+      58.0,
+      36.0,
+      40.699851989746094
+    ],
+    "volume_cm3": 6.934032955301074,
+    "faces": 10848,
+    "watertight": true,
+    "winding_consistent": true,
+    "components": 1
+  },
+  "veil_v13_prototype.3mf": {
+    "sha256": "475fd8afd76fe1a98607d7bd6a265647404e37864cfbcc1762b7e0638e9bced2",
+    "watertight": true,
+    "components": 1,
+    "extents_mm": [
+      150.3393096923828,
+      241.277099609375,
+      40.699764251708984
+    ],
+    "volume_cm3": 74.6052818463993,
+    "max_bounds_difference_from_STL_mm": 0.0
+  }
+}

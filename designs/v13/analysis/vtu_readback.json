@@ -1,0 +1,28 @@
+{
+  "v13_fine_result": {
+    "cells": 712354,
+    "points": 192071,
+    "cell_fields": [
+      "vertical_1g_von_Mises_MPa",
+      "eccentric_1g_von_Mises_MPa",
+      "rim_side_10N_von_Mises_MPa"
+    ],
+    "point_fields": [
+      "vertical_1g_displacement_mm",
+      "eccentric_1g_displacement_mm",
+      "rim_side_10N_displacement_mm"
+    ],
+    "passed": true
+  },
+  "v13_quality_result": {
+    "cells": 684668,
+    "points": 214538,
+    "cell_fields": [
+      "vertical_1g_von_Mises_MPa"
+    ],
+    "point_fields": [
+      "vertical_1g_displacement_mm"
+    ],
+    "passed": true
+  }
+}

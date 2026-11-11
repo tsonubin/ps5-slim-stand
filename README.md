@@ -1,6 +1,6 @@
 # PS5 Slim dock
 
-A one-piece, sculptural vertical stand for the PS5 Slim Disc. **[Start with v12: a continuous sculpted shell](designs/v12/README.md)** — irregular rounded openings and integrated edges, ready for aesthetic review. Physical qualification is pending. Earlier designs and their validation remain preserved below.
+A one-piece, sculptural vertical stand for the PS5 Slim Disc. **[Start with v13: smoother, nearly level perimeter loops](designs/v13/README.md)** — the accepted shell direction with restrained rim height and fresh engineering studies. Physical qualification is pending. Earlier designs and their validation remain preserved below.
 
 ## Start here
 - Read `docs/CONTINUE.md` for the current task and exact stopping point.
@@ -14,7 +14,16 @@ Source chat: https://claude.ai/chat/f4d270b2-2594-4b75-a828-277e58a32ab0
 v6 is generated and geometry-checked in `designs/v6/`. Start with [the v6 preview and files](designs/v6/README.md), [validation](designs/v6/VALIDATION.md), and [print-service brief](designs/v6/PRINT_SERVICE.md). No physical fit, print, strength or thermal validation has been performed.
 
 
-## Current candidate: v12
+## Current candidate: v13
+
+[Veil v13](designs/v13/README.md) preserves the user-liked continuous mesh shell and lower-loop silhouette. The upper perimeter is nearly level at **38.03–40.70 mm**; finite Fourier guides remove abrupt local changes in both loops. Overall size: **150.34 × 241.28 × 40.70 mm**, **74.61 cm³**.
+
+- [Actual assembly detail](designs/v13/output/assembly_base_detail.png), [standalone view](designs/v13/output/hero_v13.png), [3MF](designs/v13/output/veil_v13_prototype.3mf) and [STL](designs/v13/output/veil_v13_prototype.stl).
+- [Geometry method](designs/v13/GEOMETRY_METHOD.md), [continuity checks](designs/v13/analysis/guide_continuity.json), [reference/mesh checks](designs/v13/analysis/light_geometry_review.json) and [vendor brief](designs/v13/PRINT_SERVICE.md).
+
+Fresh [v13 FEA](designs/v13/STRUCTURAL_ANALYSIS.md) and [conditional airflow screening](designs/v13/airflow/AIRFLOW_REVIEW.md) are available, with [3D stress colors](designs/v13/output/stress_heatmap_3d.html) and [flow views](designs/v13/airflow/flow_streamlines_3d.png). Stress peaks remain unconverged, and the hypothetical airflow channel does not establish actual PS5 cooling loss. Lower rear-grille clearance and the real active vent map remain unresolved. This is a review prototype, **not yet ready for service-use printing**; internal junctions/contact and hardware vent spacing need further work.
+
+## Preserved v12 shell study
 
 [Veil v12](designs/v12/README.md) is a continuous sculpted shell with **72 irregular flowing openings**, integrated edges and a lower internal support web. The **150.40 × 240.62 × 48.04 mm** candidate is ready for aesthetic review; it is not yet a qualified console support.
 

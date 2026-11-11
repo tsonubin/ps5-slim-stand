@@ -20,3 +20,8 @@ designs/*/output/preblend_skin.stl
 designs/*/output/root_only.stl
 # v11 binary STL exceeds GitHub's per-file limit; its gzip and 3MF are tracked.
 designs/v11/output/veil_v11_prototype.stl
+# Reproducible v13 airflow solver working arrays and logs.
+designs/v13/airflow/*.npz
+designs/v13/airflow/*.bin
+designs/v13/airflow/*.field
+designs/v13/airflow/*.log
