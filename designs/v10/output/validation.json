@@ -1,0 +1,301 @@
+{
+  "scope": "Geometric checks and conditional rigid-body estimates, NOT physical qualification",
+  "mesh": {
+    "veil_v10_prototype.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -65.39786529541016,
+          -120.20333862304688,
+          0.0
+        ],
+        [
+          85.92659759521484,
+          124.26188659667969,
+          53.21739196777344
+        ]
+      ],
+      "volume_cm3": 131.40033546395284,
+      "faces": 177768,
+      "sha256": "11d8d495b5d24f01d3091f885f174e6076daee61aa5425c5803140e57dfdf50c"
+    },
+    "GAUGE_v10_cavity_1.6mm.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -45.48997116088867,
+          -113.5,
+          0.0
+        ],
+        [
+          61.42397689819336,
+          113.5,
+          1.600000023841858
+        ]
+      ],
+      "volume_cm3": 3.7726204883454324,
+      "faces": 1500,
+      "sha256": "088d6f857eb1504d9d38e7b13843e17f6aea5ede7a48b562bb09fddbae7ed3f4"
+    },
+    "PRINT_TEST_v10_section.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "bounds_mm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          58.0,
+          36.0,
+          48.138023376464844
+        ]
+      ],
+      "volume_cm3": 9.738790761949218,
+      "faces": 12566,
+      "sha256": "b84b7d7e792994a4c3747b954072e05956dd7b46c246cb90aa5147610fcad859"
+    },
+    "undercroft_sleek.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1,
+      "bounds_mm": [
+        [
+          -57.15812683105469,
+          -117.15040588378906,
+          6.304488488240167e-05
+        ],
+        [
+          75.79171752929688,
+          121.40078735351562,
+          30.0
+        ]
+      ],
+      "volume_cm3": 63.26193436860008,
+      "faces": 11770,
+      "sha256": "c4968448612a6b6fa2c117618a4d172a0682dcbb040264863e5a6ffc31c34e7b"
+    }
+  },
+  "sections": {
+    "0.1": {
+      "solid_area_mm2": 4441.546256533993,
+      "inside_reference_plan_mm2": 123.50173822971178
+    },
+    "6": {
+      "solid_area_mm2": 2302.874331111306,
+      "inside_reference_plan_mm2": 983.4763251282035
+    },
+    "12": {
+      "solid_area_mm2": 3246.1505660848406,
+      "inside_reference_plan_mm2": 1760.1650294473457
+    },
+    "20": {
+      "solid_area_mm2": 4158.8227007990145,
+      "inside_reference_plan_mm2": 2391.958647984989
+    },
+    "29.9": {
+      "solid_area_mm2": 4045.1906252210747,
+      "inside_reference_plan_mm2": 2391.723774413092
+    },
+    "30.1": {
+      "solid_area_mm2": 1355.6584191904853,
+      "inside_reference_plan_mm2": 0.0
+    },
+    "40": {
+      "solid_area_mm2": 1019.8633841912883,
+      "inside_reference_plan_mm2": 0.0
+    },
+    "50": {
+      "solid_area_mm2": 179.34704138637872,
+      "inside_reference_plan_mm2": 0.0
+    },
+    "60": {
+      "solid_area_mm2": 0.0,
+      "inside_reference_plan_mm2": 0.0
+    }
+  },
+  "3mf": {
+    "watertight": true,
+    "extents_mm": [
+      151.324462890625,
+      244.46522521972656,
+      53.21739196777344
+    ],
+    "volume_cm3": 131.40033546395284
+  },
+  "reference_plan_intersection_mm3": 0.0,
+  "cavity_envelope_intersection_mm3": 0.5073064726282694,
+  "tipping": {
+    "assumptions": "3.2kg console, CoM 179mm above base, console lift30mm, horizontal push at388mm, solid PLA density1.24g/cm3, rigid no-slip coupling. Not valid if console moves independently in loose cavity. No comparison to Sony stand.",
+    "scenarios": [
+      {
+        "assumed_console_com_xy_mm": [
+          -5,
+          -15
+        ],
+        "nearest_pivot_mm": 57.157421198719334,
+        "top_push_N": 4.859913775818456,
+        "tilt_deg": 15.966789624271387
+      },
+      {
+        "assumed_console_com_xy_mm": [
+          -5,
+          0
+        ],
+        "nearest_pivot_mm": 59.43868841504577,
+        "top_push_N": 5.0538826732675295,
+        "tilt_deg": 16.56972874335539
+      },
+      {
+        "assumed_console_com_xy_mm": [
+          -5,
+          15
+        ],
+        "nearest_pivot_mm": 60.68974314953553,
+        "top_push_N": 5.160255879247402,
+        "tilt_deg": 16.89879575749129
+      },
+      {
+        "assumed_console_com_xy_mm": [
+          5,
+          -15
+        ],
+        "nearest_pivot_mm": 66.48138930523038,
+        "top_push_N": 5.652701135636227,
+        "tilt_deg": 18.40703246546797
+      },
+      {
+        "assumed_console_com_xy_mm": [
+          5,
+          0
+        ],
+        "nearest_pivot_mm": 68.87556922272508,
+        "top_push_N": 5.856270641026738,
+        "tilt_deg": 19.02300642520235
+      },
+      {
+        "assumed_console_com_xy_mm": [
+          5,
+          15
+        ],
+        "nearest_pivot_mm": 70.19305112346865,
+        "top_push_N": 5.968291937728601,
+        "tilt_deg": 19.36004018444867
+      },
+      {
+        "assumed_console_com_xy_mm": [
+          15,
+          -15
+        ],
+        "nearest_pivot_mm": 70.98732019992957,
+        "top_push_N": 6.035826111689646,
+        "tilt_deg": 19.56255796740493
+      },
+      {
+        "assumed_console_com_xy_mm": [
+          15,
+          0
+        ],
+        "nearest_pivot_mm": 71.00287545646601,
+        "top_push_N": 6.037148725690461,
+        "tilt_deg": 19.56651909367569
+      },
+      {
+        "assumed_console_com_xy_mm": [
+          15,
+          15
+        ],
+        "nearest_pivot_mm": 69.64656499131314,
+        "top_push_N": 5.9218259596236305,
+        "tilt_deg": 19.220407511790008
+      }
+    ]
+  },
+  "layer_screen": {
+    "layer_height_mm": 0.2,
+    "method": "Area outside preceding cross section expanded 0.2mm; no extrusion width, bridging, cooling or material model. New islands have zero direct overlap with prior layer; diagonal extrusion may still support them.",
+    "layers": 265,
+    "worst_layers": [
+      {
+        "z_mm": 14.1,
+        "beyond_45deg_support_area_mm2": 191.65147937301535,
+        "new_nonoverlapping_islands": 0
+      },
+      {
+        "z_mm": 13.9,
+        "beyond_45deg_support_area_mm2": 145.71958492736638,
+        "new_nonoverlapping_islands": 0
+      },
+      {
+        "z_mm": 13.7,
+        "beyond_45deg_support_area_mm2": 96.45211764613008,
+        "new_nonoverlapping_islands": 0
+      },
+      {
+        "z_mm": 0.3,
+        "beyond_45deg_support_area_mm2": 82.9355624491951,
+        "new_nonoverlapping_islands": 0
+      },
+      {
+        "z_mm": 13.5,
+        "beyond_45deg_support_area_mm2": 75.70860667571073,
+        "new_nonoverlapping_islands": 0
+      },
+      {
+        "z_mm": 13.3,
+        "beyond_45deg_support_area_mm2": 66.52874577711282,
+        "new_nonoverlapping_islands": 0
+      },
+      {
+        "z_mm": 13.1,
+        "beyond_45deg_support_area_mm2": 60.368550681911636,
+        "new_nonoverlapping_islands": 0
+      },
+      {
+        "z_mm": 12.9,
+        "beyond_45deg_support_area_mm2": 55.567900808604826,
+        "new_nonoverlapping_islands": 0
+      },
+      {
+        "z_mm": 12.7,
+        "beyond_45deg_support_area_mm2": 55.49983045911871,
+        "new_nonoverlapping_islands": 0
+      },
+      {
+        "z_mm": 0.5,
+        "beyond_45deg_support_area_mm2": 53.44702472152176,
+        "new_nonoverlapping_islands": 0
+      },
+      {
+        "z_mm": 12.5,
+        "beyond_45deg_support_area_mm2": 52.35649620606627,
+        "new_nonoverlapping_islands": 0
+      },
+      {
+        "z_mm": 12.3,
+        "beyond_45deg_support_area_mm2": 47.824154301801954,
+        "new_nonoverlapping_islands": 0
+      }
+    ],
+    "sum_new_nonoverlapping_islands": 2
+  },
+  "reference_core_contact": {
+    "slice_console_z_mm": 0.5,
+    "core_area_mm2": 7024.847429250298,
+    "rib_top_overlap_mm2": 1055.0984872069262,
+    "warning": "Fan-made core mesh section, not verified contact face. Holes and actual feet unknown."
+  },
+  "nominal_features_mm": {
+    "round_strand_diameter": 3.3,
+    "under_console_ribs": 3.2,
+    "rim_band_height": 4.0,
+    "base_band_height": 4.8,
+    "reference_clearance": 1.5
+  }
+}

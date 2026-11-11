@@ -1,0 +1,132 @@
+{
+  "scope": "exploratory, regularized geometry, assumed isotropic material, not fully converged",
+  "side_load_cases": {
+    "full_star_result": {
+      "iterations": 355,
+      "relative_residual": 9.582465702277978e-09,
+      "max_displacement_mm": 0.17632938331356773,
+      "max_seat_down_mm": 0.0004436629388338042,
+      "peak_von_mises_MPa": 4.541740122672663,
+      "volume_weighted_p95_von_mises_MPa": 0.1270607355929933,
+      "peak_element_center_mm": [
+        57.73299312591553,
+        67.55673408508301,
+        30.296703815460205
+      ],
+      "support_reaction_N": [
+        -9.999999999849473,
+        9.69626601232676e-11,
+        31.392000000384485
+      ],
+      "applied_force_N": [
+        10,
+        0,
+        -31.392
+      ],
+      "compliance_Nmm": 1.0522479772173967,
+      "solve_seconds": 45.65435481071472
+    },
+    "full_star_refined_result": {
+      "iterations": 354,
+      "relative_residual": 9.061580717500125e-09,
+      "max_displacement_mm": 0.22840553966440513,
+      "max_seat_down_mm": 0.00044985749528334094,
+      "peak_von_mises_MPa": 4.866230091963417,
+      "volume_weighted_p95_von_mises_MPa": 0.14352010127841544,
+      "peak_element_center_mm": [
+        57.89437294006348,
+        71.98420333862305,
+        31.134248733520508
+      ],
+      "support_reaction_N": [
+        -9.999999999992491,
+        5.26483301399594e-11,
+        31.3919999996969
+      ],
+      "applied_force_N": [
+        10,
+        0,
+        -31.392
+      ],
+      "compliance_Nmm": 1.3380268180591124,
+      "solve_seconds": 56.55232000350952
+    },
+    "full_star_fine_result": {
+      "iterations": 406,
+      "relative_residual": 1.0023794298273459e-08,
+      "max_displacement_mm": 0.2418008472079898,
+      "max_seat_down_mm": 0.0004525706227388264,
+      "peak_von_mises_MPa": 4.9113102212984225,
+      "volume_weighted_p95_von_mises_MPa": 0.14783930912662546,
+      "peak_element_center_mm": [
+        57.50442981719971,
+        66.95215225219727,
+        30.163341999053955
+      ],
+      "support_reaction_N": [
+        -9.999999999610553,
+        -3.50523832182148e-10,
+        31.391999999977262
+      ],
+      "applied_force_N": [
+        10,
+        0,
+        -31.392
+      ],
+      "compliance_Nmm": 1.4133170968003492,
+      "solve_seconds": 95.94692587852478
+    },
+    "full_star_reinforced_result": {
+      "iterations": 361,
+      "relative_residual": 9.850502066164118e-09,
+      "max_displacement_mm": 0.18936620464383322,
+      "max_seat_down_mm": 0.0004477295011131322,
+      "peak_von_mises_MPa": 3.8031685042706633,
+      "volume_weighted_p95_von_mises_MPa": 0.14079293732437878,
+      "peak_element_center_mm": [
+        62.500644041840395,
+        28.89193633343109,
+        30.517821606154484
+      ],
+      "support_reaction_N": [
+        -10.000000000140428,
+        -1.0505152303608156e-11,
+        31.392000000100516
+      ],
+      "applied_force_N": [
+        10,
+        0,
+        -31.392
+      ],
+      "compliance_Nmm": 1.1185659910856398,
+      "solve_seconds": 71.77368760108948
+    },
+    "full_star_reinforced_fine_result": {
+      "iterations": 436,
+      "relative_residual": 9.887052137320463e-09,
+      "max_displacement_mm": 0.19952320143113433,
+      "max_seat_down_mm": 0.0004500746825906978,
+      "peak_von_mises_MPa": 4.947522653416885,
+      "volume_weighted_p95_von_mises_MPa": 0.14270397875536003,
+      "peak_element_center_mm": [
+        57.26828193664551,
+        66.34192848205566,
+        30.05725383758545
+      ],
+      "support_reaction_N": [
+        -10.000000000070713,
+        -1.5159318245139275e-11,
+        31.392000000103373
+      ],
+      "applied_force_N": [
+        10,
+        0,
+        -31.392
+      ],
+      "compliance_Nmm": 1.1727179645584132,
+      "solve_seconds": 104.87362885475159
+    }
+  },
+  "collar_fine_displacement_reduction_fraction": 0.1748449034195877,
+  "collar_fine_peak_reduction_fraction": -0.0073732732176892135
+}

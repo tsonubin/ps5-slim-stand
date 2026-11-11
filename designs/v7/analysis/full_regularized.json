@@ -1,0 +1,10 @@
+{
+  "method": "Section raster + Gaussian sigma0.55 voxels + isosurface + topology-preserving decimation",
+  "pitch_mm": 0.6,
+  "original_volume_mm3": 192787.85851631706,
+  "simulation_volume_mm3": 190566.2826708102,
+  "relative_volume_change": -0.011523421975864867,
+  "sample_max_distance_mm": 1.844511927583359,
+  "sample_p95_distance_mm": 0.3511794651525764,
+  "faces": 398364
+}

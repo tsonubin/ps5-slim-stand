@@ -1,0 +1,1327 @@
+[
+  {
+    "z_mm": 0.3,
+    "beyond_45deg_support_area_mm2": 82.9355624491951,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 0.5,
+    "beyond_45deg_support_area_mm2": 53.44702472152176,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 0.7,
+    "beyond_45deg_support_area_mm2": 42.228107686943524,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 0.9,
+    "beyond_45deg_support_area_mm2": 35.53627813911872,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 1.1,
+    "beyond_45deg_support_area_mm2": 29.713150235480366,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 1.3,
+    "beyond_45deg_support_area_mm2": 24.765412513747457,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 1.5,
+    "beyond_45deg_support_area_mm2": 21.349191964442984,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 1.7,
+    "beyond_45deg_support_area_mm2": 19.800629022349924,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 1.9,
+    "beyond_45deg_support_area_mm2": 18.373214353938298,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 2.1,
+    "beyond_45deg_support_area_mm2": 17.935467386102182,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 2.3,
+    "beyond_45deg_support_area_mm2": 17.596871198853567,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 2.5,
+    "beyond_45deg_support_area_mm2": 17.596285367901224,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 2.7,
+    "beyond_45deg_support_area_mm2": 16.834520517815452,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 2.9,
+    "beyond_45deg_support_area_mm2": 16.25642651695628,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 3.1,
+    "beyond_45deg_support_area_mm2": 15.346467844634828,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 3.3,
+    "beyond_45deg_support_area_mm2": 14.963042168448608,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 3.5,
+    "beyond_45deg_support_area_mm2": 14.249396123418592,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 3.7,
+    "beyond_45deg_support_area_mm2": 13.905533957963948,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 3.9,
+    "beyond_45deg_support_area_mm2": 13.518183236032987,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 4.1,
+    "beyond_45deg_support_area_mm2": 12.940525424916986,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 4.3,
+    "beyond_45deg_support_area_mm2": 12.619014783831085,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 4.5,
+    "beyond_45deg_support_area_mm2": 12.305609954934456,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 4.7,
+    "beyond_45deg_support_area_mm2": 11.910996714693265,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 4.9,
+    "beyond_45deg_support_area_mm2": 11.611573011991673,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 5.1,
+    "beyond_45deg_support_area_mm2": 29.123690712752612,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 5.3,
+    "beyond_45deg_support_area_mm2": 29.949623869839197,
+    "new_nonoverlapping_islands": 1
+  },
+  {
+    "z_mm": 5.5,
+    "beyond_45deg_support_area_mm2": 30.345274007971383,
+    "new_nonoverlapping_islands": 1
+  },
+  {
+    "z_mm": 5.7,
+    "beyond_45deg_support_area_mm2": 28.031606906218215,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 5.9,
+    "beyond_45deg_support_area_mm2": 28.222775948574903,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 6.1,
+    "beyond_45deg_support_area_mm2": 28.55155527901806,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 6.3,
+    "beyond_45deg_support_area_mm2": 28.340824648716183,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 6.5,
+    "beyond_45deg_support_area_mm2": 28.199906423603608,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 6.7,
+    "beyond_45deg_support_area_mm2": 28.808246939324185,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 6.9,
+    "beyond_45deg_support_area_mm2": 28.750677315024518,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 7.1,
+    "beyond_45deg_support_area_mm2": 30.596062977301134,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 7.3,
+    "beyond_45deg_support_area_mm2": 30.172324431761627,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 7.5,
+    "beyond_45deg_support_area_mm2": 30.287735423086254,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 7.7,
+    "beyond_45deg_support_area_mm2": 29.505688145760647,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 7.9,
+    "beyond_45deg_support_area_mm2": 33.3753348217287,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 8.1,
+    "beyond_45deg_support_area_mm2": 32.82698207139016,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 8.3,
+    "beyond_45deg_support_area_mm2": 32.14784361540331,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 8.5,
+    "beyond_45deg_support_area_mm2": 30.99347726214577,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 8.7,
+    "beyond_45deg_support_area_mm2": 33.917729959929716,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 8.9,
+    "beyond_45deg_support_area_mm2": 35.76542991404724,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 9.1,
+    "beyond_45deg_support_area_mm2": 33.94591321151517,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 9.3,
+    "beyond_45deg_support_area_mm2": 28.892922878483574,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 9.5,
+    "beyond_45deg_support_area_mm2": 27.79441799981769,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 9.7,
+    "beyond_45deg_support_area_mm2": 26.473956529681267,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 9.9,
+    "beyond_45deg_support_area_mm2": 26.74394708810118,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 10.1,
+    "beyond_45deg_support_area_mm2": 26.838149203883336,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 10.3,
+    "beyond_45deg_support_area_mm2": 28.27881849397318,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 10.5,
+    "beyond_45deg_support_area_mm2": 31.105545373764272,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 10.7,
+    "beyond_45deg_support_area_mm2": 32.55286262932337,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 10.9,
+    "beyond_45deg_support_area_mm2": 33.61066733851431,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 11.1,
+    "beyond_45deg_support_area_mm2": 34.097653743713245,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 11.3,
+    "beyond_45deg_support_area_mm2": 38.523100762888475,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 11.5,
+    "beyond_45deg_support_area_mm2": 40.22803390087344,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 11.7,
+    "beyond_45deg_support_area_mm2": 40.431780259776474,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 11.9,
+    "beyond_45deg_support_area_mm2": 41.09134367684268,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 12.1,
+    "beyond_45deg_support_area_mm2": 43.47949632062908,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 12.3,
+    "beyond_45deg_support_area_mm2": 47.824154301801954,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 12.5,
+    "beyond_45deg_support_area_mm2": 52.35649620606627,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 12.7,
+    "beyond_45deg_support_area_mm2": 55.49983045911871,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 12.9,
+    "beyond_45deg_support_area_mm2": 55.567900808604826,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 13.1,
+    "beyond_45deg_support_area_mm2": 60.368550681911636,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 13.3,
+    "beyond_45deg_support_area_mm2": 66.52874577711282,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 13.5,
+    "beyond_45deg_support_area_mm2": 75.70860667571073,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 13.7,
+    "beyond_45deg_support_area_mm2": 96.45211764613008,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 13.9,
+    "beyond_45deg_support_area_mm2": 145.71958492736638,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 14.1,
+    "beyond_45deg_support_area_mm2": 191.65147937301535,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 14.3,
+    "beyond_45deg_support_area_mm2": 21.092104587385357,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 14.5,
+    "beyond_45deg_support_area_mm2": 19.923125484518962,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 14.7,
+    "beyond_45deg_support_area_mm2": 19.75014498969253,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 14.9,
+    "beyond_45deg_support_area_mm2": 18.371103842411827,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 15.1,
+    "beyond_45deg_support_area_mm2": 18.435968667096766,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 15.3,
+    "beyond_45deg_support_area_mm2": 20.024225978866777,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 15.5,
+    "beyond_45deg_support_area_mm2": 22.197391039266456,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 15.7,
+    "beyond_45deg_support_area_mm2": 21.5736252998176,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 15.9,
+    "beyond_45deg_support_area_mm2": 16.71317140335182,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 16.1,
+    "beyond_45deg_support_area_mm2": 16.935795086095254,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 16.3,
+    "beyond_45deg_support_area_mm2": 14.007616271213056,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 16.5,
+    "beyond_45deg_support_area_mm2": 13.938850163090308,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 16.7,
+    "beyond_45deg_support_area_mm2": 12.401076203921363,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 16.9,
+    "beyond_45deg_support_area_mm2": 12.065955610618442,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 17.1,
+    "beyond_45deg_support_area_mm2": 10.652842448882378,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 17.3,
+    "beyond_45deg_support_area_mm2": 9.49306867964922,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 17.5,
+    "beyond_45deg_support_area_mm2": 9.31357252013486,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 17.7,
+    "beyond_45deg_support_area_mm2": 8.736850412946943,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 17.9,
+    "beyond_45deg_support_area_mm2": 12.36551637600095,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 18.1,
+    "beyond_45deg_support_area_mm2": 15.114120885072008,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 18.3,
+    "beyond_45deg_support_area_mm2": 17.306657764609817,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 18.5,
+    "beyond_45deg_support_area_mm2": 21.622226952841142,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 18.7,
+    "beyond_45deg_support_area_mm2": 25.327336903391757,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 18.9,
+    "beyond_45deg_support_area_mm2": 23.924784419723995,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 19.1,
+    "beyond_45deg_support_area_mm2": 19.144849906210368,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 19.3,
+    "beyond_45deg_support_area_mm2": 17.911079977966764,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 19.5,
+    "beyond_45deg_support_area_mm2": 17.454189669763466,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 19.7,
+    "beyond_45deg_support_area_mm2": 23.65444616432847,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 19.9,
+    "beyond_45deg_support_area_mm2": 18.786639095349795,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 20.1,
+    "beyond_45deg_support_area_mm2": 13.266540077481865,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 20.3,
+    "beyond_45deg_support_area_mm2": 13.859024497560304,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 20.5,
+    "beyond_45deg_support_area_mm2": 11.132403743326062,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 20.7,
+    "beyond_45deg_support_area_mm2": 10.10624114749077,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 20.9,
+    "beyond_45deg_support_area_mm2": 11.295510101253408,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 21.1,
+    "beyond_45deg_support_area_mm2": 14.147513176270717,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 21.3,
+    "beyond_45deg_support_area_mm2": 14.6505840392389,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 21.5,
+    "beyond_45deg_support_area_mm2": 28.50519854443932,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 21.7,
+    "beyond_45deg_support_area_mm2": 33.75467274101703,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 21.9,
+    "beyond_45deg_support_area_mm2": 16.819059691543092,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 22.1,
+    "beyond_45deg_support_area_mm2": 7.9599793624307145,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 22.3,
+    "beyond_45deg_support_area_mm2": 5.724383738425153,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 22.5,
+    "beyond_45deg_support_area_mm2": 6.6490972669476935,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 22.7,
+    "beyond_45deg_support_area_mm2": 8.486038753724664,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 22.9,
+    "beyond_45deg_support_area_mm2": 8.741859411999842,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 23.1,
+    "beyond_45deg_support_area_mm2": 9.617801378463586,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 23.3,
+    "beyond_45deg_support_area_mm2": 11.654136275643847,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 23.5,
+    "beyond_45deg_support_area_mm2": 15.492864093199723,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 23.7,
+    "beyond_45deg_support_area_mm2": 16.240568900791466,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 23.9,
+    "beyond_45deg_support_area_mm2": 16.107190860427842,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 24.1,
+    "beyond_45deg_support_area_mm2": 17.667685636837923,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 24.3,
+    "beyond_45deg_support_area_mm2": 15.866148333939357,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 24.5,
+    "beyond_45deg_support_area_mm2": 16.581414248552072,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 24.7,
+    "beyond_45deg_support_area_mm2": 17.813427465973156,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 24.9,
+    "beyond_45deg_support_area_mm2": 16.925745282449164,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 25.1,
+    "beyond_45deg_support_area_mm2": 19.496547982293816,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 25.3,
+    "beyond_45deg_support_area_mm2": 28.644517058121092,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 25.5,
+    "beyond_45deg_support_area_mm2": 14.423688118149517,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 25.7,
+    "beyond_45deg_support_area_mm2": 12.0796729136387,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 25.9,
+    "beyond_45deg_support_area_mm2": 14.107520654522839,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 26.1,
+    "beyond_45deg_support_area_mm2": 10.596951090377399,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 26.3,
+    "beyond_45deg_support_area_mm2": 8.293678945414662,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 26.5,
+    "beyond_45deg_support_area_mm2": 11.399327755251203,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 26.7,
+    "beyond_45deg_support_area_mm2": 9.945804389097933,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 26.9,
+    "beyond_45deg_support_area_mm2": 9.063125993844537,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 27.1,
+    "beyond_45deg_support_area_mm2": 14.293149884395143,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 27.3,
+    "beyond_45deg_support_area_mm2": 14.418962122598822,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 27.5,
+    "beyond_45deg_support_area_mm2": 13.947042439767696,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 27.7,
+    "beyond_45deg_support_area_mm2": 16.179877122188742,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 27.9,
+    "beyond_45deg_support_area_mm2": 14.955441539942015,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 28.1,
+    "beyond_45deg_support_area_mm2": 17.136712747600566,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 28.3,
+    "beyond_45deg_support_area_mm2": 18.486831395169748,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 28.5,
+    "beyond_45deg_support_area_mm2": 17.154406769620323,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 28.7,
+    "beyond_45deg_support_area_mm2": 13.626456533148298,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 28.9,
+    "beyond_45deg_support_area_mm2": 14.204837126257418,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 29.1,
+    "beyond_45deg_support_area_mm2": 15.055875379522305,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 29.3,
+    "beyond_45deg_support_area_mm2": 12.700584490732474,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 29.5,
+    "beyond_45deg_support_area_mm2": 11.3120244411326,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 29.7,
+    "beyond_45deg_support_area_mm2": 17.763179302630746,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 29.9,
+    "beyond_45deg_support_area_mm2": 23.155661235913193,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 30.1,
+    "beyond_45deg_support_area_mm2": 19.21300585891928,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 30.3,
+    "beyond_45deg_support_area_mm2": 18.94458245651622,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 30.5,
+    "beyond_45deg_support_area_mm2": 15.521070205155748,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 30.7,
+    "beyond_45deg_support_area_mm2": 14.314210543874132,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 30.9,
+    "beyond_45deg_support_area_mm2": 11.303248128089606,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 31.1,
+    "beyond_45deg_support_area_mm2": 10.85915911887504,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 31.3,
+    "beyond_45deg_support_area_mm2": 24.543161336954356,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 31.5,
+    "beyond_45deg_support_area_mm2": 17.4768344251722,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 31.7,
+    "beyond_45deg_support_area_mm2": 12.376166619869053,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 31.9,
+    "beyond_45deg_support_area_mm2": 10.214702607752828,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 32.1,
+    "beyond_45deg_support_area_mm2": 9.275929201493502,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 32.3,
+    "beyond_45deg_support_area_mm2": 17.020743954109143,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 32.5,
+    "beyond_45deg_support_area_mm2": 20.15139590075303,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 32.7,
+    "beyond_45deg_support_area_mm2": 11.857507224816066,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 32.9,
+    "beyond_45deg_support_area_mm2": 16.35985596370297,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 33.1,
+    "beyond_45deg_support_area_mm2": 10.954685446744838,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 33.3,
+    "beyond_45deg_support_area_mm2": 14.992355664898627,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 33.5,
+    "beyond_45deg_support_area_mm2": 13.632467544049165,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 33.7,
+    "beyond_45deg_support_area_mm2": 13.582028172146833,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 33.9,
+    "beyond_45deg_support_area_mm2": 12.729633594369835,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 34.1,
+    "beyond_45deg_support_area_mm2": 14.998094332953693,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 34.3,
+    "beyond_45deg_support_area_mm2": 12.22802393527503,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 34.5,
+    "beyond_45deg_support_area_mm2": 20.14067697871862,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 34.7,
+    "beyond_45deg_support_area_mm2": 11.739518782329277,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 34.9,
+    "beyond_45deg_support_area_mm2": 9.712441336345806,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 35.1,
+    "beyond_45deg_support_area_mm2": 9.859848191304186,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 35.3,
+    "beyond_45deg_support_area_mm2": 12.93389691014137,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 35.5,
+    "beyond_45deg_support_area_mm2": 13.694286990843537,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 35.7,
+    "beyond_45deg_support_area_mm2": 13.977699092610258,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 35.9,
+    "beyond_45deg_support_area_mm2": 14.677413398829279,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 36.1,
+    "beyond_45deg_support_area_mm2": 13.850533758549672,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 36.3,
+    "beyond_45deg_support_area_mm2": 13.39871091136099,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 36.5,
+    "beyond_45deg_support_area_mm2": 15.316340400146204,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 36.7,
+    "beyond_45deg_support_area_mm2": 22.10014275562753,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 36.9,
+    "beyond_45deg_support_area_mm2": 21.002700495216992,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 37.1,
+    "beyond_45deg_support_area_mm2": 16.838214208820062,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 37.3,
+    "beyond_45deg_support_area_mm2": 14.238020696004657,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 37.5,
+    "beyond_45deg_support_area_mm2": 13.47480802920086,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 37.7,
+    "beyond_45deg_support_area_mm2": 15.724023557065804,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 37.9,
+    "beyond_45deg_support_area_mm2": 17.222969703500038,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 38.1,
+    "beyond_45deg_support_area_mm2": 15.619380402319809,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 38.3,
+    "beyond_45deg_support_area_mm2": 23.88871551598209,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 38.5,
+    "beyond_45deg_support_area_mm2": 12.555183267728388,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 38.7,
+    "beyond_45deg_support_area_mm2": 14.782565567501745,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 38.9,
+    "beyond_45deg_support_area_mm2": 8.180159522774776,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 39.1,
+    "beyond_45deg_support_area_mm2": 9.662698061004434,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 39.3,
+    "beyond_45deg_support_area_mm2": 9.54070310451808,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 39.5,
+    "beyond_45deg_support_area_mm2": 7.900007507431492,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 39.7,
+    "beyond_45deg_support_area_mm2": 7.179880437121818,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 39.9,
+    "beyond_45deg_support_area_mm2": 9.203543918950853,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 40.1,
+    "beyond_45deg_support_area_mm2": 9.294935523042918,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 40.3,
+    "beyond_45deg_support_area_mm2": 9.779042575785066,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 40.5,
+    "beyond_45deg_support_area_mm2": 9.648567593215535,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 40.7,
+    "beyond_45deg_support_area_mm2": 12.680694164029955,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 40.9,
+    "beyond_45deg_support_area_mm2": 16.261019341411355,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 41.1,
+    "beyond_45deg_support_area_mm2": 13.489649750259424,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 41.3,
+    "beyond_45deg_support_area_mm2": 20.64701096707693,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 41.5,
+    "beyond_45deg_support_area_mm2": 4.7275426030515915,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 41.7,
+    "beyond_45deg_support_area_mm2": 4.111753442064073,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 41.9,
+    "beyond_45deg_support_area_mm2": 3.650477318713548,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 42.1,
+    "beyond_45deg_support_area_mm2": 2.448503073749765,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 42.3,
+    "beyond_45deg_support_area_mm2": 3.028192730285448,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 42.5,
+    "beyond_45deg_support_area_mm2": 3.5883691895874654,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 42.7,
+    "beyond_45deg_support_area_mm2": 4.209294992550454,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 42.9,
+    "beyond_45deg_support_area_mm2": 8.179238887750401,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 43.1,
+    "beyond_45deg_support_area_mm2": 9.26282422184839,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 43.3,
+    "beyond_45deg_support_area_mm2": 10.764451445526255,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 43.5,
+    "beyond_45deg_support_area_mm2": 12.474649965374391,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 43.7,
+    "beyond_45deg_support_area_mm2": 5.040133170809716,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 43.9,
+    "beyond_45deg_support_area_mm2": 4.576858901801721,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 44.1,
+    "beyond_45deg_support_area_mm2": 18.675207980332676,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 44.3,
+    "beyond_45deg_support_area_mm2": 12.207122627458945,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 44.5,
+    "beyond_45deg_support_area_mm2": 3.749889053756002,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 44.7,
+    "beyond_45deg_support_area_mm2": 3.815246308456893,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 44.9,
+    "beyond_45deg_support_area_mm2": 3.9332686430174233,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 45.1,
+    "beyond_45deg_support_area_mm2": 3.640239119863815,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 45.3,
+    "beyond_45deg_support_area_mm2": 3.0960301019377576,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 45.5,
+    "beyond_45deg_support_area_mm2": 2.9125847605243114,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 45.7,
+    "beyond_45deg_support_area_mm2": 2.9703467209743284,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 45.9,
+    "beyond_45deg_support_area_mm2": 1.5448594805481384,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 46.1,
+    "beyond_45deg_support_area_mm2": 0.8231567768493511,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 46.3,
+    "beyond_45deg_support_area_mm2": 0.6162935414202404,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 46.5,
+    "beyond_45deg_support_area_mm2": 0.6464681208056908,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 46.7,
+    "beyond_45deg_support_area_mm2": 0.5102352202580003,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 46.9,
+    "beyond_45deg_support_area_mm2": 0.48445209742579043,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 47.1,
+    "beyond_45deg_support_area_mm2": 0.6183867649229077,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 47.3,
+    "beyond_45deg_support_area_mm2": 0.9509932414609894,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 47.5,
+    "beyond_45deg_support_area_mm2": 1.1233582395761346,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 47.7,
+    "beyond_45deg_support_area_mm2": 1.3284226890191437,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 47.9,
+    "beyond_45deg_support_area_mm2": 2.0043265879813754,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 48.1,
+    "beyond_45deg_support_area_mm2": 3.055887291744466,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 48.3,
+    "beyond_45deg_support_area_mm2": 3.654010324673636,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 48.5,
+    "beyond_45deg_support_area_mm2": 4.973839276639659,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 48.7,
+    "beyond_45deg_support_area_mm2": 7.841382867401766,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 48.9,
+    "beyond_45deg_support_area_mm2": 9.722809112927802,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 49.1,
+    "beyond_45deg_support_area_mm2": 8.238334059763954,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 49.3,
+    "beyond_45deg_support_area_mm2": 12.537535885331836,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 49.5,
+    "beyond_45deg_support_area_mm2": 0.03358570239462111,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 49.7,
+    "beyond_45deg_support_area_mm2": 0.038914938917000264,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 49.9,
+    "beyond_45deg_support_area_mm2": 0.04001173233484234,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 50.1,
+    "beyond_45deg_support_area_mm2": 0.0015976115314826345,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 50.3,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 50.5,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 50.7,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 50.9,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 51.1,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 51.3,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 51.5,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 51.7,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 51.9,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 52.1,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 52.3,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 52.5,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 52.7,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 52.9,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  },
+  {
+    "z_mm": 53.1,
+    "beyond_45deg_support_area_mm2": 0.0,
+    "new_nonoverlapping_islands": 0
+  }
+]

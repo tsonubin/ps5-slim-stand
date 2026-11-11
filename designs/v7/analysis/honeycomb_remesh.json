@@ -1,0 +1,9 @@
+{
+  "original_volume_mm3": 134586.7161444953,
+  "remesh_volume_mm3": 132950.19419437752,
+  "relative_volume_change": -0.012159609781702163,
+  "bidirectional_sample_max_distance_mm": 4.72570241528729,
+  "bidirectional_sample_p95_distance_mm": 0.44700877847242254,
+  "vertices": 21446,
+  "faces": 43008
+}

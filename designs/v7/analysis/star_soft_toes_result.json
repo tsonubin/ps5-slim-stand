@@ -1,0 +1,71 @@
+{
+  "surface_mesh": "designs/v7/analysis/star_soft_toes.npz",
+  "nodes": 72202,
+  "tets": 214612,
+  "solid_volume_mm3": 119197.2715956967,
+  "material_assumption": {
+    "E_MPa": 1200.0,
+    "nu": 0.35,
+    "model": "Isotropic homogeneous linear elastic. Not measured printed properties."
+  },
+  "boundary": "All translations fixed at actual modeled bottom nodes; no sliding/lift-off/contact nonlinearity. Upper rib faces inside reference black-core footprint carry pressure. Outer shell omitted from support comparison.",
+  "seat_area_mm2": 2119.8744359664342,
+  "results": {
+    "vertical_1g": {
+      "iterations": 246,
+      "relative_residual": 8.528652533591199e-09,
+      "max_displacement_mm": 0.00046285480283602163,
+      "max_seat_down_mm": 0.00042744733483520683,
+      "peak_von_mises_MPa": 1.429403436117427,
+      "volume_weighted_p95_von_mises_MPa": 0.01747549776067535,
+      "peak_element_center_mm": [
+        -13.516154018380462,
+        19.878233425816557,
+        0.001733844866805626
+      ],
+      "support_reaction_N": [
+        -1.0454059840014907e-10,
+        -9.065355133230923e-10,
+        31.392000000095976
+      ],
+      "applied_force_N": [
+        0,
+        0,
+        -31.392
+      ],
+      "compliance_Nmm": 0.011321708297680621,
+      "solve_seconds": 9.039170980453491
+    },
+    "eccentric_1g": {
+      "iterations": 228,
+      "relative_residual": 9.826411003803094e-09,
+      "max_displacement_mm": 0.0010426790806710798,
+      "max_seat_down_mm": 0.0010376829250161473,
+      "peak_von_mises_MPa": 1.1597316336756265,
+      "volume_weighted_p95_von_mises_MPa": 0.03363785272317888,
+      "peak_element_center_mm": [
+        36.88008946739137,
+        -8.016724516404793,
+        5.067658824014739
+      ],
+      "support_reaction_N": [
+        4.3437697883064175e-10,
+        1.4823060556778955e-09,
+        31.39199999970539
+      ],
+      "applied_force_N": [
+        0,
+        0,
+        -31.392
+      ],
+      "compliance_Nmm": 0.024403798499589142,
+      "solve_seconds": 8.071995973587036
+    },
+    "vertical_3g_linear_scaling": {
+      "max_displacement_mm": 0.001388564408508065,
+      "max_seat_down_mm": 0.0012823420045056204,
+      "peak_von_mises_MPa": 4.288210308352281,
+      "volume_weighted_p95_von_mises_MPa": 0.052426493282026046
+    }
+  }
+}

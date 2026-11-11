@@ -1,0 +1,38 @@
+[
+  {
+    "profile": "Triangle",
+    "area_mm2": 11.599198623925231,
+    "principal_second_moments_mm4": [
+      12.779968556205924,
+      12.77996855620593
+    ],
+    "nominal_X_arm_mm": null
+  },
+  {
+    "profile": "Circle",
+    "area_mm2": 11.212041033841196,
+    "principal_second_moments_mm4": [
+      10.003936355361121,
+      10.003936355361121
+    ],
+    "nominal_X_arm_mm": null
+  },
+  {
+    "profile": "Cross / X",
+    "area_mm2": 13.413634495906436,
+    "principal_second_moments_mm4": [
+      17.57061967583715,
+      17.57061967583715
+    ],
+    "nominal_X_arm_mm": 1.6
+  },
+  {
+    "profile": "Square",
+    "area_mm2": 12.203137084989844,
+    "principal_second_moments_mm4": [
+      12.370131926036985,
+      12.370131926036988
+    ],
+    "nominal_X_arm_mm": null
+  }
+]

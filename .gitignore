@@ -12,6 +12,7 @@ designs/*/analysis/*.vtk
 designs/*/output/*.vtu
 designs/*/output/*.npz
 designs/*/output/*.zip
+designs/*/*.zip
 designs/*/output/*.log
 designs/*/baseline/*.npz
 designs/*/baseline/*.log
