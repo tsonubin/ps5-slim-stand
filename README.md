@@ -1,5 +1,7 @@
 # PS5 Slim dock
 
+[Git version tags and checkpoint history](docs/VERSION_HISTORY.md) — stable references for v5–v13.
+
 A one-piece, sculptural vertical stand for the PS5 Slim Disc. **[Start with v13: smoother, nearly level perimeter loops](designs/v13/README.md)** — the accepted shell direction with restrained rim height and fresh engineering studies. Physical qualification is pending. Earlier designs and their validation remain preserved below.
 
 ## Start here
