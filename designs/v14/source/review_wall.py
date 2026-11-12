@@ -31,7 +31,7 @@ def review(v):
  delta=v.SB(th)-v.SR(th);out['flare_mm']=[float(delta.min()),float(delta.max())];out['max_wall_lean_from_vertical_deg']=float(np.degrees(np.arctan(2*delta/v.SH(th))).max())
  return out
 rep={'scope':'Analytic exterior guide surface r(theta,z). Horizontal sections at 5 heights and silhouettes from 12 azimuths. Does not certify aperture edges or the triangulated Boolean result.',
- 'v13':review(load('veil_v13',HERE.parents[1]/'v13/source')),'v14':review(load('veil_v14',HERE))}
+ 'v13':review(load('veil_v13',HERE.parent/'baseline_v13/source')),'v14':review(load('veil_v14',HERE))}
 (HERE.parent/'analysis/wall_smoothness.json').write_text(json.dumps(rep,indent=2))
 for ver in ['v13','v14']:
  r=rep[ver];print(ver,'base',r['base_size_mm'],'rim',r['rim_size_mm'],'gap',np.round(r['rim_to_cavity_gap_mm'],2),'flare',np.round(r['flare_mm'],2),'lean',round(r['max_wall_lean_from_vertical_deg'],1),'silhouette inflections',r['silhouette_inflections_total_12_views'])

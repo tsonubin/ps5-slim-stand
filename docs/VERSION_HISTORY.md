@@ -2,6 +2,8 @@
 
 Each design milestone has an annotated Git tag, published to `origin`. Tags mark reviewable design snapshots, not engineering approval or print qualification. Existing history has not been rewritten.
 
+**Only `designs/v14/` is kept in the working tree.** The folders listed for v5–v13 were removed from the branch after the v14 release; check out the tag to see them (the `v14` tag itself still contains all of them).
+
 | Tag | Commit | Authoritative design folder | Checkpoint provenance |
 |---|---|---|---|
 | `v5` | `7070cee` | `designs/imported/ps5_veil_stand_v5/` | Imported original archived in the initial repository snapshot; not an original v5-era Git commit |

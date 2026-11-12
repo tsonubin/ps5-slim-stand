@@ -1,7 +1,7 @@
-"""Compare v14 with v13 in the same hypothetical capped-channel screen (see v13 AIRFLOW_REVIEW.md)."""
+"""Compare v14 with v13 in the same hypothetical capped-channel screen (method: ../baseline_v13/airflow/AIRFLOW_REVIEW.md)."""
 from pathlib import Path
 import json,hashlib
-R=Path(__file__).resolve().parent;OLD=R.parents[1]/'v13/airflow'
+R=Path(__file__).resolve().parent;OLD=R.parent/'baseline_v13/airflow'
 def reduction(folder,tag):
  e=json.loads((folder/f'empty_{tag}.json').read_text());s=json.loads((folder/f'stand_{tag}.json').read_text())
  return {'conductance_reduction_percent':100*(1-s['qout_lattice']/e['qout_lattice']),'unblocked_port_area_mm2':s['port_area_mm2'],'nominal_port_area_mm2':e['port_area_mm2'],'max_mass_imbalance_fraction':max(e['mass_imbalance_fraction'],s['mass_imbalance_fraction']),'velocity_change':max(e['relative_change'],s['relative_change'])}
