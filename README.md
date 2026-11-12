@@ -8,7 +8,7 @@ A one-piece, 3D-printed stand that lifts a PS5 Slim (disc model, CFI-20xx) 30 mm
 
 ![Veil v14 with the reference console](designs/v14/output/assembly_base_detail.png)
 
-[Standalone view](designs/v14/output/hero_v14.png) · [four views](designs/v14/output/preview_v14_clean.png) · [turntable](designs/v14/output/turntable_v14.png) · [print files (v14 release)](https://github.com/tsonubin/ps5-slim-stand/releases/tag/v14) · [full engineering report](designs/v14/README.md)
+[Standalone view](designs/v14/output/hero_v14.png) · [four views](designs/v14/output/preview_v14_clean.png) · [turntable](designs/v14/output/turntable_v14.png) · [full engineering report](designs/v14/README.md)
 
 ## Design philosophy
 

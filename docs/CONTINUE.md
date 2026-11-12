@@ -168,7 +168,7 @@ Decisions already made by the user: final part in white, bead-blasted SLS PA12 f
 
 Do not claim: a cooling prediction (all OpenFOAM flow rates are assumptions; real vent map, fan flow and rear-grille clearance are unmeasured), a converged contact peak (it rises with refinement at the pad edge), or anything about creep and warm-air softening (not estimated). Nothing has been printed.
 
-The user asked for v14 to be tagged and its print files published as a GitHub release (tag `v14`).
+The user asked for v14 to be tagged and released (tag `v14`); the print files were removed from that release the same day, after photos of a real CFI-2009 showed the seat layout and both simulated tests rest on a wrong underside (see the warning at the top of the READMEs).
 
 ## Only v14 kept (2026-11-12)
 
