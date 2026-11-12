@@ -2,6 +2,8 @@
 
 A one-piece, 3D-printed stand that lifts a PS5 Slim (disc model, CFI-20xx) 30 mm off the desk inside a perforated, sculpted shell.
 
+> **Do not print this version to hold a console.** On 2026-11-12 the seat layout and both simulated tests were found to rest on a wrong picture of the console's underside. The fan-made reference model shows a flat, symmetric base with no openings. A real CFI-2009 has a row of about 17 vent slots in a recessed strip along the disc-drive side of the black base. Two of the stand's four pads and one rib sit under that strip. The stress results assume contact on a surface that is not there, and the airflow results draw air through a solid face instead of through those slots. Sections below are kept as a record and are **not valid** until the seat is redesigned against measurements of real hardware.
+
 **Status: review prototype.** The geometry is final for a first print, and it has been through simulated stress and airflow tests. Nothing has been printed, fitted to a console or heat-tested yet.
 
 ![Veil v14 with the reference console](designs/v14/output/assembly_base_detail.png)

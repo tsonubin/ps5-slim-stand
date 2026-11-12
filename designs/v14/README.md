@@ -1,5 +1,7 @@
 # Veil v14 — convex wall, seat pads, open-arch ribs, stiffened long sides, blended rib feet
 
+> **Do not print this version to hold a console.** On 2026-11-12 the seat layout and both simulated tests were found to rest on a wrong picture of the console's underside. The fan-made reference model shows a flat, symmetric base with no openings. A real CFI-2009 has a row of about 17 vent slots in a recessed strip along the disc-drive side of the black base. Two of the stand's four pads and one rib sit under that strip. The stress results assume contact on a surface that is not there, and the airflow results draw air through a solid face instead of through those slots. Sections below are kept as a record and are **not valid** until the seat is redesigned against measurements of real hardware.
+
 v14 keeps v13's perforated shell and opening pattern, and changes these things: the exterior wall is rebuilt as a strictly convex surface, the console now rests on four flat pads instead of narrow rib crests, the ribs are rerouted under those pads with filleted crossings, the wall is thickened inward by up to 0.7 mm where it stands clear of the console, and each rib's underside is a wider, flatter arch to let more air through, and every rib end is blended into the wall with a fillet. **This is a design and screening prototype, not a qualified stand.** Nothing has been printed or tested on hardware. The print plan is in [PRINT_SERVICE.md](PRINT_SERVICE.md). v13 is untouched.
 
 ![v14 assembly](output/assembly_base_detail.png)

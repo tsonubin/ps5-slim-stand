@@ -1,5 +1,7 @@
 # v14 print brief / 打印说明
 
+**On hold: do not order the full part.** The seat pads were laid out against a wrong model of the console's underside (see the README). The gauge can still be printed to check the outline. / **暂停：请勿下单完整件。** 支撑垫的位置依据了错误的主机底部模型（见 README），量规仍可打印用于核对外形。
+
 **Development prototype.** The numbers below come from simulation and data sheets. Nothing has been printed, fitted, loaded or heat-tested yet. Engineering detail is in [README.md](README.md).
 
 ## Plan
