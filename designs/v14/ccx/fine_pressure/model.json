@@ -1,0 +1,31 @@
+{
+  "mesh": "mesh_fine.msh",
+  "mode": "pressure",
+  "nodes": 433027,
+  "tets": 214875,
+  "E_MPa": 1650.0,
+  "nu": 0.4,
+  "weight_N": 31.392000000000003,
+  "fixed_nodes": 6956,
+  "seat_pressure_area_mm2": 756.2935264726159,
+  "pad_contact_surface_mm2": 954.8199127626426,
+  "side_patch_area_mm2": 1052.494379610198,
+  "cases": {
+    "vertical_1g": {
+      "pressure_MPa": 0.04150769364166527,
+      "loaded_area_mm2": 756.2935264726159
+    },
+    "eccentric_1g": {
+      "pressure_MPa": 0.08933711291785432,
+      "loaded_area_mm2": 351.38811827135066
+    },
+    "rim_side_10N": {
+      "pressure_MPa": 0.04150769364166527,
+      "loaded_area_mm2": 756.2935264726159
+    }
+  },
+  "core_centroid_xy_mm": [
+    -0.0008560269818883125,
+    3.417126866725808
+  ]
+}

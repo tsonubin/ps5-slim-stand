@@ -1,0 +1,19 @@
+{
+  "input": "../analysis/regularized.stl",
+  "tool": "MMG 5.8.0",
+  "base_edge_mm": 2.2,
+  "hausdorff_tolerance_mm": 0.35,
+  "faces": 138686,
+  "edge_mm_p5_p50_p95": [
+    0.674,
+    0.999,
+    1.481
+  ],
+  "triangle_quality_min_p1": [
+    0.5656141747737171,
+    0.8318600183223672
+  ],
+  "volume_change_vs_input": -0.006494650240972288,
+  "max_sampled_deviation_mm": 0.880423127705359,
+  "p95_sampled_deviation_mm": 0.24893988427785999
+}

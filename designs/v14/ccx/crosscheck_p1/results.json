@@ -1,0 +1,130 @@
+{
+  "mesh": "analysis/v14_fine_mesh.npz",
+  "mode": "pressure",
+  "nodes": 183440,
+  "tets": 665991,
+  "element": "C3D4",
+  "E_MPa": 1650.0,
+  "nu": 0.4,
+  "seat_pressure_area_mm2": 749.9847771049982,
+  "results": {
+    "rim_side_10N": {
+      "max_displacement_mm": 0.14628160755077857,
+      "max_displacement_at_mm": [
+        55.2,
+        69.6,
+        40.4
+      ],
+      "peak_von_mises_MPa": 6.824151272522467,
+      "peak_at_mm": [
+        78.1,
+        -37.9,
+        0.1
+      ],
+      "volume_weighted_p95_MPa": 0.47457408658229866,
+      "volume_weighted_p99.9_MPa": 1.2625800786826193,
+      "volume_above_2MPa_mm3": 9.43179282285062,
+      "zones": {
+        "pads_and_rib_crossings": {
+          "peak_MPa": 4.193867750571899,
+          "at_mm": [
+            -1.6,
+            -43.3,
+            23.6
+          ]
+        },
+        "plus_x_wall_struts": {
+          "peak_MPa": 4.8919662863310895,
+          "at_mm": [
+            61.9,
+            40.9,
+            29.5
+          ]
+        },
+        "within_1.5mm_of_clamped_base": {
+          "peak_MPa": 6.824151272522467,
+          "at_mm": [
+            78.1,
+            -37.9,
+            0.1
+          ]
+        },
+        "everything_above_base_zone": {
+          "peak_MPa": 5.179561867835742,
+          "at_mm": [
+            -51.4,
+            -38.7,
+            5.6
+          ]
+        }
+      },
+      "safety_factor_vs_48MPa_XY": 9.26719309949214,
+      "safety_factor_vs_42MPa_Z": 8.108793962055621,
+      "base_reaction_N": [
+        -10.0,
+        9.258147e-11,
+        31.392
+      ],
+      "solver_iterations": 0
+    },
+    "vertical_1g": {
+      "max_displacement_mm": 0.09731946973992255,
+      "max_displacement_at_mm": [
+        12.7,
+        -10.5,
+        21.8
+      ],
+      "peak_von_mises_MPa": 7.0917660301839485,
+      "peak_at_mm": [
+        78.1,
+        -37.9,
+        0.1
+      ],
+      "volume_weighted_p95_MPa": 0.4183333433288111,
+      "volume_weighted_p99.9_MPa": 1.0483877906992705,
+      "volume_above_2MPa_mm3": 1.321769498565938,
+      "zones": {
+        "pads_and_rib_crossings": {
+          "peak_MPa": 4.11914380083665,
+          "at_mm": [
+            -1.6,
+            -43.3,
+            23.6
+          ]
+        },
+        "plus_x_wall_struts": {
+          "peak_MPa": 1.540720358291212,
+          "at_mm": [
+            71.9,
+            39.9,
+            6.9
+          ]
+        },
+        "within_1.5mm_of_clamped_base": {
+          "peak_MPa": 7.0917660301839485,
+          "at_mm": [
+            78.1,
+            -37.9,
+            0.1
+          ]
+        },
+        "everything_above_base_zone": {
+          "peak_MPa": 5.299703941018851,
+          "at_mm": [
+            -51.4,
+            -38.7,
+            5.6
+          ]
+        }
+      },
+      "safety_factor_vs_48MPa_XY": 9.057109705409724,
+      "safety_factor_vs_42MPa_Z": 7.924970992233508,
+      "base_reaction_N": [
+        5.136734e-11,
+        2.127559e-10,
+        31.392
+      ],
+      "solver_iterations": 0
+    }
+  }
+}

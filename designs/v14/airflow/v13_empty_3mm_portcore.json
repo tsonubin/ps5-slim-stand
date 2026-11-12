@@ -1,0 +1,23 @@
+{
+  "iterations": 2750,
+  "relative_change": 8.8634385924742e-07,
+  "link_flux_in": 0.0096416999057532,
+  "link_flux_out": 0.0096417107836906,
+  "name": "v13_empty_3mm_portcore",
+  "pitch_mm": 3.0,
+  "shape": [
+    12,
+    94,
+    64
+  ],
+  "fluid_nodes": 57040,
+  "port_area_mm2": 6984.0,
+  "qout_lattice": 0.0096417107836906,
+  "qin_lattice": 0.0096416999057532,
+  "mass_imbalance_fraction": 1.1282165213048666e-06,
+  "max_speed_lattice": 1.7019701772369444e-05,
+  "tau": 0.8,
+  "kinematic_viscosity_lattice": 0.1,
+  "density_difference": 1e-05,
+  "conductance_scaled": 7809.785734789385
+}

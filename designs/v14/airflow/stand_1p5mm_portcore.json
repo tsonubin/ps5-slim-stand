@@ -1,0 +1,23 @@
+{
+  "iterations": 3500,
+  "relative_change": 7.2375070731264e-07,
+  "link_flux_in": 0.018608743049687,
+  "link_flux_out": 0.018608748035164,
+  "name": "stand_1p5mm_portcore",
+  "pitch_mm": 1.5,
+  "shape": [
+    22,
+    187,
+    127
+  ],
+  "fluid_nodes": 442984,
+  "port_area_mm2": 6030.0,
+  "qout_lattice": 0.018608748035164,
+  "qin_lattice": 0.018608743049687,
+  "mass_imbalance_fraction": 2.6791039303446944e-07,
+  "max_speed_lattice": 1.576759859744925e-05,
+  "tau": 0.8,
+  "kinematic_viscosity_lattice": 0.1,
+  "density_difference": 1e-05,
+  "conductance_scaled": 1884.135738560355
+}

@@ -1,0 +1,172 @@
+{
+  "manufacturing_stl_sha256": "fafd089c4409d807b5e09a74fbd1d7b48db3d83a04dc6812c6d39d48809bc629",
+  "regularized_surface_sha256": "2322836faad9bfa7e13997e3f9157629c996d4d539b69dfd2254b596f3d5f4b6",
+  "quality_definition": "Mean ratio12*(3V)^(2/3)/sum(squared six edge lengths),1 for regular tetrahedron; no elements or peaks removed.",
+  "models": {
+    "v14_coarse_result": {
+      "tets": 547825,
+      "mean_ratio_quality_percentiles": {
+        "min": 2.0862332881781792e-05,
+        "p0.01": 0.0002602781893627205,
+        "p0.1": 0.0018828771317140616,
+        "p1": 0.021607680540241474,
+        "p50": 0.5229958193325793
+      },
+      "tet_count_quality_below_0.001": 235,
+      "cases": {
+        "vertical_1g": {
+          "peak_tet_volume_mm3": 2.8062591164651837e-07,
+          "peak_tet_mean_ratio_quality": 0.00044491848661142903,
+          "peak_center_mm": [
+            49.95155906677246,
+            40.27500534057617,
+            22.558778285980225
+          ],
+          "peak_distance_to_manufacturing_surface_mm": 0.018714545193679055,
+          "within3mm_volume_weighted_p95_MPa": 0.44154414308974504,
+          "force_balance_error_N": 1.3641427445708191e-09,
+          "max_displacement_node_mm": [
+            12.654993057250977,
+            -10.531500816345215,
+            21.846500396728516
+          ],
+          "moment_balance_error_Nmm": 5.547214278621476e-08
+        },
+        "eccentric_1g": {
+          "peak_tet_volume_mm3": 2.8062591164651837e-07,
+          "peak_tet_mean_ratio_quality": 0.00044491848661142903,
+          "peak_center_mm": [
+            49.95155906677246,
+            40.27500534057617,
+            22.558778285980225
+          ],
+          "peak_distance_to_manufacturing_surface_mm": 0.018714545193679055,
+          "within3mm_volume_weighted_p95_MPa": 0.517489035686632,
+          "force_balance_error_N": 1.986732014997494e-09,
+          "max_displacement_node_mm": [
+            15.713987350463867,
+            -6.57824182510376,
+            22.34317970275879
+          ],
+          "moment_balance_error_Nmm": 4.75932039452923e-08
+        },
+        "rim_side_10N": {
+          "peak_tet_volume_mm3": 2.8062591164651837e-07,
+          "peak_tet_mean_ratio_quality": 0.00044491848661142903,
+          "peak_center_mm": [
+            49.95155906677246,
+            40.27500534057617,
+            22.558778285980225
+          ],
+          "peak_distance_to_manufacturing_surface_mm": 0.018714545193679055,
+          "within3mm_volume_weighted_p95_MPa": 0.5937726610013259,
+          "force_balance_error_N": 4.571955577107163e-09,
+          "max_displacement_node_mm": [
+            55.19794464111328,
+            69.11847686767578,
+            40.4398307800293
+          ],
+          "moment_balance_error_Nmm": 1.3500437200345455e-07
+        }
+      }
+    },
+    "v14_fine_result": {
+      "tets": 665991,
+      "mean_ratio_quality_percentiles": {
+        "min": 4.4718875634602384e-05,
+        "p0.01": 0.0003550679054335963,
+        "p0.1": 0.002328571862266996,
+        "p1": 0.027324910438365147,
+        "p50": 0.6281161511253025
+      },
+      "tet_count_quality_below_0.001": 222,
+      "cases": {
+        "vertical_1g": {
+          "peak_tet_volume_mm3": 3.5947724605905165e-05,
+          "peak_tet_mean_ratio_quality": 0.017217894208888286,
+          "peak_center_mm": [
+            -1.819649487733841,
+            -43.230655670166016,
+            23.43010663986206
+          ],
+          "peak_distance_to_manufacturing_surface_mm": 0.17444213993581464,
+          "within3mm_volume_weighted_p95_MPa": 1.0051403879163074,
+          "force_balance_error_N": 2.663752707155288e-09,
+          "max_displacement_node_mm": [
+            12.654993057250977,
+            -10.531500816345215,
+            21.846500396728516
+          ],
+          "moment_balance_error_Nmm": 4.275477650322512e-09
+        },
+        "eccentric_1g": {
+          "peak_tet_volume_mm3": 4.7044150021502734e-05,
+          "peak_tet_mean_ratio_quality": 4.4718875634602384e-05,
+          "peak_center_mm": [
+            -15.252488613128662,
+            95.49538040161133,
+            14.713261604309082
+          ],
+          "peak_distance_to_manufacturing_surface_mm": 0.17115682159657894,
+          "within3mm_volume_weighted_p95_MPa": 0.23512472669692797,
+          "force_balance_error_N": 2.138130309703767e-09,
+          "max_displacement_node_mm": [
+            15.713987350463867,
+            -6.57824182510376,
+            22.34317970275879
+          ],
+          "moment_balance_error_Nmm": 8.042909658134688e-08
+        },
+        "rim_side_10N": {
+          "peak_tet_volume_mm3": 3.5947724605905165e-05,
+          "peak_tet_mean_ratio_quality": 0.017217894208888286,
+          "peak_center_mm": [
+            -1.819649487733841,
+            -43.230655670166016,
+            23.43010663986206
+          ],
+          "peak_distance_to_manufacturing_surface_mm": 0.17444213993581464,
+          "within3mm_volume_weighted_p95_MPa": 1.0021296114240061,
+          "force_balance_error_N": 1.8091168085946982e-09,
+          "max_displacement_node_mm": [
+            55.16454315185547,
+            69.59555053710938,
+            40.448909759521484
+          ],
+          "moment_balance_error_Nmm": 3.6844275522243756e-08
+        }
+      }
+    },
+    "v14_quality_result": {
+      "tets": 696578,
+      "mean_ratio_quality_percentiles": {
+        "min": 1.0620011972969701e-05,
+        "p0.01": 0.00047521402438915157,
+        "p0.1": 0.0037661067716010595,
+        "p1": 0.029641465378937235,
+        "p50": 0.27568670828695563
+      },
+      "tet_count_quality_below_0.001": 178,
+      "cases": {
+        "vertical_1g": {
+          "peak_tet_volume_mm3": 1.5985628584735906e-08,
+          "peak_tet_mean_ratio_quality": 1.0620011972969701e-05,
+          "peak_center_mm": [
+            62.81424140930176,
+            -41.01452350616455,
+            15.109714269638062
+          ],
+          "peak_distance_to_manufacturing_surface_mm": 0.07770782470915605,
+          "within3mm_volume_weighted_p95_MPa": 0.22683065098882932,
+          "force_balance_error_N": 2.247342684652112e-09,
+          "max_displacement_node_mm": [
+            12.68862247467041,
+            -6.130435943603516,
+            22.38545799255371
+          ],
+          "moment_balance_error_Nmm": 2.89589693968414e-08
+        }
+      }
+    }
+  }
+}

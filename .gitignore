@@ -25,3 +25,16 @@ designs/v13/airflow/*.npz
 designs/v13/airflow/*.bin
 designs/v13/airflow/*.field
 designs/v13/airflow/*.log
+designs/v14/airflow/*.npz
+designs/v14/airflow/*.bin
+designs/v14/airflow/*.field
+designs/v14/airflow/*.log
+# v14 CalculiX / OpenFOAM working files (regenerate with the scripts in designs/v14; summaries are tracked).
+designs/v14/ccx/*.msh
+designs/v14/ccx/*.stl
+designs/v14/ccx/**/*.inp
+designs/v14/ccx/**/*.frd
+designs/v14/ccx/**/*.npz
+designs/v14/ccx/**/*.12d
+designs/v14/ccx/**/spooles.out
+designs/v14/openfoam/cases/

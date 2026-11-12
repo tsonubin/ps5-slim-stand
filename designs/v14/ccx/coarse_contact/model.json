@@ -1,0 +1,37 @@
+{
+  "mesh": "mesh_coarse.msh",
+  "mode": "contact",
+  "nodes": 215525,
+  "tets": 103741,
+  "E_MPa": 1650.0,
+  "nu": 0.4,
+  "weight_N": 31.392000000000003,
+  "fixed_nodes": 2273,
+  "seat_pressure_area_mm2": 685.8925511113836,
+  "pad_contact_surface_mm2": 899.0796249748876,
+  "side_patch_area_mm2": 1032.3412716615042,
+  "cases": {
+    "vertical_1g": {
+      "weight_point_xy_mm": [
+        -0.0008560269818883125,
+        3.417126866725808
+      ]
+    },
+    "eccentric_1g": {
+      "weight_point_xy_mm": [
+        9.999143973018112,
+        3.417126866725808
+      ]
+    },
+    "rim_side_10N": {
+      "weight_point_xy_mm": [
+        -0.0008560269818883125,
+        3.417126866725808
+      ]
+    }
+  },
+  "core_centroid_xy_mm": [
+    -0.0008560269818883125,
+    3.417126866725808
+  ]
+}
