@@ -13,6 +13,7 @@ Each design milestone has an annotated Git tag, published to `origin`. Tags mark
 | `v11` | `557163f` | `designs/v11/` | Dedicated v11 design commit |
 | `v12` | `ede01eb` | `designs/v12/` | Dedicated v12 design commit |
 | `v13` | `f5dd66f` | `designs/v13/` | Dedicated v13 design, stress and conditional airflow investigation commit |
+| `v14` | see `git rev-parse v14^{}` | `designs/v14/` | Dedicated v14 commit: convex wall, seat pads, blended rib feet, CalculiX and OpenFOAM studies. Print files are attached to the GitHub release of the same name |
 
 The earlier work was committed in batches. In particular, `v7`, `v8`, and `v9` cannot honestly be presented as separate historical whole-repository checkpoints: those tags point to the first commit containing their preserved folders, which also contains later studies. Inspect the authoritative folder listed above. Tag annotations record this limitation.
 

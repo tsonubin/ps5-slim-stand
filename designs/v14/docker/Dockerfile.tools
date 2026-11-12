@@ -1,5 +1,5 @@
 # Python toolchain for the v14 generator, meshing and post-processing, plus the compiled lattice-Boltzmann screen.
-# Optional: the same packages install natively into .venv-cad (see designs/v14/HANDOFF.md). Not yet built or tested.
+# Optional: the same packages install natively into .venv-cad (see designs/v14/README.md, Reproduce). Not yet built or tested.
 FROM python:3.13-slim-bookworm
 RUN apt-get update && apt-get install -y --no-install-recommends g++ libgl1 libglu1-mesa libxrender1 libxcursor1 libxft2 libxinerama1 libgomp1 && rm -rf /var/lib/apt/lists/*
 COPY source/requirements.txt source/requirements-fea.txt source/requirements-solvers.txt /tmp/req/

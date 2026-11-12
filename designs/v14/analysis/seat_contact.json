@@ -32,57 +32,57 @@
     "highest_stand_point_under_core_away_from_seat_lands_mm": null
   },
   "v14": {
-    "stl_sha256": "fafd089c4409d807b5e09a74fbd1d7b48db3d83a04dc6812c6d39d48809bc629",
-    "flat_seat_area_mm2": 771.5433238588703,
-    "contact_area_on_core_mm2": 771.5433238588704,
-    "mean_pressure_MPa_at_3p2kg": 0.04068728097210803,
+    "stl_sha256": "f1d0bfc22a9153e16242919a86aeb8b0463d0420215a4993fba140493aacfccf",
+    "flat_seat_area_mm2": 781.8534206942768,
+    "contact_area_on_core_mm2": 771.5433238573448,
+    "mean_pressure_MPa_at_3p2kg": 0.04068728097218848,
     "patches": [
       {
-        "area_mm2": 192.88583281262663,
+        "area_mm2": 192.88583281289993,
         "centroid_xy_mm": [
           16.5,
           44.0
         ],
-        "bounding_length_mm": 21.584079774837512,
-        "bounding_width_mm": 10.584685405605192,
+        "bounding_length_mm": 21.584079775446817,
+        "bounding_width_mm": 10.584685406047372,
         "max_inscribed_width_mm": 10.5,
-        "min_distance_to_core_edge_mm": 8.815105226418952,
+        "min_distance_to_core_edge_mm": 8.815105225890576,
         "fully_on_core": true
       },
       {
-        "area_mm2": 192.88583278938052,
+        "area_mm2": 192.88583279016876,
         "centroid_xy_mm": [
           -16.5,
           44.0
         ],
-        "bounding_length_mm": 21.584079768863212,
-        "bounding_width_mm": 10.584685402670349,
+        "bounding_length_mm": 21.58407976946579,
+        "bounding_width_mm": 10.584685403114262,
         "max_inscribed_width_mm": 10.5,
-        "min_distance_to_core_edge_mm": 8.816609079705412,
+        "min_distance_to_core_edge_mm": 8.816609079313798,
         "fully_on_core": true
       },
       {
-        "area_mm2": 192.88582914885046,
+        "area_mm2": 192.88582914707106,
         "centroid_xy_mm": [
           11.5,
           -44.0
         ],
-        "bounding_length_mm": 21.584079768863212,
-        "bounding_width_mm": 10.584684925862005,
+        "bounding_length_mm": 21.584079769465784,
+        "bounding_width_mm": 10.584684926140646,
         "max_inscribed_width_mm": 10.5,
-        "min_distance_to_core_edge_mm": 6.644370214627856,
+        "min_distance_to_core_edge_mm": 6.644370214598395,
         "fully_on_core": true
       },
       {
-        "area_mm2": 192.88582910801279,
+        "area_mm2": 192.88582910720515,
         "centroid_xy_mm": [
           -11.5,
           -44.0
         ],
-        "bounding_length_mm": 21.584079774837498,
-        "bounding_width_mm": 10.584684888461906,
+        "bounding_length_mm": 21.584079775446806,
+        "bounding_width_mm": 10.584684888850397,
         "max_inscribed_width_mm": 10.5,
-        "min_distance_to_core_edge_mm": 6.646382533784062,
+        "min_distance_to_core_edge_mm": 6.646382533690111,
         "fully_on_core": true
       }
     ],
@@ -91,7 +91,7 @@
       -2.17
     ],
     "centroid_inside_contact_hull": true,
-    "centroid_margin_to_hull_edge_mm": 15.363691669331157,
+    "centroid_margin_to_hull_edge_mm": 15.363691669614065,
     "stand_volume_inside_core_to_cover_slot_mm3": 0.5331116427459626,
     "highest_stand_point_under_core_away_from_seat_lands_mm": 29.0
   }

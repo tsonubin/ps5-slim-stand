@@ -31,6 +31,7 @@ seat=(np.abs(tri[:,:,2]-30).max(1)<.3)&(nz>.9)&incore                 # same rul
 padtop=(tri[:,:,2].min(1)>29.2)&(nz>.7)&incore                         # whole pad land for contact
 rim=(cent[:,0]>40)&(cent[:,1]>15)&(cent[:,1]<100)&(cent[:,2]>36)
 base=np.where(xyz[:,2]<xyz[:,2].min()+.2)[0]
+PADS=np.array([(-16.5,44.),(16.5,44.),(-11.5,-44.),(11.5,-44.)]);padid=np.linalg.norm(cent[:,None,:2]-PADS[None],axis=2).argmin(1)
 def lines(ids,per=12):
  ids=[str(int(i)) for i in ids];return '\n'.join(', '.join(ids[i:i+per]) for i in range(0,len(ids),per))
 def side_cload():
@@ -58,11 +59,14 @@ else:
   ref,rot=nn+len(pn)+1,nn+len(pn)+2
   d=head+['*NODE, NSET=NPLATE']+pn+['*NODE, NSET=NREF',f'{ref}, {pt[0]:.5f}, {pt[1]:.5f}, 30.0',f'{rot}, {pt[0]:.5f}, {pt[1]:.5f}, 30.0']
   d+=['*ELEMENT, TYPE=C3D8, ELSET=PLATE']+pe+['*MATERIAL, NAME=RIGIDISH','*ELASTIC','200000., 0.3','*SOLID SECTION, ELSET=PLATE, MATERIAL=RIGIDISH',f'*RIGID BODY, NSET=NPLATE, REF NODE={ref}, ROT NODE={rot}']
-  d+=['*SURFACE, NAME=SLAVE, TYPE=ELEMENT']+[f'{e+1}, S{f+1}' for e,f in zip(bel[padtop],bfa[padtop])]+['*SURFACE, NAME=MASTER, TYPE=ELEMENT']+[f'{ne+1+i}, S1' for i in range(len(pe))]
-  d+=['*CONTACT PAIR, INTERACTION=SEAT, TYPE=SURFACE TO SURFACE, ADJUST=0.45','SLAVE, MASTER','*SURFACE INTERACTION, NAME=SEAT','*SURFACE BEHAVIOR, PRESSURE-OVERCLOSURE=LINEAR','2.E4']
+  # One slave surface and contact pair per pad, so the solver reports each pad's contact force (*CONTACT PRINT, CF).
+  for i in range(4):d+=[f'*SURFACE, NAME=PAD{i+1}, TYPE=ELEMENT']+[f'{e+1}, S{f+1}' for e,f in zip(bel[padtop&(padid==i)],bfa[padtop&(padid==i)])]
+  d+=['*SURFACE, NAME=MASTER, TYPE=ELEMENT']+[f'{ne+1+i}, S1' for i in range(len(pe))]
+  for i in range(4):d+=['*CONTACT PAIR, INTERACTION=SEAT, TYPE=SURFACE TO SURFACE, ADJUST=0.45',f'PAD{i+1}, MASTER']
+  d+=['*SURFACE INTERACTION, NAME=SEAT','*SURFACE BEHAVIOR, PRESSURE-OVERCLOSURE=LINEAR','2.E4']
   d+=['*BOUNDARY',f'{ref}, 1, 2',f'{rot}, 3, 3','*STEP, INC=60','*STATIC','0.5, 1., 1.E-4, 1.','*CLOAD',f'{ref}, 3, {-W:.6f}']
   if case=='rim_side_10N':d+=[side_cload().rstrip()]
-  (dest/f'{case}.inp').write_text('\n'.join(d)+'\n'+out+'*CONTACT FILE\nCDIS, CSTR\n*END STEP\n');info['cases'][case]={'weight_point_xy_mm':[float(pt[0]),float(pt[1])]}
+  (dest/f'{case}.inp').write_text('\n'.join(d)+'\n'+out+'*CONTACT FILE\nCDIS, CSTR\n'+''.join(f'*CONTACT PRINT, SLAVE=PAD{i+1}, MASTER=MASTER, TOTALS=ONLY\nCF\n' for i in range(4))+'*END STEP\n');info['cases'][case]={'weight_point_xy_mm':[float(pt[0]),float(pt[1])]}
 info['core_centroid_xy_mm']=list(map(float,core.centroid.coords[0]))
 np.savez_compressed(dest/'model.npz',xyz=xyz,conn=conn,bfaces=allf[bnd],bmid=mid,base=base,seat=seat,padtop=padtop,rim=rim)
 (dest/'model.json').write_text(json.dumps(info,indent=2));print(json.dumps(info,indent=1))

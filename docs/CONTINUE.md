@@ -154,3 +154,18 @@ Conditional airflow uses a capped 30 mm high surrogate channel, impermeable desk
 ## Git version markers
 
 User requested explicit version-control markers. Annotated tags `v5`–`v13` are documented in `docs/VERSION_HISTORY.md`; early batched/imported snapshots are explicitly distinguished from dedicated version commits. For future numbered designs, commit and tag each milestone separately and push both branch and tag. Never silently move published version tags.
+
+
+## v14 — convex wall, seat pads, blended rib feet, CalculiX and OpenFOAM studies (2026-11-12)
+
+v14 keeps v13's shell and opening pattern and is now the main version; read `designs/v14/README.md` first and `designs/v14/PRINT_SERVICE.md` for the print plan. The mid-task handoff list was worked through on 2026-11-12 and the handoff file removed; what is still open is listed in the README's "Still open" section.
+
+Frozen CAD: **152.83 × 247.08 × 40.70 mm**, **79.26 cm³**, STL SHA256 `f1d0bfc22a9153e16242919a86aeb8b0463d0420215a4993fba140493aacfccf`. One watertight body; zero intersection with the reference plan and cavity.
+
+What changed against the first v14 build (78.54 cm³): every rib end is blended into the wall (3 mm rolling-ball fillet inside the wall face, 1.5 mm inside the wall thickness). The unconverged stress peak that the handoff attributed to a rib foot "near the floor" was one cross-rib end crossing a wall opening and touching its lower rim at a single point. After the blend that peak is gone and the weight-case peak holds at 4.6–4.9 MPa on three meshes. From outside, that one opening now shows a small rounded pocket. **The user has not yet seen or approved this visible change.**
+
+Decisions already made by the user: final part in white, bead-blasted SLS PA12 from the UnionTech service; first a PETG fit check of the gauge and coupon on the Bambu H2D; MJF only if black is wanted.
+
+Do not claim: a cooling prediction (all OpenFOAM flow rates are assumptions; real vent map, fan flow and rear-grille clearance are unmeasured), a converged contact peak (it rises with refinement at the pad edge), or anything about creep and warm-air softening (not estimated). Nothing has been printed.
+
+The user asked for v14 to be tagged and its print files published as a GitHub release (tag `v14`).

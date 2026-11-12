@@ -251,34 +251,99 @@ def crossing_fillets(paths):
     slab=Manifold.extrude(CS([np.asarray(orient(g,sign=1.).exterior.coords)[:-1]]),.3).translate((0,0,float(z)));assert slab.status()==m3.Error.NoError and slab.volume()>0
     out.append(slab)
  return out
-def supports():
+FOOT_R=float(os.environ.get('VEIL_FOOT_FILLET','3'));FOOT_PITCH=float(os.environ.get('VEIL_FOOT_PITCH','0.1'));FOOT_LOG=[]
+def inner_radius(th,z):
+ p=shell_point(th,z,-WT(th));return np.hypot(p[...,0]-CENTER[0],p[...,1]-CENTER[1])
+def foot_fillets(solid,paths,R=None,h=None,RW=1.5):
+ """Rolling-ball fillet (radius R) of every concave corner where a rib end meets the wall.
+ The perforated skin plus ribs is rasterised locally from exact sections, closed with a ball of radius R
+ (dilate, then erode), and the closed region is meshed 0.7 voxel shy so it never stands proud of CAD faces.
+ Only material within 8 mm of the rib centreline is kept. Inside the wall thickness (where a rib end can cross a
+ wall opening and would otherwise touch its rim at a point) the ball radius is RW, small enough not to close openings."""
+ from skimage.draw import polygon
+ from skimage.measure import marching_cubes
+ from scipy.ndimage import distance_transform_edt as edt,gaussian_filter
+ from scipy.spatial import cKDTree
+ R=FOOT_R if R is None else R;h=FOOT_PITCH if h is None else h;out=[];LAT=8.;pad_=R+6*h
+ for pi,path in enumerate(paths):
+  L=np.r_[0,np.cumsum(np.linalg.norm(np.diff(path,axis=0),axis=1))];low=(RIB_TOP-RIB_DEPTH)*np.sin(np.pi*L/L[-1])**ARCH_P
+  d=path-CENTER;rho=np.hypot(*d.T);th=np.arctan2(d[:,1],d[:,0]);mid=len(path)//2
+  for end,idx in enumerate([np.arange(mid,-1,-1),np.arange(mid,len(path))]):
+   top=next(i for i in idx if rho[i]>=inner_radius(th[i],RIB_TOP));last=next((i for i in idx if rho[i]>=inner_radius(th[i],0.)+1.),idx[-1])
+   seg=path[(L>=min(L[top],L[last])-R-14)&(L<=max(L[top],L[last])+2)]
+   lo=np.r_[seg.min(0)-LAT-pad_,-pad_];hi=np.r_[seg.max(0)+LAT+pad_,RIB_TOP+R+1.5+pad_]
+   xs=np.arange(lo[0],hi[0],h)+h/2;ys=np.arange(lo[1],hi[1],h)+h/2;zs=np.arange(lo[2],hi[2],h)+h/2
+   area=lambda q:np.sum(q[:,0]*np.roll(q[:,1],-1)-q[:,1]*np.roll(q[:,0],-1))/2;cube=Manifold.cube(tuple(hi-lo+2*h)).translate(tuple(lo-h))
+   def raster(man):
+    local=man^cube;a=np.zeros((len(zs),len(ys),len(xs)),bool)
+    for k,z in enumerate(zs):
+     if z<=0:continue
+     for q in sorted(local.slice(float(z)).to_polygons(),key=lambda q:abs(area(q)),reverse=True):
+      rr,cc=polygon((q[:,1]-ys[0])/h,(q[:,0]-xs[0])/h,shape=a.shape[1:]);a[k,rr,cc]=area(q)>0
+    return a
+   occ=raster(solid)
+   d0=edt(~occ,sampling=h);closed=edt(d0<=R,sampling=h)>R;closedw=edt(d0<=RW,sampling=h)>RW
+   # Keep-zone as a signed distance (positive inside): lateral band, inside the wall face, below the fillet top.
+   XX,YY=np.meshgrid(xs,ys);dlat=cKDTree(np.c_[np.interp(np.arange(0,L[-1],.05),L,path[:,0]),np.interp(np.arange(0,L[-1],.05),L,path[:,1])]).query(np.c_[XX.ravel(),YY.ravel()])[0].reshape(XX.shape)
+   tg=np.arctan2(YY-CENTER[1],XX-CENTER[0]);rg=np.hypot(XX-CENTER[0],YY-CENTER[1])
+   g0,g1,b0,b1,h0,h1,wt=SR(tg),SR(tg,1),SB(tg),SB(tg,1),SH(tg),SH(tg,1),WT(tg);depth=np.empty(occ.shape,np.float32)
+   for k,z in enumerate(np.maximum(zs,0.)):   # inner_radius() with the Fourier guides evaluated once per column
+    q=1-z/h0;r=g0+(b0-g0)*q*q;depth[k]=r-wt*np.sqrt(1+((g1+(b1-g1)*q*q+2*(b0-g0)*q*z*h1/(h0*h0))/r)**2+(2*(b0-g0)*q/h0)**2)-rg
+   zone=np.minimum(np.minimum(LAT-dlat[None],depth+(wt-1.4)[None]),(RIB_TOP+R+1.5-zs)[:,None,None]).astype(np.float32)
+   added=((closed&(depth>0))|(closedw&(depth<=0)))&~occ&(zone>0);
+   region=occ|added;sd=gaussian_filter((edt(region,sampling=h)-edt(~region,sampling=h)).astype(np.float32),1.2)
+   edge=added&(zone<.25)&(depth>0)&((LAT-dlat[None]<.25)|((RIB_TOP+R+1.5-zs)[:,None,None]<.25))
+   FOOT_LOG.append({'rib':pi,'end':end,'near_xy_mm':path[top].round(1).tolist(),'added_volume_mm3':float(added.sum()*h**3),'added_z_range_mm':[float(zs[np.where(added.any((1,2)))[0][[0,-1]]][0]),float(zs[np.where(added.any((1,2)))[0][[0,-1]]][1])] if added.any() else None,'added_volume_cut_by_zone_edge_mm3':float(edge.sum()*h**3)})
+   if not added.any():continue
+   v,f,_,_=marching_cubes(np.pad(np.minimum(sd-.7*h,zone),1,constant_values=-1.),level=0.,spacing=(h,h,h),allow_degenerate=False)  # padded: closed at the box faces
+   tm=trimesh.Trimesh(v[:,[2,1,0]]+[xs[0]-h,ys[0]-h,zs[0]-h],f[:,[0,2,1]],process=True);tm.fix_normals();parts=[q for q in tm.split(only_watertight=True) if q.volume>.5];assert parts
+   for part in parts:
+    man=Manifold(m3.Mesh64(np.asarray(part.vertices,np.float64),np.asarray(part.faces,np.uint64)));assert man.status()==m3.Error.NoError
+    out.append(man.simplify(.02))
+ return out
+def supports(skin=None):
  paths=rib_paths();pieces=[support_wall(p) for p in paths]+crossing_fillets(paths)
  walls=Manifold.batch_boolean(pieces,m3.OpType.Add)
- # Clip support ends to the inside of the shell; they stay under its quiet rim.
- verts=[]
- for z in np.linspace(0,30,61):verts.append(shell_point(TH,np.full(M,z),-1.6))
+ if FOOT_R>0 and skin is not None:
+  # Fillets are computed against the perforated skin and the same clipped ribs they will join.
+  walls=Manifold.batch_boolean([walls]+foot_fillets(skin+_clip(walls),paths),m3.OpType.Add)
+ return _clip(walls)+Manifold.batch_boolean([pad(*c) for c in PADS],m3.OpType.Add)
+def _inner(depth,ztop=30.):
+ """Solid bounded by the shell surface offset by `depth` (negative = inward), from the table to ztop."""
+ n=int(round(ztop*2));verts=[]
+ for z in np.linspace(0,ztop,n+1):verts.append(shell_point(TH,np.full(M,z),depth))
  verts=np.array(verts);faces=[]
- for j in range(60):
+ for j in range(n):
   for k in range(M):a=j*M+k;b=j*M+(k+1)%M;c=b+M;d=a+M;faces.extend([[a,b,c],[a,c,d]])
- for k in range(1,M-1):faces.extend([[0,k+1,k],[60*M,60*M+k,60*M+k+1]])
- tm=trimesh.Trimesh(verts.reshape(-1,3),faces);tm.fix_normals();env=Manifold(m3.Mesh64(np.asarray(tm.vertices,np.float64),np.asarray(tm.faces,np.uint64)))
- return (walls^env)+Manifold.batch_boolean([pad(*c) for c in PADS],m3.OpType.Add)
+ for k in range(1,M-1):faces.extend([[0,k+1,k],[n*M,n*M+k,n*M+k+1]])
+ tm=trimesh.Trimesh(verts.reshape(-1,3),faces);tm.fix_normals();return Manifold(m3.Mesh64(np.asarray(tm.vertices,np.float64),np.asarray(tm.faces,np.uint64)))
+def _clip(walls):
+ # Clip support ends to the inside of the shell; they stay under its quiet rim.
+ return walls^_inner(-1.6)
 
-def export_mesh(body,tol=.008):
- mm=body.as_original().set_tolerance(tol).simplify(tol).to_mesh64();vv=np.asarray(mm.vert_properties)[:,:3];ff=np.asarray(mm.tri_verts);remap=np.arange(len(vv));remap[np.asarray(mm.merge_from_vert,int)]=np.asarray(mm.merge_to_vert,int)
- while np.any(remap[remap]!=remap):remap=remap[remap]
- tm=trimesh.Trimesh(np.float32(vv),remap[ff],process=True);tm.update_faces(tm.nondegenerate_faces());tm.update_faces(tm.unique_faces());tm.remove_unreferenced_vertices()
- assert tm.is_watertight and tm.is_winding_consistent
- return tm
+EXPORT_TOL={}
+def export_mesh(body,tol=.008,name=None):
+ # The float32 STL occasionally loses watertightness at one simplification tolerance; step to a finer one.
+ for t in [tol,.006,.005,.004]:
+  mm=body.as_original().set_tolerance(t).simplify(t).to_mesh64();vv=np.asarray(mm.vert_properties)[:,:3];ff=np.asarray(mm.tri_verts);remap=np.arange(len(vv));remap[np.asarray(mm.merge_from_vert,int)]=np.asarray(mm.merge_to_vert,int)
+  while np.any(remap[remap]!=remap):remap=remap[remap]
+  tm=trimesh.Trimesh(np.float32(vv),remap[ff],process=True);tm.update_faces(tm.nondegenerate_faces());tm.update_faces(tm.unique_faces());tm.remove_unreferenced_vertices()
+  if tm.is_watertight and tm.is_winding_consistent and tm.body_count==1:
+   if name:EXPORT_TOL[name]=t
+   return tm
+ raise AssertionError('no watertight export at any tolerance')
 
 if __name__=='__main__':
  OUT.mkdir(parents=True,exist_ok=True);print('Building continuous perforated shell',flush=True)
- skin=shell()-apertures();print('Building concealed flowing support paths',flush=True);body=skin+supports();body=body-Manifold.extrude(CAV,100).translate((0,0,30));body=body^Manifold.cube((400,400,100)).translate((-200,-200,0))
- parts=body.decompose();print('Bodies',len(parts),[p.volume() for p in parts],flush=True);assert len(parts)==1
- mesh=export_mesh(body)
+ skin=shell()-apertures();print('Building concealed flowing support paths',flush=True);body=skin+supports(skin);body=body-Manifold.extrude(CAV,100).translate((0,0,30));body=body^Manifold.cube((400,400,100)).translate((-200,-200,0))
+ parts=sorted(body.decompose(),key=lambda p:-p.volume());print('Bodies',len(parts),[p.volume() for p in parts],flush=True)
+ # Booleans against the voxel-derived fillets can leave zero-volume slivers; anything measurable is still an error.
+ assert all(abs(p.volume())<1e-3 for p in parts[1:]);body=parts[0]
+ mesh=export_mesh(body,name='stand')
  for ext in ['stl','3mf']:mesh.export(OUT/f'veil_v14_prototype.{ext}')
  np.savez_compressed(OUT/'mesh.npz',V=mesh.vertices,F=mesh.faces)
  gauge=export_mesh(Manifold.extrude(CAV.offset(4)-CAV,1.6));gauge.export(OUT/'GAUGE_v14_cavity_1.6mm.stl')
  clip=Manifold.cube((58,36,80)).translate((22,34,0));coupon=max((body^clip).decompose(),key=lambda p:p.volume())
- test=export_mesh(coupon);test.apply_translation(-test.bounds[0]);test.export(OUT/'PRINT_TEST_v14_section.stl')
+ test=export_mesh(coupon,name='coupon');test.apply_translation(-test.bounds[0]);test.export(OUT/'PRINT_TEST_v14_section.stl')
+ ((OUT.parent/'analysis' if (OUT.parent/'analysis').is_dir() else OUT)/'foot_fillets.json').write_text(json.dumps({'radius_mm':FOOT_R,'radius_inside_wall_thickness_mm':1.5,'voxel_pitch_mm':FOOT_PITCH,'export_simplify_tolerance_mm':EXPORT_TOL,'feet':FOOT_LOG},indent=1));print('Foot fillets',json.dumps(FOOT_LOG),flush=True)
  print('Final dimensions',mesh.extents,'volume cm3',mesh.volume/1000,'faces',len(mesh.faces),flush=True)

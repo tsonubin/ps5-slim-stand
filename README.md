@@ -1,8 +1,8 @@
 # PS5 Slim dock
 
-[Git version tags and checkpoint history](docs/VERSION_HISTORY.md) — stable references for v5–v13.
+[Git version tags and checkpoint history](docs/VERSION_HISTORY.md) — stable references for v5–v14. Print files for v14 are attached to the [v14 release](https://github.com/tsonubin/ps5-slim-stand/releases/tag/v14).
 
-A one-piece, sculptural vertical stand for the PS5 Slim Disc. **[Start with v13: smoother, nearly level perimeter loops](designs/v13/README.md)** — the accepted shell direction with restrained rim height and fresh engineering studies. Physical qualification is pending. Earlier designs and their validation remain preserved below.
+A one-piece, sculptural vertical stand for the PS5 Slim Disc. **[Start with v14](designs/v14/README.md)**: the accepted perforated shell with a strictly convex wall, four flat seat pads, stiffer long sides, open-arch ribs and blended rib feet, plus stress and airflow studies. Nothing has been printed or tested on hardware yet. Earlier designs and their validation remain preserved below.
 
 ## Start here
 - Read `docs/CONTINUE.md` for the current task and exact stopping point.
@@ -16,7 +16,17 @@ Source chat: https://claude.ai/chat/f4d270b2-2594-4b75-a828-277e58a32ab0
 v6 is generated and geometry-checked in `designs/v6/`. Start with [the v6 preview and files](designs/v6/README.md), [validation](designs/v6/VALIDATION.md), and [print-service brief](designs/v6/PRINT_SERVICE.md). No physical fit, print, strength or thermal validation has been performed.
 
 
-## Current candidate: v13
+## Current candidate: v14
+
+[Veil v14](designs/v14/README.md) keeps v13's shell and opening pattern. Overall size **152.83 × 247.08 × 40.70 mm**, **79.26 cm³**, about 74 g in sintered PA12.
+
+- [Assembly view](designs/v14/output/assembly_base_detail.png), [standalone view](designs/v14/output/hero_v14.png), [3MF](designs/v14/output/veil_v14_prototype.3mf) and [STL](designs/v14/output/veil_v14_prototype.stl), [editable source](designs/v14/source/veil_v14.py).
+- [Print brief, English and Chinese](designs/v14/PRINT_SERVICE.md): fit check of the gauge and coupon in PETG first, then the final part in white SLS PA12.
+- Stress (Gmsh + CalculiX, PA 2200 data-sheet values) and airflow (lattice-Boltzmann screen and OpenFOAM sweep) are reported in the [v14 README](designs/v14/README.md), with their assumptions.
+
+Still open: the real console's vent positions, fan flow and lower rear-grille clearance are unmeasured, creep and warm-air softening are not estimated, and no part has been printed. This is a review prototype, not a qualified stand.
+
+## Preserved v13 study
 
 [Veil v13](designs/v13/README.md) preserves the user-liked continuous mesh shell and lower-loop silhouette. The upper perimeter is nearly level at **38.03–40.70 mm**; finite Fourier guides remove abrupt local changes in both loops. Overall size: **150.34 × 241.28 × 40.70 mm**, **74.61 cm³**.
 

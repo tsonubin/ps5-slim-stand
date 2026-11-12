@@ -2,14 +2,14 @@
   "scope": "v14 file readback: format and reference-envelope checks only. No slicing or physical qualification.",
   "files": {
     "veil_v14_prototype.stl": {
-      "sha256": "fafd089c4409d807b5e09a74fbd1d7b48db3d83a04dc6812c6d39d48809bc629",
+      "sha256": "f1d0bfc22a9153e16242919a86aeb8b0463d0420215a4993fba140493aacfccf",
       "extents_mm": [
         152.828,
         247.082,
         40.7
       ],
-      "volume_cm3": 78.53508367520132,
-      "faces": 170986,
+      "volume_cm3": 79.26010412532573,
+      "faces": 218524,
       "watertight": true,
       "components": 1
     },
@@ -26,20 +26,20 @@
       "components": 1
     },
     "PRINT_TEST_v14_section.stl": {
-      "sha256": "1a7438f40cfbae2a0ae65eeaf6662609c1afc23e6fa85d641fedaed9efbbfdc5",
+      "sha256": "15513f3d5a467a2b806c07e8bbd839c5f6c8cb3eaaf42e028f18528d82e7196d",
       "extents_mm": [
         58.0,
         36.0,
         40.7
       ],
-      "volume_cm3": 4.896794266057038,
-      "faces": 8292,
+      "volume_cm3": 4.966926143931851,
+      "faces": 13184,
       "watertight": true,
       "components": 1
     }
   },
   "3mf_max_bounds_difference_mm": 0.0,
-  "3mf_sha256": "f55bcebdbd1dc1df2a4d202bf24fa9a9fa5125313b7a5870fee445d92c5791f0",
+  "3mf_sha256": "8f7bd91c8042c4c2c88216bdfa08c53924e68f460edb42586c9dcb45547cb30b",
   "reference_plan_intersection_mm3": 0.0,
   "cavity_intersection_mm3": 0.0,
   "gauge_identical_extents_to_v13": true,
@@ -71,5 +71,5 @@
     "perimeter_fraction_above_3.3mm": 0.7958333333333333,
     "min_radial_gap_minus_thickness_mm": 1.0480576653305627
   },
-  "generator_sha256": "be75c654a78bf6bcebfabed83a17c939a75e957804e17bb4b2161096f927b4aa"
+  "generator_sha256": "1634380b99803f2226b3aba5a11374d6db1dc8df464eed85ebb6398e807df565"
 }

@@ -3,17 +3,17 @@
   "tool": "MMG 5.8.0",
   "base_edge_mm": 3.0,
   "hausdorff_tolerance_mm": 0.6,
-  "faces": 72882,
+  "faces": 71290,
   "edge_mm_p5_p50_p95": [
-    0.939,
-    1.372,
-    1.984
+    0.953,
+    1.383,
+    2.011
   ],
   "triangle_quality_min_p1": [
-    0.44431319606314784,
-    0.8214046479761583
+    0.5117308455897579,
+    0.8238314628663298
   ],
-  "volume_change_vs_input": -0.03693221014682446,
-  "max_sampled_deviation_mm": 1.2191603226294547,
-  "p95_sampled_deviation_mm": 0.4269045887468014
+  "volume_change_vs_input": -0.03655389119709018,
+  "max_sampled_deviation_mm": 1.34421555421794,
+  "p95_sampled_deviation_mm": 0.39891262774127473
 }

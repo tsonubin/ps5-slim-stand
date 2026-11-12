@@ -1,3 +1,5 @@
+ Container docker-ccx-run-34a6dcba7b7d Creating 
+ Container docker-ccx-run-34a6dcba7b7d Created 
 
 ************************************************************
 
@@ -14,18 +16,18 @@ You are using an executable made on Sun Jul 31 18:08:37 CEST 2022
 
   number of:
 
-   nodes:       617790
-   elements:       300727
+   nodes:       608679
+   elements:       296577
    one-dimensional elements:            0
    two-dimensional elements:            0
    integration points per element:            4
    degrees of freedom per node:            3
    layers per element:            1
 
-   distributed facial loads:         1873
+   distributed facial loads:         1823
    distributed volumetric loads:            0
    concentrated loads:            0
-   single point constraints:        31011
+   single point constraints:        32970
    multiple point constraints:            1
    terms in all multiple point constraints:            1
    tie constraints:            0
@@ -33,7 +35,7 @@ You are using an executable made on Sun Jul 31 18:08:37 CEST 2022
    dependent nodes in pre-tension constraints:            0
 
    sets:            3
-   terms in all sets:      1546644
+   terms in all sets:      1524925
 
    materials:            1
    constants per material and temperature:            2
@@ -57,9 +59,9 @@ You are using an executable made on Sun Jul 31 18:08:37 CEST 2022
  Determining the structure of the matrix:
  Using up to 2 cpu(s) for setting up the structure of the matrix.
  number of equations
- 1822359
+ 1793067
  number of nonzero lower triangular matrix elements
- 60200040
+ 59242128
 
  Using up to 2 cpu(s) for the stress calculation.
 
@@ -75,5 +77,5 @@ You are using an executable made on Sun Jul 31 18:08:37 CEST 2022
 
 ________________________________________
 
-Total CalculiX Time: 136.699598
+Total CalculiX Time: 81.992810
 ________________________________________

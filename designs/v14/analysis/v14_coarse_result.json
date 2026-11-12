@@ -1,9 +1,9 @@
 {
   "surface_mesh": "designs/v14/analysis/v14_coarse_mesh.npz",
-  "nodes": 165328,
-  "tets": 547825,
-  "solid_volume_mm3": 77519.99148357133,
-  "fixed_node_count": 3770,
+  "nodes": 166174,
+  "tets": 552762,
+  "solid_volume_mm3": 78268.12821029541,
+  "fixed_node_count": 3809,
   "regularized_contact_tolerance_mm": 0.3,
   "upper_shell_patch_rule": "x > 40, 15 < y < 100, z > 36 mm; local stand push, not console-top force",
   "material_assumption": {
@@ -12,146 +12,146 @@
     "model": "Isotropic homogeneous linear elastic. Not measured printed properties."
   },
   "boundary": "Complete stand on a regularized geometry: feet within0.2mm of minimum Z are clamped; seat faces within0.3mm of Z30, nearly horizontal and inside reference core, carry pressure. Isotropic small-displacement screen; no slip/lift-off or material failure.",
-  "seat_area_mm2": 749.9847771049982,
+  "seat_area_mm2": 749.9857804441873,
   "results": {
     "vertical_1g": {
-      "iterations": 495,
-      "relative_residual": 1.015041846308773e-08,
-      "max_displacement_mm": 0.13454369527471804,
-      "max_seat_down_mm": 0.11906723591505416,
-      "peak_von_mises_MPa": 60.86938445859651,
-      "volume_weighted_p95_von_mises_MPa": 0.4321857860502738,
+      "iterations": 618,
+      "relative_residual": 9.725223296579075e-09,
+      "max_displacement_mm": 0.1274656736292905,
+      "max_seat_down_mm": 0.11230301517683013,
+      "peak_von_mises_MPa": 22.263699773098555,
+      "volume_weighted_p95_von_mises_MPa": 0.42693074601738645,
       "peak_element_center_mm": [
-        49.95155906677246,
-        40.27500534057617,
-        22.558778285980225
+        -9.479257822036743,
+        -86.40955543518066,
+        23.169780731201172
       ],
       "support_reaction_N": [
-        8.422036401611876e-10,
-        9.898002417685348e-10,
-        31.391999999585423
+        2.1807204930723856e-09,
+        7.619114228418766e-10,
+        31.391999999284685
       ],
       "support_reaction_moment_Nmm": [
-        -2.4878984166204607,
-        1.8762481652780494,
-        -1.07410835781252e-09
+        -2.485694278967204,
+        1.8752150675895387,
+        5.218587281593951e-08
       ],
       "applied_force_N": [
         0,
         0,
         -31.392
       ],
-      "seat_pressure_area_mm2": 749.9847771049982,
+      "seat_pressure_area_mm2": 749.9857804441873,
       "vertical_load_centroid_mm": [
-        -0.0597683542154256,
-        -0.07925262713829434,
-        30.137899863770663
+        -0.05973544356768381,
+        -0.07918241620074228,
+        30.1379013508639
       ],
       "load_moment_about_origin_Nmm": [
-        2.4878984711263286,
-        -1.8762481755306242,
+        2.48569440937308,
+        -1.875215044476736,
         0.0
       ],
       "side_patch_area_mm2": 0.0,
       "side_patch_centroid_mm": null,
-      "compliance_Nmm": 2.641436978356073,
-      "solve_seconds": 82.6901319026947
+      "compliance_Nmm": 2.5124670323994325,
+      "solve_seconds": 101.15478301048279
     },
     "eccentric_1g": {
-      "iterations": 494,
-      "relative_residual": 9.490586416922047e-09,
-      "max_displacement_mm": 0.18650004431889647,
-      "max_seat_down_mm": 0.15407784591909138,
-      "peak_von_mises_MPa": 64.54588289292795,
-      "volume_weighted_p95_von_mises_MPa": 0.5378540684398468,
+      "iterations": 614,
+      "relative_residual": 9.111140090319427e-09,
+      "max_displacement_mm": 0.17732974883936364,
+      "max_seat_down_mm": 0.14603771175395625,
+      "peak_von_mises_MPa": 23.913255591406443,
+      "volume_weighted_p95_von_mises_MPa": 0.5292381471601488,
       "peak_element_center_mm": [
-        49.95155906677246,
-        40.27500534057617,
-        22.558778285980225
+        -9.479257822036743,
+        -86.40955543518066,
+        23.169780731201172
       ],
       "support_reaction_N": [
-        4.503277750700363e-10,
-        1.1687841805496646e-09,
-        31.392000001542158
+        -2.01472616367937e-10,
+        3.677136817259452e-09,
+        31.39199999767481
       ],
       "support_reaction_moment_Nmm": [
-        45.946398448891365,
-        -448.94665640843033,
-        4.2908168795818824e-08
+        45.95032333380865,
+        -448.9471313914459,
+        1.0646639225074223e-07
       ],
       "applied_force_N": [
         0,
         0,
         -31.392
       ],
-      "seat_pressure_area_mm2": 359.7232927254585,
+      "seat_pressure_area_mm2": 359.72409275467555,
       "vertical_load_centroid_mm": [
-        14.301307862799726,
-        1.4636339975032158,
-        30.145334587441422
+        14.301322993611118,
+        1.4637590243149845,
+        30.145338260785223
       ],
       "load_moment_about_origin_Nmm": [
-        -45.94639844962052,
-        448.9466564290087,
+        -45.95032329129565,
+        448.94713141544014,
         0.0
       ],
       "side_patch_area_mm2": 0.0,
       "side_patch_centroid_mm": null,
-      "compliance_Nmm": 4.0650254264998456,
-      "solve_seconds": 96.16398310661316
+      "compliance_Nmm": 3.8927725129557134,
+      "solve_seconds": 96.41254782676697
     },
     "rim_side_10N": {
-      "iterations": 498,
-      "relative_residual": 9.987540822328759e-09,
-      "max_displacement_mm": 0.19375313302790434,
-      "max_seat_down_mm": 0.11671281137738233,
-      "peak_von_mises_MPa": 116.63090646194858,
-      "volume_weighted_p95_von_mises_MPa": 0.5032995105825687,
+      "iterations": 618,
+      "relative_residual": 1.197977104980982e-08,
+      "max_displacement_mm": 0.1716026329325577,
+      "max_seat_down_mm": 0.10991429979151705,
+      "peak_von_mises_MPa": 22.29283741970112,
+      "volume_weighted_p95_von_mises_MPa": 0.48385554608760667,
       "peak_element_center_mm": [
-        49.95155906677246,
-        40.27500534057617,
-        22.558778285980225
+        -9.479257822036743,
+        -86.40955543518066,
+        23.169780731201172
       ],
       "support_reaction_N": [
-        -9.99999999850791,
-        -1.2209788735617622e-09,
-        31.392000004145558
+        -9.99999999813328,
+        2.1903314717519606e-09,
+        31.391999998369464
       ],
       "support_reaction_moment_Nmm": [
-        -2.4878984508338977,
-        -385.0029338349929,
-        569.2544103189141
+        -2.4856944607440643,
+        -385.0041812341377,
+        569.2554479254882
       ],
       "applied_force_N": [
         10,
         0,
         -31.392
       ],
-      "seat_pressure_area_mm2": 749.9847771049982,
+      "seat_pressure_area_mm2": 749.9857804441873,
       "vertical_load_centroid_mm": [
-        -0.0597683542154256,
-        -0.07925262713829434,
-        30.137899863770663
+        -0.05973544356768381,
+        -0.07918241620074228,
+        30.1379013508639
       ],
       "load_moment_about_origin_Nmm": [
-        2.4878984711263286,
-        385.0029338700716,
-        -569.2544104476925
+        2.48569440937308,
+        385.0041812539805,
+        -569.2554478437196
       ],
-      "side_patch_area_mm2": 1104.6416450675313,
+      "side_patch_area_mm2": 1104.6336924270609,
       "side_patch_centroid_mm": [
-        58.54784436065581,
-        56.92544104476905,
-        38.68791820455979
+        58.5478690260035,
+        56.92554478437205,
+        38.68793962984554
       ],
-      "compliance_Nmm": 3.9083931143469366,
-      "solve_seconds": 102.72448706626892
+      "compliance_Nmm": 3.6206883502760876,
+      "solve_seconds": 102.25612592697144
     },
     "vertical_3g_linear_scaling": {
-      "max_displacement_mm": 0.40363108582415413,
-      "max_seat_down_mm": 0.35720170774516247,
-      "peak_von_mises_MPa": 182.60815337578953,
-      "volume_weighted_p95_von_mises_MPa": 1.2965573581508214
+      "max_displacement_mm": 0.38239702088787153,
+      "max_seat_down_mm": 0.3369090455304904,
+      "peak_von_mises_MPa": 66.79109931929567,
+      "volume_weighted_p95_von_mises_MPa": 1.2807922380521592
     }
   }
 }

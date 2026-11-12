@@ -18,7 +18,7 @@ cap=m3.Manifold.cube((X1-X0+20,Y1-Y0+20,Z1+5-30)).translate((X0-10,Y0-10,30))-m3
 mm=cap.to_mesh();trimesh.Trimesh(np.asarray(mm.vert_properties)[:,:3],np.asarray(mm.tri_verts)).export(case/'constant/triSurface/cap.stl')
 if kind=='stand':shutil.copy(root/'designs/v14/output/veil_v14_prototype.stl',case/'constant/triSurface/stand.stl')
 A=core.area*1e-6;nx,ny,nz=[int(round(v/h)) for v in (X1-X0,Y1-Y0,Z1)]
-k0=3.75e-3;om0=22.
+k0=3.75e-3;om0=22.;END=int(sys.argv[6]) if len(sys.argv)>6 else 1500  # fields are written once, at the last iteration
 def w(name,body,cls='dictionary',loc='system'):
  (case/loc/name).write_text('FoamFile\n{\n    version 2.0;\n    format ascii;\n    class %s;\n    object %s;\n}\n'%(cls,name)+body)
 w('blockMeshDict',f'''scale 0.001;
@@ -54,8 +54,8 @@ addLayersControls {{ relativeSizes true; layers {{}} expansionRatio 1.2; finalLa
 meshQualityControls {{ maxNonOrtho 65; maxBoundarySkewness 20; maxInternalSkewness 4; maxConcave 80; minVol 1e-18; minTetQuality -1e30; minArea -1; minTwist 0.02; minDeterminant 0.001; minFaceWeight 0.05; minVolRatio 0.01; minTriangleTwist -1; nSmoothScale 4; errorReduction 0.75; }}
 mergeTolerance 1e-6;
 ''')
-w('controlDict',f'''application simpleFoam; startFrom latestTime; startTime 0; stopAt endTime; endTime {sys.argv[6] if len(sys.argv)>6 else 1500}; deltaT 1;
-writeControl timeStep; writeInterval 5000; purgeWrite 1; writeFormat ascii; writePrecision 8; timeFormat general; timePrecision 6; runTimeModifiable false;
+w('controlDict',f'''application simpleFoam; startFrom latestTime; startTime 0; stopAt endTime; endTime {END}; deltaT 1;
+writeControl timeStep; writeInterval {END}; purgeWrite 1; writeFormat ascii; writePrecision 8; timeFormat general; timePrecision 6; runTimeModifiable false;
 functions
 {{
     outletP {{ type surfaceFieldValue; libs (fieldFunctionObjects); regionType patch; name outlet; operation areaAverage; fields (p); writeFields false; writeControl timeStep; writeInterval 5; log false; }}

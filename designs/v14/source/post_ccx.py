@@ -34,12 +34,20 @@ for inp in sorted(d.glob('*.inp')):
  item={'max_displacement_mm':float(u.max()),'max_displacement_at_mm':xyz[u.argmax()].round(1).tolist(),'peak_von_mises_MPa':float(vm.max()),'peak_at_mm':xyz[vm.argmax()].round(1).tolist(),'volume_weighted_p95_MPa':float(ev[order[np.searchsorted(cum,.95)]]),'volume_weighted_p99.9_MPa':float(ev[order[np.searchsorted(cum,.999)]]),'volume_above_2MPa_mm3':float(vol[ev>2].sum()),'zones':{}}
  for z,k in zones.items():item['zones'][z]={'peak_MPa':float(vm[k].max()),'at_mm':xyz[np.where(k)[0][vm[k].argmax()]].round(1).tolist()}
  pk=item['zones']['everything_above_base_zone']['peak_MPa'];item['safety_factor_vs_48MPa_XY']=48/pk;item['safety_factor_vs_42MPa_Z']=42/pk
- dat=(d/f'{case}.dat').read_text().split('\n');tot=[l for l in dat if len(l.split())==3 and 'E' in l]
- if tot:item['base_reaction_N']=[float(x) for x in tot[-1].split()]
+ dat=(d/f'{case}.dat').read_text().split('\n');nums=lambda l:[float(x) for x in l.split()] if l.split() and all(c in '0123456789.+-Ee ' for c in l) else None
+ def after(key):
+  hit=[i for i,l in enumerate(dat) if key in l]
+  return next((nums(l) for l in dat[hit[-1]+1:hit[-1]+8] if nums(l)),None) if hit else None
+ rf=after('for set BASE')
+ if rf:item['base_reaction_N']=rf[:3]
+ cf=[after(f'slave set PAD{i+1}') for i in range(4)]   # *CONTACT PRINT, CF: total force on each pad's contact pair
+ if all(cf):
+  fz=np.abs([c[2] for c in cf]);PADS=[(-16.5,44.),(16.5,44.),(-11.5,-44.),(11.5,-44.)]
+  item['pad_loads']={'method':'CalculiX *CONTACT PRINT CF, one contact pair per pad','sum_N':float(fz.sum()),'pads':[{'centre_xy_mm':list(PADS[i]),'load_N':float(fz[i]),'share':float(fz[i]/fz.sum())} for i in range(4)]}
  cv=d/f'{case}.cvg'
  if cv.exists():item['solver_iterations']=sum(1 for l in cv.read_text().split('\n') if l.strip() and l.split()[0].isdigit())
  res[case]=item;np.savez_compressed(d/f'{case}_fields.npz',u=r['DISP'],vm=vm)
- print(case,'U %.4f'%item['max_displacement_mm'],'peak %.2f at'%item['peak_von_mises_MPa'],item['peak_at_mm'],'p95 %.3f p99.9 %.2f'%(item['volume_weighted_p95_MPa'],item['volume_weighted_p99.9_MPa']),{z:round(v['peak_MPa'],2) for z,v in item['zones'].items()},'R',item.get('base_reaction_N'),flush=True)
+ print(case,'U %.4f'%item['max_displacement_mm'],'peak %.2f at'%item['peak_von_mises_MPa'],item['peak_at_mm'],'p95 %.3f p99.9 %.2f'%(item['volume_weighted_p95_MPa'],item['volume_weighted_p99.9_MPa']),{z:round(v['peak_MPa'],2) for z,v in item['zones'].items()},'R',item.get('base_reaction_N'),[round(q['load_N'],2) for q in item['pad_loads']['pads']] if 'pad_loads' in item else '',flush=True)
 info['results']=res;(d/'results.json').write_text(json.dumps(info,indent=2))
 if len(sys.argv)>2:
  import trimesh;from PIL import Image,ImageDraw,ImageFont
