@@ -55,7 +55,7 @@ Neither pressure is high enough to damage the console housing; the change is abo
 
 ## 3. Airflow (in-house lattice-Boltzmann screen)
 
-**The real CFI-20xx vent positions and fan operating point are still unmeasured, so nothing here shows that the console's intake works.** Both screens are relative comparisons at equal suction ([method and limits](../v13/airflow/AIRFLOW_REVIEW.md)): solid table at z = 0, solid cap at seat height, open sides, creeping-flow lattice-Boltzmann.
+**The real CFI-20xx vent positions and fan operating point are still unmeasured, so nothing here shows that the console's intake works.** Both screens are relative comparisons at equal suction ([method and limits](baseline_v13/airflow/AIRFLOW_REVIEW.md)): solid table at z = 0, solid cap at seat height, open sides, creeping-flow lattice-Boltzmann.
 
 ### Assumed 30 mm port
 
@@ -90,7 +90,7 @@ Results: `airflow/summary.json`, `airflow/*_portcore.json`; map from `airflow/re
 
 ## 4. Stress screen (in-house, first-order elements)
 
-Same method as [v13's structural analysis](../v13/STRUCTURAL_ANALYSIS.md): scikit-fem, first-order tetrahedra on a smoothed simulation-only surface, E = 1,200 MPa and Poisson ratio 0.35 (illustrative), clamped base, 31.392 N as uniform pressure on the pad tops (750 mm²; v13: 265 mm² of rib crest). **Kept for comparison with v13. Section 5 shows these first-order results understate deflection by about half.**
+Same method as [v13's structural analysis](baseline_v13/STRUCTURAL_ANALYSIS.md): scikit-fem, first-order tetrahedra on a smoothed simulation-only surface, E = 1,200 MPa and Poisson ratio 0.35 (illustrative), clamped base, 31.392 N as uniform pressure on the pad tops (750 mm²; v13: 265 mm² of rib crest). **Kept for comparison with v13. Section 5 shows these first-order results understate deflection by about half.**
 
 | Case, finer mesh | | v13 | v14 |
 |---|---|---:|---:|

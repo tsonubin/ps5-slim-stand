@@ -23,7 +23,7 @@ def seat(stl):
  V=m.vertices;inside=np.array([foot.contains(Point(p[:2])) for p in V[V[:,2]>28]]);far=np.array([land.distance(Point(p[:2]))>2.5 for p in V[V[:,2]>28]]);out['highest_stand_point_under_core_away_from_seat_lands_mm']=float(V[V[:,2]>28][inside&far][:,2].max()) if (inside&far).any() else None
  return out
 rep={'scope':'Flat stand faces at z=30 intersected with the flat bottom of the fan-made reference core. Nominal geometry; no solved contact, no hardware measurement.','assumed_mass_kg':3.2,'reference_core_flat_bottom_area_mm2':float(foot.area),'reference_cover_lowest_edge_above_core_bottom_mm':float(cover.bounds[0][2]),
- 'v13':seat(ROOT/'designs/v13/output/veil_v13_prototype.stl'),'v14':seat(ROOT/'designs/v14/output/veil_v14_prototype.stl')}
+ 'v13':seat(ROOT/'designs/v14/baseline_v13/veil_v13_prototype.stl'),'v14':seat(ROOT/'designs/v14/output/veil_v14_prototype.stl')}
 (ROOT/'designs/v14/analysis/seat_contact.json').write_text(json.dumps(rep,indent=2))
 for k in ['v13','v14']:
  r=rep[k];print(k,'contact %.1f mm2, mean %.4f MPa, COM inside %s margin %.1f, slot volume %.1f, highest non-land point under core %s'%(r['contact_area_on_core_mm2'],r['mean_pressure_MPa_at_3p2kg'],r['centroid_inside_contact_hull'],r['centroid_margin_to_hull_edge_mm'],r['stand_volume_inside_core_to_cover_slot_mm3'],r['highest_stand_point_under_core_away_from_seat_lands_mm']))

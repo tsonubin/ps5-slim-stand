@@ -1,9 +1,0 @@
-{
-  "geometry": "Exported manufacturing STL, unchanged",
-  "stl_sha256": "fdbd7e7691bb6d06da563a79c449766f4ce8f72575be76b2369bc51d8ea804cb",
-  "projection": "Perspective-correct CPU triangle rasterization with z-buffer",
-  "overview_shading": "Vertex averaging only where average is within 20 degrees of face normal; other corners retain face normal",
-  "side_profile_shading": "Flat face normals, no smoothing",
-  "antialiasing": "2x supersampling with Lanczos reduction",
-  "cad_modification": false
-}

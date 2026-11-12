@@ -169,3 +169,7 @@ Decisions already made by the user: final part in white, bead-blasted SLS PA12 f
 Do not claim: a cooling prediction (all OpenFOAM flow rates are assumptions; real vent map, fan flow and rear-grille clearance are unmeasured), a converged contact peak (it rises with refinement at the pad edge), or anything about creep and warm-air softening (not estimated). Nothing has been printed.
 
 The user asked for v14 to be tagged and its print files published as a GitHub release (tag `v14`).
+
+## Only v14 kept (2026-11-12)
+
+At the user's request the design folders for v5–v13 (`designs/imported`, `designs/v6` … `designs/v13`) were removed from the branch; tags v5–v13 were kept, so each version is still available at its tag. This supersedes the earlier instruction to preserve prior designs in the tree. Paths to those folders elsewhere in this file are historical. The few v13 files that v14's review scripts compare against now live in `designs/v14/baseline_v13/`. The top-level README was rewritten around v14 alone (specifications, design philosophy, stress test, airflow test, printing notes). The original uploads in `references/` were not touched.

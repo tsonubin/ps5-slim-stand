@@ -9,7 +9,7 @@ for n in ['veil_v14_prototype.stl','GAUGE_v14_cavity_1.6mm.stl','PRINT_TEST_v14_
  m=trimesh.load(out/n);files[n]={'sha256':sha(out/n),'extents_mm':np.round(m.extents,3).tolist(),'volume_cm3':m.volume/1000,'faces':len(m.faces),'watertight':bool(m.is_watertight and m.is_winding_consistent),'components':int(m.body_count)}
 stl=trimesh.load(out/'veil_v14_prototype.stl');t3=trimesh.load(out/'veil_v14_prototype.3mf',force='mesh')
 body=m3.Manifold(m3.Mesh(np.float32(stl.vertices),np.uint32(stl.faces)));assert body.status()==m3.Error.NoError
-old=trimesh.load(root.parent/'v13/output/GAUGE_v13_cavity_1.6mm.stl')
+old=trimesh.load(root/'baseline_v13/GAUGE_v13_cavity_1.6mm.stl')
 th=g.TH;gap=g.SR(th)-g.R_C;wt=g.WT(th)
 r={'scope':'v14 file readback: format and reference-envelope checks only. No slicing or physical qualification.','files':files,
  '3mf_max_bounds_difference_mm':float(abs(t3.bounds-stl.bounds).max()),'3mf_sha256':sha(out/'veil_v14_prototype.3mf'),

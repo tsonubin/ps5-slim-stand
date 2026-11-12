@@ -10,7 +10,7 @@ from render_mesh import render
 try:font=ImageFont.truetype('/System/Library/Fonts/Helvetica.ttc',22);small=ImageFont.truetype('/System/Library/Fonts/Helvetica.ttc',16)
 except OSError:font=ImageFont.load_default(size=22);small=ImageFont.load_default(size=16)
 def sheet(ver):
- m=trimesh.load(root/f'designs/{ver}/output/veil_{ver}_prototype.stl');W,H=560,400
+ m=trimesh.load(root/('designs/v14/output/veil_v14_prototype.stl' if ver=='v14' else 'designs/v14/baseline_v13/veil_v13_prototype.stl'));W,H=560,400
  canvas=Image.new('RGB',(4*W,3*H+70),(14,17,22));d=ImageDraw.Draw(canvas)
  for i,az in enumerate(range(0,360,30)):
   a=np.radians(az);eye=(8+640*np.cos(a),640*np.sin(a),150 if i%2==0 else 40)
