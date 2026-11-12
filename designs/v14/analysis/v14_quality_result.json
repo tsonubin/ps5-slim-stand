@@ -1,0 +1,67 @@
+{
+  "surface_mesh": "designs/v14/analysis/v14_quality_mesh.npz",
+  "nodes": 209341,
+  "tets": 669103,
+  "solid_volume_mm3": 78266.96868438798,
+  "fixed_node_count": 9886,
+  "regularized_contact_tolerance_mm": 0.3,
+  "upper_shell_patch_rule": "x > 40, 15 < y < 100, z > 36 mm; local stand push, not console-top force",
+  "material_assumption": {
+    "E_MPa": 1200.0,
+    "nu": 0.35,
+    "model": "Isotropic homogeneous linear elastic. Not measured printed properties."
+  },
+  "boundary": "Complete stand on a regularized geometry: feet within0.2mm of minimum Z are clamped; seat faces within0.3mm of Z30, nearly horizontal and inside reference core, carry pressure. Isotropic small-displacement screen; no slip/lift-off or material failure.",
+  "seat_area_mm2": 751.4714813797264,
+  "results": {
+    "vertical_1g": {
+      "iterations": 499,
+      "relative_residual": 9.642010225217866e-09,
+      "max_displacement_mm": 0.13434284863333243,
+      "max_seat_down_mm": 0.11097530009157232,
+      "peak_von_mises_MPa": 19.715488484829617,
+      "volume_weighted_p95_von_mises_MPa": 0.43506020723275207,
+      "peak_element_center_mm": [
+        11.024768590927124,
+        -67.9547233581543,
+        17.61476182937622
+      ],
+      "support_reaction_N": [
+        1.1728773507968526e-09,
+        -2.432249956996202e-10,
+        31.391999999881143
+      ],
+      "support_reaction_moment_Nmm": [
+        0.3307656829176646,
+        2.7326596337665485,
+        9.872939037464642e-09
+      ],
+      "applied_force_N": [
+        0,
+        0,
+        -31.392
+      ],
+      "seat_pressure_area_mm2": 751.4714813797264,
+      "vertical_load_centroid_mm": [
+        -0.0870495551650116,
+        0.010536624144473244,
+        30.137263206757524
+      ],
+      "load_moment_about_origin_Nmm": [
+        -0.33076570514274406,
+        -2.73265963574021,
+        0.0
+      ],
+      "side_patch_area_mm2": 0.0,
+      "side_patch_centroid_mm": null,
+      "compliance_Nmm": 2.6198070146788397,
+      "solve_seconds": 82.50350594520569
+    },
+    "vertical_3g_linear_scaling": {
+      "max_displacement_mm": 0.40302854589999726,
+      "max_seat_down_mm": 0.33292590027471697,
+      "peak_von_mises_MPa": 59.14646545448885,
+      "volume_weighted_p95_von_mises_MPa": 1.3051806216982562
+    }
+  }
+}

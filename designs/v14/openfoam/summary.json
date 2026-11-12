@@ -1,0 +1,631 @@
+{
+  "scope": "Table-sealed, wall-intake screen in OpenFOAM v2412 (simpleFoam, k-omega SST). Flow rates are ASSUMED; the real fan operating point and vent map are unmeasured. Pressure drop is room total pressure minus outlet total pressure.",
+  "sweep": [
+    {
+      "flow_m3_per_min": 0.25,
+      "no_stand_Pa": 0.1121012130165856,
+      "with_stand_Pa": 0.39089896172438565,
+      "added_by_stand_Pa": 0.27879774870780005,
+      "ratio": 3.487018125901558,
+      "oscillation_std_Pa": [
+        0.001724744122908631,
+        0.003804363210242491
+      ],
+      "mass_imbalance_fraction": 3.2681679999757574e-06
+    },
+    {
+      "flow_m3_per_min": 0.5,
+      "no_stand_Pa": 0.4244153238771425,
+      "with_stand_Pa": 1.4469433810571428,
+      "added_by_stand_Pa": 1.0225280571800004,
+      "ratio": 3.4092628132248977,
+      "oscillation_std_Pa": [
+        0.010662593049142185,
+        0.01641428911144506
+      ],
+      "mass_imbalance_fraction": 3.052052000088179e-06
+    },
+    {
+      "flow_m3_per_min": 1.0,
+      "no_stand_Pa": 1.6096681704649691,
+      "with_stand_Pa": 5.951278653758971,
+      "added_by_stand_Pa": 4.3416104832940015,
+      "ratio": 3.697208383042005,
+      "oscillation_std_Pa": [
+        0.02444289663499104,
+        0.1304182979460606
+      ],
+      "mass_imbalance_fraction": 1.2545059999979902e-05
+    },
+    {
+      "flow_m3_per_min": 1.5,
+      "no_stand_Pa": 3.503201481677082,
+      "with_stand_Pa": 13.544180783860284,
+      "added_by_stand_Pa": 10.040979302183203,
+      "ratio": 3.8662294631641627,
+      "oscillation_std_Pa": [
+        0.08714566946779721,
+        0.5683160772844453
+      ],
+      "mass_imbalance_fraction": 1.837699999979181e-05
+    }
+  ],
+  "power_law_fit_dp_equals_k_Q_to_n": {
+    "no_stand_Pa": {
+      "exponent": 1.9213535747410881,
+      "Pa_at_1_m3_per_min": 1.6082594474872427
+    },
+    "with_stand_Pa": {
+      "exponent": 1.9833797627704595,
+      "Pa_at_1_m3_per_min": 5.959343396697378
+    }
+  },
+  "flow_kept_at_equal_suction": {
+    "0.25": 0.5395400376779668,
+    "0.5": 0.5279703988009872,
+    "1": 0.516648853734283,
+    "1.5": 0.5101390539453329
+  },
+  "mesh_refinement_at_1_m3_per_min": {
+    "stand_q1.0_lvl3": {
+      "what": "stand surface refinement level 3 (base cell 2.5 mm)",
+      "cells": 2106153,
+      "baseline_cells": 621862,
+      "pressure_drop_total_Pa": 5.726233203375368,
+      "baseline_Pa": 5.951278653758971,
+      "change": -0.03781463841244581
+    },
+    "stand_q1.0_h1.8": {
+      "what": "base cell 1.8 mm (stand level 2)",
+      "cells": 1295152,
+      "baseline_cells": 621862,
+      "pressure_drop_total_Pa": 6.23389563818473,
+      "baseline_Pa": 5.951278653758971,
+      "change": 0.04748844758718396
+    },
+    "empty_q1.0_h1.8": {
+      "what": "no stand, base cell 1.8 mm",
+      "cells": 446107,
+      "baseline_cells": 164032,
+      "pressure_drop_total_Pa": 1.9527231593231325,
+      "baseline_Pa": 1.6096681704649691,
+      "change": 0.21312155831413904
+    }
+  },
+  "comparison_with_lattice_boltzmann": {
+    "lattice_boltzmann_flow_kept_at_equal_suction": 0.23428005176258387,
+    "openfoam_flow_kept_at_equal_suction": {
+      "0.25": 0.5395400376779668,
+      "0.5": 0.5279703988009872,
+      "1": 0.516648853734283,
+      "1.5": 0.5101390539453329
+    },
+    "openfoam_resistance_ratio_at_equal_flow": {
+      "0.25": 3.487018125901558,
+      "0.5": 3.4092628132248977,
+      "1": 3.697208383042005,
+      "1.5": 3.8662294631641627
+    },
+    "inflow_share_by_side": {
+      "stand": {
+        "openfoam_1_m3_per_min": {
+          "x_min": 0.31090846254158455,
+          "x_max": 0.38846320830132136,
+          "y_min": 0.1642630746714021,
+          "y_max": 0.13636525448569206
+        },
+        "lattice_boltzmann": {
+          "x_min": 0.3197956681251526,
+          "x_max": 0.42940905690193176,
+          "y_min": 0.14513663947582245,
+          "y_max": 0.10565871000289917
+        }
+      },
+      "empty": {
+        "openfoam_1_m3_per_min": {
+          "x_min": 0.3741072360570114,
+          "x_max": 0.33570147924612787,
+          "y_min": 0.14034899033778603,
+          "y_max": 0.14984229435907462
+        },
+        "lattice_boltzmann": {
+          "x_min": 0.37797799706459045,
+          "x_max": 0.3212582767009735,
+          "y_min": 0.144196555018425,
+          "y_max": 0.15656717121601105
+        }
+      }
+    },
+    "plan_speed_map_correlation_stand": {
+      "pearson_r": 0.8146951872068853,
+      "cells_compared": 2101,
+      "note": "depth-averaged horizontal speed below seat height on a 5 mm plan grid, each map normalised by its own mean"
+    }
+  },
+  "cases": {
+    "empty_q0.25": {
+      "case": "empty_q0.25",
+      "kind": "empty",
+      "flow_m3_per_min": 0.25,
+      "flow_m3_per_s": 0.004166666666666667,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": null,
+      "chimney_area_m2": 0.007020445467919344,
+      "mean_outlet_speed_m_per_s": 0.5935045982062938,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 164032,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 41.216977,
+      "iterations": 1500,
+      "averaging_window_iterations": [
+        1005,
+        1500
+      ],
+      "outlet_area_m2": 0.00701868525,
+      "outlet_speed_m_per_s": 0.5936534433805344,
+      "outlet_static_p_Pa": -0.32426070834079995,
+      "outlet_static_p_std_Pa": 0.001724744122908631,
+      "pressure_drop_total_Pa": 0.1121012130165856,
+      "pressure_drop_static_Pa": 0.32426070834079995,
+      "inflow_through_sides_m3_per_s": 0.0041666721725,
+      "mass_imbalance_fraction": 1.3214000000455473e-06,
+      "final_initial_residuals": {
+        "Ux": 0.0041520074,
+        "Uy": 0.0074153072,
+        "Uz": 0.0058235276,
+        "p": 0.0010818609,
+        "k": 0.0081983385,
+        "omega": 0.00020232402
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.37234242837352005,
+        "x_max": 0.3345760902856287,
+        "y_min": 0.1407224071219637,
+        "y_max": 0.15235907421888767
+      },
+      "time_folder": "1500"
+    },
+    "empty_q0.5": {
+      "case": "empty_q0.5",
+      "kind": "empty",
+      "flow_m3_per_min": 0.5,
+      "flow_m3_per_s": 0.008333333333333333,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": null,
+      "chimney_area_m2": 0.007020445467919344,
+      "mean_outlet_speed_m_per_s": 1.1870091964125875,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 164032,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 41.216976,
+      "iterations": 1500,
+      "averaging_window_iterations": [
+        1005,
+        1500
+      ],
+      "outlet_area_m2": 0.00701868525,
+      "outlet_speed_m_per_s": 1.1873068867610688,
+      "outlet_static_p_Pa": -1.2730533051739998,
+      "outlet_static_p_std_Pa": 0.010662593049142185,
+      "pressure_drop_total_Pa": 0.4244153238771425,
+      "pressure_drop_static_Pa": 1.2730533051739998,
+      "inflow_through_sides_m3_per_s": 0.0083333587671,
+      "mass_imbalance_fraction": 3.052052000088179e-06,
+      "final_initial_residuals": {
+        "Ux": 0.0085393704,
+        "Uy": 0.015210743,
+        "Uz": 0.012557729,
+        "p": 0.0019851387,
+        "k": 0.011016941,
+        "omega": 0.00074460782
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.37276853199038273,
+        "x_max": 0.33616321307973,
+        "y_min": 0.14024609164171972,
+        "y_max": 0.15082216328816764
+      },
+      "time_folder": "1500"
+    },
+    "empty_q1.0": {
+      "case": "empty_q1.0",
+      "kind": "empty",
+      "flow_m3_per_min": 1.0,
+      "flow_m3_per_s": 0.016666666666666666,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": null,
+      "chimney_area_m2": 0.007020445467919344,
+      "mean_outlet_speed_m_per_s": 2.374018392825175,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 164032,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 41.216977,
+      "iterations": 1500,
+      "averaging_window_iterations": [
+        1005,
+        1500
+      ],
+      "outlet_area_m2": 0.00701868525,
+      "outlet_speed_m_per_s": 2.3746137735221375,
+      "outlet_static_p_Pa": -5.004220095652399,
+      "outlet_static_p_std_Pa": 0.02444289663499104,
+      "pressure_drop_total_Pa": 1.6096681704649691,
+      "pressure_drop_static_Pa": 5.004220095652399,
+      "inflow_through_sides_m3_per_s": 0.016666875751,
+      "mass_imbalance_fraction": 1.2545059999979902e-05,
+      "final_initial_residuals": {
+        "Ux": 0.012245262,
+        "Uy": 0.018087115,
+        "Uz": 0.016206918,
+        "p": 0.002370248,
+        "k": 0.013006047,
+        "omega": 0.0021097531
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.3741072360570114,
+        "x_max": 0.33570147924612787,
+        "y_min": 0.14034899033778603,
+        "y_max": 0.14984229435907462
+      },
+      "time_folder": "1500"
+    },
+    "empty_q1.0_h1.8": {
+      "case": "empty_q1.0_h1.8",
+      "kind": "empty",
+      "flow_m3_per_min": 1.0,
+      "flow_m3_per_s": 0.016666666666666666,
+      "base_cell_mm": 1.8,
+      "stand_refinement_level": null,
+      "chimney_area_m2": 0.007020445467919344,
+      "mean_outlet_speed_m_per_s": 2.374018392825175,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 446107,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 34.092759,
+      "iterations": 1500,
+      "averaging_window_iterations": [
+        1005,
+        1500
+      ],
+      "outlet_area_m2": 0.00701976886,
+      "outlet_speed_m_per_s": 2.3742472151236425,
+      "outlet_static_p_Pa": -5.3462271621136,
+      "outlet_static_p_std_Pa": 0.24839254444522557,
+      "pressure_drop_total_Pa": 1.9527231593231325,
+      "pressure_drop_static_Pa": 5.3462271621136,
+      "inflow_through_sides_m3_per_s": 0.016666800756999996,
+      "mass_imbalance_fraction": 8.045419999797021e-06,
+      "final_initial_residuals": {
+        "Ux": 0.011573545,
+        "Uy": 0.016167064,
+        "Uz": 0.012081605,
+        "p": 0.0024090671,
+        "k": 0.011846827,
+        "omega": 0.0021486592
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.3822615757706146,
+        "x_max": 0.3284037166005598,
+        "y_min": 0.14391838152595826,
+        "y_max": 0.1454156270512627
+      },
+      "time_folder": "1500"
+    },
+    "empty_q1.5": {
+      "case": "empty_q1.5",
+      "kind": "empty",
+      "flow_m3_per_min": 1.5,
+      "flow_m3_per_s": 0.025,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": null,
+      "chimney_area_m2": 0.007020445467919344,
+      "mean_outlet_speed_m_per_s": 3.561027589237763,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 164032,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 41.216977,
+      "iterations": 1500,
+      "averaging_window_iterations": [
+        1005,
+        1500
+      ],
+      "outlet_area_m2": 0.00701868525,
+      "outlet_speed_m_per_s": 3.5619206602832065,
+      "outlet_static_p_Pa": -11.140943313348798,
+      "outlet_static_p_std_Pa": 0.08714566946779721,
+      "pressure_drop_total_Pa": 3.503201481677082,
+      "pressure_drop_static_Pa": 11.140943313348798,
+      "inflow_through_sides_m3_per_s": 0.025000291096000007,
+      "mass_imbalance_fraction": 1.1643840000241656e-05,
+      "final_initial_residuals": {
+        "Ux": 0.010813006,
+        "Uy": 0.016242229,
+        "Uz": 0.014032748,
+        "p": 0.0016970836,
+        "k": 0.0090263055,
+        "omega": 0.0017696237
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.37461920240960717,
+        "x_max": 0.3355584712390246,
+        "y_min": 0.14037483051168026,
+        "y_max": 0.14944749583968792
+      },
+      "time_folder": "1500"
+    },
+    "stand_q0.25": {
+      "case": "stand_q0.25",
+      "kind": "stand",
+      "flow_m3_per_min": 0.25,
+      "flow_m3_per_s": 0.004166666666666667,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": 2,
+      "chimney_area_m2": 0.007020445467919344,
+      "mean_outlet_speed_m_per_s": 0.5935045982062938,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 621862,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 58.412633,
+      "iterations": 1500,
+      "averaging_window_iterations": [
+        1005,
+        1500
+      ],
+      "outlet_area_m2": 0.00701868525,
+      "outlet_speed_m_per_s": 0.5936534433805344,
+      "outlet_static_p_Pa": -0.6030584570486,
+      "outlet_static_p_std_Pa": 0.003804363210242491,
+      "pressure_drop_total_Pa": 0.39089896172438565,
+      "pressure_drop_static_Pa": 0.6030584570486,
+      "inflow_through_sides_m3_per_s": 0.0041666530493,
+      "mass_imbalance_fraction": 3.2681679999757574e-06,
+      "final_initial_residuals": {
+        "Ux": 0.0070973848,
+        "Uy": 0.0085719228,
+        "Uz": 0.0074906684,
+        "p": 0.0012579251,
+        "k": 0.0054559179,
+        "omega": 5.6067655e-05
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.3130517740238662,
+        "x_max": 0.38623566898229067,
+        "y_min": 0.15789993425424276,
+        "y_max": 0.14281262273960044
+      },
+      "time_folder": "1500"
+    },
+    "stand_q0.5": {
+      "case": "stand_q0.5",
+      "kind": "stand",
+      "flow_m3_per_min": 0.5,
+      "flow_m3_per_s": 0.008333333333333333,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": 2,
+      "chimney_area_m2": 0.007020445467919344,
+      "mean_outlet_speed_m_per_s": 1.1870091964125875,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 621862,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 58.412633,
+      "iterations": 1500,
+      "averaging_window_iterations": [
+        1005,
+        1500
+      ],
+      "outlet_area_m2": 0.00701868525,
+      "outlet_speed_m_per_s": 1.1873068867610688,
+      "outlet_static_p_Pa": -2.295581362354,
+      "outlet_static_p_std_Pa": 0.01641428911144506,
+      "pressure_drop_total_Pa": 1.4469433810571428,
+      "pressure_drop_static_Pa": 2.295581362354,
+      "inflow_through_sides_m3_per_s": 0.0083333482506,
+      "mass_imbalance_fraction": 1.7900720000046944e-06,
+      "final_initial_residuals": {
+        "Ux": 0.0065791327,
+        "Uy": 0.0073875994,
+        "Uz": 0.0074503765,
+        "p": 0.0011619668,
+        "k": 0.0070137132,
+        "omega": 0.000130338
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.3121609113291453,
+        "x_max": 0.3845689717604828,
+        "y_min": 0.16039198103356042,
+        "y_max": 0.1428781358768115
+      },
+      "time_folder": "1500"
+    },
+    "stand_q1.0": {
+      "case": "stand_q1.0",
+      "kind": "stand",
+      "flow_m3_per_min": 1.0,
+      "flow_m3_per_s": 0.016666666666666666,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": 2,
+      "chimney_area_m2": 0.007020445467919344,
+      "mean_outlet_speed_m_per_s": 2.374018392825175,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 621862,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 58.412633,
+      "iterations": 1500,
+      "averaging_window_iterations": [
+        1005,
+        1500
+      ],
+      "outlet_area_m2": 0.00701868525,
+      "outlet_speed_m_per_s": 2.3746137735221375,
+      "outlet_static_p_Pa": -9.345830578946401,
+      "outlet_static_p_std_Pa": 0.1304182979460606,
+      "pressure_drop_total_Pa": 5.951278653758971,
+      "pressure_drop_static_Pa": 9.345830578946401,
+      "inflow_through_sides_m3_per_s": 0.016666695514,
+      "mass_imbalance_fraction": 1.7308400000748403e-06,
+      "final_initial_residuals": {
+        "Ux": 0.013371954,
+        "Uy": 0.016028571,
+        "Uz": 0.013626564,
+        "p": 0.0021303588,
+        "k": 0.013272174,
+        "omega": 0.00060487189
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.31090846254158455,
+        "x_max": 0.38846320830132136,
+        "y_min": 0.1642630746714021,
+        "y_max": 0.13636525448569206
+      },
+      "time_folder": "1500"
+    },
+    "stand_q1.0_h1.8": {
+      "case": "stand_q1.0_h1.8",
+      "kind": "stand",
+      "flow_m3_per_min": 1.0,
+      "flow_m3_per_s": 0.016666666666666666,
+      "base_cell_mm": 1.8,
+      "stand_refinement_level": 2,
+      "chimney_area_m2": 0.007020445467919344,
+      "mean_outlet_speed_m_per_s": 2.374018392825175,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 1295152,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 52.92535,
+      "iterations": 1500,
+      "averaging_window_iterations": [
+        1005,
+        1500
+      ],
+      "outlet_area_m2": 0.00701976886,
+      "outlet_speed_m_per_s": 2.3742472151236425,
+      "outlet_static_p_Pa": -9.627399640975199,
+      "outlet_static_p_std_Pa": 0.13347629264155966,
+      "pressure_drop_total_Pa": 6.23389563818473,
+      "pressure_drop_static_Pa": 9.627399640975199,
+      "inflow_through_sides_m3_per_s": 0.016666675768000003,
+      "mass_imbalance_fraction": 5.460800001771959e-07,
+      "final_initial_residuals": {
+        "Ux": 0.012101673,
+        "Uy": 0.015186282,
+        "Uz": 0.013439248,
+        "p": 0.0022060585,
+        "k": 0.015282478,
+        "omega": 0.00043383048
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.3074122830262884,
+        "x_max": 0.3867835920468645,
+        "y_min": 0.15971248733221827,
+        "y_max": 0.14609084849036724
+      },
+      "time_folder": "1500"
+    },
+    "stand_q1.0_lvl3": {
+      "case": "stand_q1.0_lvl3",
+      "kind": "stand",
+      "flow_m3_per_min": 1.0,
+      "flow_m3_per_s": 0.016666666666666666,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": 3,
+      "chimney_area_m2": 0.007020445467919344,
+      "mean_outlet_speed_m_per_s": 2.374018392825175,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 2106153,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 48.583352,
+      "iterations": 1500,
+      "averaging_window_iterations": [
+        1005,
+        1500
+      ],
+      "outlet_area_m2": 0.00701868525,
+      "outlet_speed_m_per_s": 2.3746137735221375,
+      "outlet_static_p_Pa": -9.120785128562797,
+      "outlet_static_p_std_Pa": 0.17267159150697847,
+      "pressure_drop_total_Pa": 5.726233203375368,
+      "pressure_drop_static_Pa": 9.120785128562797,
+      "inflow_through_sides_m3_per_s": 0.016666467046,
+      "mass_imbalance_fraction": 1.1977240000002332e-05,
+      "final_initial_residuals": {
+        "Ux": 0.014566251,
+        "Uy": 0.015085156,
+        "Uz": 0.013890112,
+        "p": 0.0025525495,
+        "k": 0.014773915,
+        "omega": 0.0001968168
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.31571947629824165,
+        "x_max": 0.38337071146610957,
+        "y_min": 0.16323879699095178,
+        "y_max": 0.13767101524469696
+      },
+      "time_folder": "1500"
+    },
+    "stand_q1.5": {
+      "case": "stand_q1.5",
+      "kind": "stand",
+      "flow_m3_per_min": 1.5,
+      "flow_m3_per_s": 0.025,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": 2,
+      "chimney_area_m2": 0.007020445467919344,
+      "mean_outlet_speed_m_per_s": 3.561027589237763,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 621862,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 58.412633,
+      "iterations": 1500,
+      "averaging_window_iterations": [
+        1005,
+        1500
+      ],
+      "outlet_area_m2": 0.00701868525,
+      "outlet_speed_m_per_s": 3.5619206602832065,
+      "outlet_static_p_Pa": -21.181922615532002,
+      "outlet_static_p_std_Pa": 0.5683160772844453,
+      "pressure_drop_total_Pa": 13.544180783860284,
+      "pressure_drop_static_Pa": 21.181922615532002,
+      "inflow_through_sides_m3_per_s": 0.024999540575000007,
+      "mass_imbalance_fraction": 1.837699999979181e-05,
+      "final_initial_residuals": {
+        "Ux": 0.020163508,
+        "Uy": 0.023845407,
+        "Uz": 0.020533433,
+        "p": 0.0029808092,
+        "k": 0.020431173,
+        "omega": 0.0012531463
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.30680031893625337,
+        "x_max": 0.3883245468243659,
+        "y_min": 0.16256354934791736,
+        "y_max": 0.14231158489146345
+      },
+      "time_folder": "1500"
+    }
+  }
+}

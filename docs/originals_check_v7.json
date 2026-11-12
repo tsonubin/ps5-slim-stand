@@ -1,0 +1,76 @@
+{
+  "uploads": [
+    {
+      "path": "references/user-imports/ps5_veil_stand_v5.zip",
+      "sha256": "21b39ced52a5ff1058f97936003fcfa7283b0dfa0d7b4560d396dad9ef7e5a8f",
+      "matches": true
+    },
+    {
+      "path": "references/user-imports/ps5_slim_disc_veil_stand.3mf",
+      "sha256": "4261a8ccf041fcd586240c1403d283c9f52efd8a15ed7e56a33ea27aeb552542",
+      "matches": true
+    },
+    {
+      "path": "references/user-imports/preview.png",
+      "sha256": "34187da8ba07ab36179db7fde1529e409d87086ef2f0db645f86c2c85b471b9b",
+      "matches": true
+    },
+    {
+      "path": "references/user-imports/PS5_Slim-a48efc06.zip",
+      "sha256": "cc099e133ed85119084d7729c94e92885197b48ff79c07eb549d5be81edb7386",
+      "matches": true
+    }
+  ],
+  "imported_v5": [
+    {
+      "path": "designs/imported/ps5_veil_stand_v5/ps5_slim_disc_veil_stand.stl",
+      "sha256": "929853cb618fd4b5bc59800f040d7b3e8a6dd741377d876db4f8c30f6c05cd1a",
+      "matches": true
+    },
+    {
+      "path": "designs/imported/ps5_veil_stand_v5/preview.png",
+      "sha256": "69f0a76af9131f08f39fc831ef8e33031523219875de497b908f6ab324153bc3",
+      "matches": true
+    },
+    {
+      "path": "designs/imported/ps5_veil_stand_v5/source/ps5_veil_stand.py",
+      "sha256": "ab367a924a3e8cb59f8428ec73d1db7feb82b343634f160eed81ee53bc5ebe32",
+      "matches": true
+    },
+    {
+      "path": "designs/imported/ps5_veil_stand_v5/source/preview.py",
+      "sha256": "7b50019f0bd5f1d90825bf1378902bacf763d62b17e4f0170401e7d80525ca25",
+      "matches": true
+    },
+    {
+      "path": "designs/imported/ps5_veil_stand_v5/source/outline.json",
+      "sha256": "bee935b9c28ad07907a75b46e1ed2c9612dfeb5aef34c9b620f19e6af473bc21",
+      "matches": true
+    },
+    {
+      "path": "designs/imported/ps5_veil_stand_v5/source/splat.py",
+      "sha256": "7654b84c2cb921d2c939d8e9b8f6df91b8c28ef226eff8957da16ae01f5995d0",
+      "matches": true
+    },
+    {
+      "path": "designs/imported/ps5_veil_stand_v5/source/checks.py",
+      "sha256": "b8cdbc50fc26c4a9deec4a6ac76d9071aa41fe83a6452f5116521887315b525b",
+      "matches": true
+    },
+    {
+      "path": "designs/imported/ps5_veil_stand_v5/checks.txt",
+      "sha256": "f829656873ae125e406cd87a3a8f6a04b817fce7052bf098a6062497dce32830",
+      "matches": true
+    },
+    {
+      "path": "designs/imported/ps5_veil_stand_v5/GAUGE_cavity_outline_1.6mm.stl",
+      "sha256": "5fc50d41b2e065a3706482c37d1f837428be5d86befc4ebe032c2dd92966c0d1",
+      "matches": true
+    },
+    {
+      "path": "designs/imported/ps5_veil_stand_v5/ps5_slim_disc_veil_stand.3mf",
+      "sha256": "4261a8ccf041fcd586240c1403d283c9f52efd8a15ed7e56a33ea27aeb552542",
+      "matches": true
+    }
+  ]
+}

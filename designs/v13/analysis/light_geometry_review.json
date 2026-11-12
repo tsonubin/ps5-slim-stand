@@ -1,0 +1,97 @@
+{
+  "scope": "Final softened v13 visual prototype. Basic geometry/format checks only; no FEA, production slicing or physical qualification.",
+  "generator_source_sha256": "ea78e5858aa0b04a1cbe392eade81cce2c0b0fdc66c938617e999046fd99ee5f",
+  "files": {
+    "veil_v13_prototype.stl": {
+      "sha256": "bea7633ae9056bdd5e5f3f4c0e4ced1c9958bf9ea5c77ac0db26fd036f9fed11",
+      "extents_mm": [
+        150.3393096923828,
+        241.277099609375,
+        40.699764251708984
+      ],
+      "volume_cm3": 74.6052818463993,
+      "faces": 170792,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1
+    },
+    "GAUGE_v13_cavity_1.6mm.stl": {
+      "sha256": "088d6f857eb1504d9d38e7b13843e17f6aea5ede7a48b562bb09fddbae7ed3f4",
+      "extents_mm": [
+        106.91394805908203,
+        227.0,
+        1.600000023841858
+      ],
+      "volume_cm3": 3.7726204883454324,
+      "faces": 1500,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1
+    },
+    "PRINT_TEST_v13_section.stl": {
+      "sha256": "eb6de0c236e3bfa226a42ee0dc9de2c76fee9100cdadfaacf2db370817a721b7",
+      "extents_mm": [
+        58.0,
+        36.0,
+        40.699851989746094
+      ],
+      "volume_cm3": 6.934032955301074,
+      "faces": 10848,
+      "watertight": true,
+      "winding_consistent": true,
+      "components": 1
+    }
+  },
+  "3mf": {
+    "sha256": "475fd8afd76fe1a98607d7bd6a265647404e37864cfbcc1762b7e0638e9bced2",
+    "watertight": true,
+    "components": 1,
+    "extents_mm": [
+      150.3393096923828,
+      241.277099609375,
+      40.699764251708984
+    ],
+    "volume_cm3": 74.6052818463993,
+    "max_bounds_difference_from_STL_mm": 0.0
+  },
+  "cavity_set_difference_areas_mm2": [
+    0.0,
+    0.0
+  ],
+  "seat_height_mm": 30.0,
+  "reference_intersection_mm3": 0.0,
+  "cavity_intersection_mm3": 0.0,
+  "coupon": {
+    "source_clip_bounds_mm": [
+      [
+        22,
+        34,
+        0
+      ],
+      [
+        80,
+        70,
+        80
+      ]
+    ],
+    "understructure_volume_in_clip_cm3": 3.9424268254542416,
+    "full_model_clip_components": 1,
+    "note": "Actual shell apertures and support geometry are included, but this cut specimen does not qualify all manufacturing features or strength."
+  },
+  "rounding_chart_radius_mm": {
+    "count": 72,
+    "minimum": 2.1999999999999993,
+    "maximum": 3.0,
+    "values": [
+      2.2,
+      2.4,
+      2.6,
+      2.8,
+      3.0
+    ]
+  },
+  "support_nominal_width_mm": 2.8,
+  "support_minimum_unchamfered_vertical_web_mm": 6.8,
+  "support_top_contact_width_mm": 1.54,
+  "aperture_preflight": "aperture_spacing_preflight.json; mapped maximum-bevel polygon boundaries, not final volumetric wall-thickness certification"
+}

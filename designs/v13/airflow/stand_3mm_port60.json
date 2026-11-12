@@ -1,0 +1,23 @@
+{
+  "iterations": 5750,
+  "relative_change": 9.6783610836515e-07,
+  "link_flux_in": 0.0004754458469761,
+  "link_flux_out": 0.0004754487201533,
+  "name": "stand_3mm_port60",
+  "pitch_mm": 3.0,
+  "shape": [
+    12,
+    94,
+    64
+  ],
+  "fluid_nodes": 54618,
+  "port_area_mm2": 594.0,
+  "qout_lattice": 0.0004754487201533,
+  "qin_lattice": 0.0004754458469761,
+  "mass_imbalance_fraction": 6.043085359622997e-06,
+  "max_speed_lattice": 1.2959368177689612e-05,
+  "tau": 0.8,
+  "kinematic_viscosity_lattice": 0.1,
+  "density_difference": 1e-05,
+  "conductance_scaled": 385.113463324173
+}

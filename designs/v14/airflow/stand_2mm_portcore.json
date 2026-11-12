@@ -1,0 +1,23 @@
+{
+  "iterations": 3250,
+  "relative_change": 9.3871626500363e-07,
+  "link_flux_in": 0.0081329126912582,
+  "link_flux_out": 0.0081329128801494,
+  "name": "stand_2mm_portcore",
+  "pitch_mm": 2.0,
+  "shape": [
+    17,
+    140,
+    95
+  ],
+  "fluid_nodes": 184363,
+  "port_area_mm2": 6000.0,
+  "qout_lattice": 0.0081329128801494,
+  "qin_lattice": 0.0081329126912582,
+  "mass_imbalance_fraction": 2.3225528459529553e-08,
+  "max_speed_lattice": 1.2105090718250722e-05,
+  "tau": 0.8,
+  "kinematic_viscosity_lattice": 0.1,
+  "density_difference": 1e-05,
+  "conductance_scaled": 1951.8990912358558
+}

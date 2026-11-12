@@ -1,0 +1,34 @@
+{
+  "scope": "Basic geometry only; appearance draft, not engineering qualification",
+  "mesh": {
+    "watertight": true,
+    "components": 1,
+    "faces": 166726,
+    "extents_mm": [
+      150.3953094482422,
+      240.6247100830078,
+      48.0416145324707
+    ],
+    "volume_cm3": 76.70857776906865,
+    "sha256": "b5845a1fdc46070350710ae85a5bbf05119a1fae86a3da026dadf0494a223bbd"
+  },
+  "3mf": {
+    "watertight": true,
+    "extents_mm": [
+      150.3953094482422,
+      240.6247100830078,
+      48.0416145324707
+    ],
+    "volume_cm3": 76.70857776906865
+  },
+  "reference_plan_intersection_mm3": 0.0,
+  "cavity_intersection_mm3": 0.0,
+  "nominal_features_mm": {
+    "shell_normal_depth": 2.8,
+    "seat_height": 30,
+    "reference_clearance": 1.5,
+    "support_wall": 2.8,
+    "support_top_contact_width": 1.54
+  },
+  "limitations": "Reference-derived cavity, not measured hardware. No FEA, slicer qualification, physical fit/load/creep/impact or ventilation test."
+}

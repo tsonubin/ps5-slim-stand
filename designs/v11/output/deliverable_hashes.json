@@ -1,0 +1,23 @@
+{
+  "veil_v11_prototype.stl": {
+    "bytes": 110288084,
+    "sha256": "58d4800d4e19a6e55cd60525dd0e53cfcf49d72e3722ca6c6d50ef12f6be60fd"
+  },
+  "veil_v11_prototype.stl.gz": {
+    "bytes": 46295589,
+    "sha256": "8c24f2545eed5ed127eb5ed19d2fca95406f9ac4375803442c49fb3cc2258cd4"
+  },
+  "veil_v11_prototype.3mf": {
+    "bytes": 31049985,
+    "sha256": "a81cdf384ad2ee50c3f1d40eea015eddd1da0e2832d2bd6cd098248ea8071c89"
+  },
+  "GAUGE_v11_cavity_1.6mm.stl": {
+    "bytes": 75084,
+    "sha256": "088d6f857eb1504d9d38e7b13843e17f6aea5ede7a48b562bb09fddbae7ed3f4"
+  },
+  "PRINT_TEST_v11_section.stl": {
+    "bytes": 4435884,
+    "sha256": "223eaa1925b6f0d3cf0dab3bef5596c72d31234f8c33029294f500196fa64aa5"
+  },
+  "gzip_roundtrip_verified": true
+}

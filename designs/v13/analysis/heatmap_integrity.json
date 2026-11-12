@@ -1,0 +1,18 @@
+{
+  "artifact": "designs/v13/output/stress_heatmap_3d.html",
+  "sha256": "a7fc1f51ad016677230846f43e5dd7a80b2e6e1a395d12ed6718a3dd5bb44cc7",
+  "validation": "Independent local payload and JavaScript syntax checks; no browser interactive QA performed.",
+  "gzip_payload_decoded": true,
+  "javascript_node_check_passed": true,
+  "all_vertex_indices_valid": true,
+  "all_geometry_and_field_values_finite": true,
+  "field_array_dimensions_match_geometry": true,
+  "embedded_metrics_equal_source_result_json": true,
+  "case_sets_match_actually_solved_cases": true,
+  "models": [
+    {"id": "v13_coarse_result", "vertices": 154462, "boundary_triangles": 309300, "cases": ["vertical_1g", "eccentric_1g", "rim_side_10N"]},
+    {"id": "v13_fine_result", "vertices": 154462, "boundary_triangles": 309300, "cases": ["vertical_1g", "eccentric_1g", "rim_side_10N"]},
+    {"id": "v13_quality_result", "vertices": 214461, "boundary_triangles": 429298, "cases": ["vertical_1g"]}
+  ],
+  "limitations": "Checks artifact integrity only, not WebGL rendering/interaction, physical assumptions, mesh convergence or strength qualification. No browser workaround was used."
+}

@@ -1,0 +1,448 @@
+{
+  "scope": "Source sweep vertices and densely sampled centerlines only; not final Boolean/SDF mesh or physical validation",
+  "preclip_bounds_mm": [
+    [
+      -65.63198106349361,
+      -120.18202578537797,
+      -1.0000000000000009
+    ],
+    [
+      85.9525807048957,
+      124.27458185701124,
+      53.21767150873323
+    ]
+  ],
+  "desk_clipped_extents_mm": [
+    151.5845617683893,
+    244.4566076423892,
+    53.21767150873323
+  ],
+  "above_seat_vertices_inside_cavity": 0,
+  "max_sampled_cavity_penetration_mm": 0.0,
+  "minimum_sampled_outside_cavity_distance_mm": 0.7227082489795102,
+  "minimum_signed_wire_theta_derivative": 0.4326235246765453,
+  "max_radius_times_curvature": 0.6392219623589472,
+  "curve_records": [
+    {
+      "curve": "base_ring",
+      "minimum_speed_mm_per_parameter": 68.76403799716049,
+      "minimum_curvature_radius_mm": 4.693205453906771,
+      "max_radius_times_curvature": 0.6392219623589472
+    },
+    {
+      "curve": "top_ring",
+      "minimum_speed_mm_per_parameter": 47.19903810291058,
+      "minimum_curvature_radius_mm": 4.313978118934533,
+      "max_radius_times_curvature": 0.5563310554279659
+    },
+    {
+      "curve": "contour_0",
+      "minimum_speed_mm_per_parameter": 54.76559697663649,
+      "minimum_curvature_radius_mm": 4.2767245575781345,
+      "max_radius_times_curvature": 0.38580927478162824
+    },
+    {
+      "curve": "contour_1",
+      "minimum_speed_mm_per_parameter": 50.07327990856705,
+      "minimum_curvature_radius_mm": 4.165186318690249,
+      "max_radius_times_curvature": 0.3961407422750889
+    },
+    {
+      "curve": "wire_1_0",
+      "minimum_speed_mm_per_parameter": 40.00973997363711,
+      "minimum_curvature_radius_mm": 9.99634667916758,
+      "max_radius_times_curvature": 0.19957208942838542
+    },
+    {
+      "curve": "wire_1_1",
+      "minimum_speed_mm_per_parameter": 44.12463123782192,
+      "minimum_curvature_radius_mm": 10.861097874802036,
+      "max_radius_times_curvature": 0.18251699281101955
+    },
+    {
+      "curve": "wire_1_2",
+      "minimum_speed_mm_per_parameter": 46.063618919966785,
+      "minimum_curvature_radius_mm": 11.332240056010763,
+      "max_radius_times_curvature": 0.17352034980462255
+    },
+    {
+      "curve": "wire_1_3",
+      "minimum_speed_mm_per_parameter": 68.43869616977804,
+      "minimum_curvature_radius_mm": 12.971909331081369,
+      "max_radius_times_curvature": 0.15255330814665968
+    },
+    {
+      "curve": "wire_1_4",
+      "minimum_speed_mm_per_parameter": 69.61712606283585,
+      "minimum_curvature_radius_mm": 12.824669627589342,
+      "max_radius_times_curvature": 0.1514006877185402
+    },
+    {
+      "curve": "wire_1_5",
+      "minimum_speed_mm_per_parameter": 71.53937170002298,
+      "minimum_curvature_radius_mm": 13.279675771178024,
+      "max_radius_times_curvature": 0.14133289041346922
+    },
+    {
+      "curve": "wire_1_6",
+      "minimum_speed_mm_per_parameter": 81.85237843990062,
+      "minimum_curvature_radius_mm": 5.361040154074755,
+      "max_radius_times_curvature": 0.3077760942987692
+    },
+    {
+      "curve": "wire_1_7",
+      "minimum_speed_mm_per_parameter": 83.91365548040903,
+      "minimum_curvature_radius_mm": 5.61122835103219,
+      "max_radius_times_curvature": 0.29405326192017855
+    },
+    {
+      "curve": "wire_1_8",
+      "minimum_speed_mm_per_parameter": 99.87750614605537,
+      "minimum_curvature_radius_mm": 7.540012543592387,
+      "max_radius_times_curvature": 0.21883252719548776
+    },
+    {
+      "curve": "wire_1_9",
+      "minimum_speed_mm_per_parameter": 105.1748704405742,
+      "minimum_curvature_radius_mm": 4.4021385677651175,
+      "max_radius_times_curvature": 0.5179466996545652
+    },
+    {
+      "curve": "wire_1_10",
+      "minimum_speed_mm_per_parameter": 104.63518235183736,
+      "minimum_curvature_radius_mm": 4.712830693654365,
+      "max_radius_times_curvature": 0.382282759905611
+    },
+    {
+      "curve": "wire_1_11",
+      "minimum_speed_mm_per_parameter": 96.0876690806399,
+      "minimum_curvature_radius_mm": 6.10638379119753,
+      "max_radius_times_curvature": 0.2702090232812596
+    },
+    {
+      "curve": "wire_1_12",
+      "minimum_speed_mm_per_parameter": 87.53629814513957,
+      "minimum_curvature_radius_mm": 6.314037843119096,
+      "max_radius_times_curvature": 0.2613224755689633
+    },
+    {
+      "curve": "wire_1_13",
+      "minimum_speed_mm_per_parameter": 70.28501756740681,
+      "minimum_curvature_radius_mm": 6.289304772426821,
+      "max_radius_times_curvature": 0.2623501419797348
+    },
+    {
+      "curve": "wire_1_14",
+      "minimum_speed_mm_per_parameter": 56.291428203844,
+      "minimum_curvature_radius_mm": 4.702215054861978,
+      "max_radius_times_curvature": 0.6202531113358539
+    },
+    {
+      "curve": "wire_1_15",
+      "minimum_speed_mm_per_parameter": 54.273509812880974,
+      "minimum_curvature_radius_mm": 7.002917038414164,
+      "max_radius_times_curvature": 0.4283929073291488
+    },
+    {
+      "curve": "wire_1_16",
+      "minimum_speed_mm_per_parameter": 45.75577572510699,
+      "minimum_curvature_radius_mm": 20.630266063292414,
+      "max_radius_times_curvature": 0.1066728277719937
+    },
+    {
+      "curve": "wire_1_17",
+      "minimum_speed_mm_per_parameter": 44.15546731580431,
+      "minimum_curvature_radius_mm": 16.750514481144783,
+      "max_radius_times_curvature": 0.13985523543955583
+    },
+    {
+      "curve": "wire_1_18",
+      "minimum_speed_mm_per_parameter": 43.40576415777668,
+      "minimum_curvature_radius_mm": 13.84979793073782,
+      "max_radius_times_curvature": 0.19277168194197117
+    },
+    {
+      "curve": "wire_1_19",
+      "minimum_speed_mm_per_parameter": 33.39866885888361,
+      "minimum_curvature_radius_mm": 7.569022785372407,
+      "max_radius_times_curvature": 0.3601131297322235
+    },
+    {
+      "curve": "wire_1_20",
+      "minimum_speed_mm_per_parameter": 32.21461941664077,
+      "minimum_curvature_radius_mm": 7.138394103491591,
+      "max_radius_times_curvature": 0.3820116198063407
+    },
+    {
+      "curve": "wire_1_21",
+      "minimum_speed_mm_per_parameter": 30.10538220297032,
+      "minimum_curvature_radius_mm": 6.261416012728651,
+      "max_radius_times_curvature": 0.4315083778492424
+    },
+    {
+      "curve": "wire_1_22",
+      "minimum_speed_mm_per_parameter": 32.84555126942825,
+      "minimum_curvature_radius_mm": 6.973678367187596,
+      "max_radius_times_curvature": 0.37788487576533697
+    },
+    {
+      "curve": "wire_1_23",
+      "minimum_speed_mm_per_parameter": 34.51807096831543,
+      "minimum_curvature_radius_mm": 7.491353736468481,
+      "max_radius_times_curvature": 0.347864408501827
+    },
+    {
+      "curve": "wire_1_24",
+      "minimum_speed_mm_per_parameter": 48.95784612913143,
+      "minimum_curvature_radius_mm": 4.974950904096947,
+      "max_radius_times_curvature": 0.4824168199120084
+    },
+    {
+      "curve": "wire_1_25",
+      "minimum_speed_mm_per_parameter": 55.575294756324816,
+      "minimum_curvature_radius_mm": 4.714343778360711,
+      "max_radius_times_curvature": 0.4206012127353803
+    },
+    {
+      "curve": "wire_1_26",
+      "minimum_speed_mm_per_parameter": 70.84969112373486,
+      "minimum_curvature_radius_mm": 5.291648929676177,
+      "max_radius_times_curvature": 0.31181206877625794
+    },
+    {
+      "curve": "wire_1_27",
+      "minimum_speed_mm_per_parameter": 95.28361974779028,
+      "minimum_curvature_radius_mm": 5.876018938019319,
+      "max_radius_times_curvature": 0.28080236251862384
+    },
+    {
+      "curve": "wire_1_28",
+      "minimum_speed_mm_per_parameter": 95.80642361442122,
+      "minimum_curvature_radius_mm": 5.878476280780073,
+      "max_radius_times_curvature": 0.28068498045909357
+    },
+    {
+      "curve": "wire_1_29",
+      "minimum_speed_mm_per_parameter": 112.94928310456716,
+      "minimum_curvature_radius_mm": 6.329222574760357,
+      "max_radius_times_curvature": 0.40603298831063506
+    },
+    {
+      "curve": "wire_1_30",
+      "minimum_speed_mm_per_parameter": 89.24007271061313,
+      "minimum_curvature_radius_mm": 14.64955144152822,
+      "max_radius_times_curvature": 0.11263143493408384
+    },
+    {
+      "curve": "wire_1_31",
+      "minimum_speed_mm_per_parameter": 77.29338748263942,
+      "minimum_curvature_radius_mm": 15.54025158640424,
+      "max_radius_times_curvature": 0.10617588723232395
+    },
+    {
+      "curve": "wire_1_32",
+      "minimum_speed_mm_per_parameter": 54.752474300851404,
+      "minimum_curvature_radius_mm": 16.267478093454145,
+      "max_radius_times_curvature": 0.11736544056600508
+    },
+    {
+      "curve": "wire_1_33",
+      "minimum_speed_mm_per_parameter": 51.95555341927692,
+      "minimum_curvature_radius_mm": 14.618384668577898,
+      "max_radius_times_curvature": 0.13000567888470244
+    },
+    {
+      "curve": "wire_1_34",
+      "minimum_speed_mm_per_parameter": 44.28665544861566,
+      "minimum_curvature_radius_mm": 11.238191488889099,
+      "max_radius_times_curvature": 0.16845849295508117
+    },
+    {
+      "curve": "wire_1_35",
+      "minimum_speed_mm_per_parameter": 40.32630689523203,
+      "minimum_curvature_radius_mm": 10.06563369138408,
+      "max_radius_times_curvature": 0.1916182573570704
+    },
+    {
+      "curve": "wire_1_36",
+      "minimum_speed_mm_per_parameter": 39.95415912333537,
+      "minimum_curvature_radius_mm": 9.986923745644033,
+      "max_radius_times_curvature": 0.19435227676899935
+    },
+    {
+      "curve": "wire_-1_0",
+      "minimum_speed_mm_per_parameter": 38.14301738381643,
+      "minimum_curvature_radius_mm": 8.795113503637946,
+      "max_radius_times_curvature": 0.30990421295183485
+    },
+    {
+      "curve": "wire_-1_1",
+      "minimum_speed_mm_per_parameter": 38.44839199541019,
+      "minimum_curvature_radius_mm": 9.757627646291768,
+      "max_radius_times_curvature": 0.2211049046930715
+    },
+    {
+      "curve": "wire_-1_2",
+      "minimum_speed_mm_per_parameter": 38.21862170747529,
+      "minimum_curvature_radius_mm": 9.14290306202419,
+      "max_radius_times_curvature": 0.2161742021924552
+    },
+    {
+      "curve": "wire_-1_3",
+      "minimum_speed_mm_per_parameter": 45.56229304235349,
+      "minimum_curvature_radius_mm": 11.156639078882169,
+      "max_radius_times_curvature": 0.17765681464680907
+    },
+    {
+      "curve": "wire_-1_4",
+      "minimum_speed_mm_per_parameter": 53.68654670194014,
+      "minimum_curvature_radius_mm": 7.612299315551654,
+      "max_radius_times_curvature": 0.2843963938505482
+    },
+    {
+      "curve": "wire_-1_5",
+      "minimum_speed_mm_per_parameter": 70.21352303427578,
+      "minimum_curvature_radius_mm": 9.386621491043591,
+      "max_radius_times_curvature": 0.1757820959942165
+    },
+    {
+      "curve": "wire_-1_6",
+      "minimum_speed_mm_per_parameter": 113.99559632673049,
+      "minimum_curvature_radius_mm": 7.40324376170427,
+      "max_radius_times_curvature": 0.4052277739913915
+    },
+    {
+      "curve": "wire_-1_7",
+      "minimum_speed_mm_per_parameter": 115.20433142095845,
+      "minimum_curvature_radius_mm": 4.645379244139061,
+      "max_radius_times_curvature": 0.5620205336398951
+    },
+    {
+      "curve": "wire_-1_8",
+      "minimum_speed_mm_per_parameter": 102.91242039309866,
+      "minimum_curvature_radius_mm": 4.6772681082529335,
+      "max_radius_times_curvature": 0.3527700276767569
+    },
+    {
+      "curve": "wire_-1_9",
+      "minimum_speed_mm_per_parameter": 104.30259245809184,
+      "minimum_curvature_radius_mm": 4.5936908438179795,
+      "max_radius_times_curvature": 0.35918829892971776
+    },
+    {
+      "curve": "wire_-1_10",
+      "minimum_speed_mm_per_parameter": 101.52578639449601,
+      "minimum_curvature_radius_mm": 4.0562807752191326,
+      "max_radius_times_curvature": 0.40677657475791035
+    },
+    {
+      "curve": "wire_-1_11",
+      "minimum_speed_mm_per_parameter": 87.42846761162778,
+      "minimum_curvature_radius_mm": 23.12287992602835,
+      "max_radius_times_curvature": 0.08160852392545401
+    },
+    {
+      "curve": "wire_-1_12",
+      "minimum_speed_mm_per_parameter": 84.55873644662321,
+      "minimum_curvature_radius_mm": 20.980040096346396,
+      "max_radius_times_curvature": 0.08948864568505062
+    },
+    {
+      "curve": "wire_-1_13",
+      "minimum_speed_mm_per_parameter": 64.77245029490159,
+      "minimum_curvature_radius_mm": 17.952767248666422,
+      "max_radius_times_curvature": 0.10794248553202548
+    },
+    {
+      "curve": "wire_-1_14",
+      "minimum_speed_mm_per_parameter": 42.62897750456107,
+      "minimum_curvature_radius_mm": 13.525338410547837,
+      "max_radius_times_curvature": 0.14819553985223402
+    },
+    {
+      "curve": "wire_-1_15",
+      "minimum_speed_mm_per_parameter": 38.29856688340296,
+      "minimum_curvature_radius_mm": 11.54522431211798,
+      "max_radius_times_curvature": 0.17103228045413665
+    },
+    {
+      "curve": "wire_-1_16",
+      "minimum_speed_mm_per_parameter": 31.362711481621176,
+      "minimum_curvature_radius_mm": 7.4291307808062825,
+      "max_radius_times_curvature": 0.2696189082996181
+    },
+    {
+      "curve": "wire_-1_17",
+      "minimum_speed_mm_per_parameter": 32.898893575764646,
+      "minimum_curvature_radius_mm": 8.482624936364447,
+      "max_radius_times_curvature": 0.23887516307196563
+    },
+    {
+      "curve": "wire_-1_18",
+      "minimum_speed_mm_per_parameter": 36.96694037287405,
+      "minimum_curvature_radius_mm": 11.03450996802544,
+      "max_radius_times_curvature": 0.1847237663619049
+    },
+    {
+      "curve": "wire_-1_19",
+      "minimum_speed_mm_per_parameter": 54.70016685798024,
+      "minimum_curvature_radius_mm": 6.955528575820387,
+      "max_radius_times_curvature": 0.24091372009204848
+    },
+    {
+      "curve": "wire_-1_20",
+      "minimum_speed_mm_per_parameter": 62.80734858154237,
+      "minimum_curvature_radius_mm": 8.151571933096372,
+      "max_radius_times_curvature": 0.2024149469013209
+    },
+    {
+      "curve": "wire_-1_21",
+      "minimum_speed_mm_per_parameter": 97.65441350260345,
+      "minimum_curvature_radius_mm": 6.098232666845989,
+      "max_radius_times_curvature": 0.2705701947009151
+    },
+    {
+      "curve": "wire_-1_22",
+      "minimum_speed_mm_per_parameter": 97.8845949514317,
+      "minimum_curvature_radius_mm": 5.005811928364482,
+      "max_radius_times_curvature": 0.39184627308117204
+    },
+    {
+      "curve": "wire_-1_23",
+      "minimum_speed_mm_per_parameter": 94.39228686399984,
+      "minimum_curvature_radius_mm": 4.863092769059525,
+      "max_radius_times_curvature": 0.4911462347382826
+    },
+    {
+      "curve": "wire_-1_24",
+      "minimum_speed_mm_per_parameter": 69.37889299587965,
+      "minimum_curvature_radius_mm": 8.471868570294912,
+      "max_radius_times_curvature": 0.19476222822736286
+    },
+    {
+      "curve": "wire_-1_25",
+      "minimum_speed_mm_per_parameter": 61.168672483676055,
+      "minimum_curvature_radius_mm": 8.021500864995884,
+      "max_radius_times_curvature": 0.2065697698432682
+    },
+    {
+      "curve": "wire_-1_26",
+      "minimum_speed_mm_per_parameter": 52.04923997260818,
+      "minimum_curvature_radius_mm": 9.205468231460705,
+      "max_radius_times_curvature": 0.2607146028890258
+    },
+    {
+      "curve": "wire_-1_27",
+      "minimum_speed_mm_per_parameter": 42.62282776118187,
+      "minimum_curvature_radius_mm": 8.56011171385898,
+      "max_radius_times_curvature": 0.3040482684939802
+    },
+    {
+      "curve": "wire_-1_28",
+      "minimum_speed_mm_per_parameter": 40.7569572443914,
+      "minimum_curvature_radius_mm": 8.321335312625632,
+      "max_radius_times_curvature": 0.3173032634109521
+    }
+  ],
+  "limitations": "Discrete profile vertices/paths do not guarantee face-interior clearance or global self-intersection freedom; final export needs separate checks."
+}

@@ -1,0 +1,60 @@
+{
+  "CAD_sha256": "bea7633ae9056bdd5e5f3f4c0e4ced1c9958bf9ea5c77ac0db26fd036f9fed11",
+  "scope": "Hypothetical capped undercroft channel, not actual PS5 cooling CFD",
+  "central_port_grid_sensitivity": [
+    {
+      "pitch_mm": 3.0,
+      "conductance_reduction_percent": 20.859230385003393,
+      "stand_conductance_scaled": 654.52131,
+      "empty_conductance_scaled": 827.0342999999999,
+      "voxel_stand_volume_under30_mm3": 65394.0,
+      "CAD_volume_under30_mm3": 64117.93147213966,
+      "voxel_volume_error_percent": 1.99018979334169,
+      "fluid_components": 1,
+      "largest_fluid_fraction": 1.0,
+      "max_mass_imbalance_fraction": 4.950182599804419e-06,
+      "velocity_change": 9.60533e-07,
+      "port_area_mm2": 720.0
+    },
+    {
+      "pitch_mm": 2.0,
+      "conductance_reduction_percent": 22.948211230339123,
+      "stand_conductance_scaled": 617.1311999999999,
+      "empty_conductance_scaled": 800.9304,
+      "voxel_stand_volume_under30_mm3": 63672.0,
+      "CAD_volume_under30_mm3": 64117.93147213966,
+      "voxel_volume_error_percent": -0.6954863669197175,
+      "fluid_components": 1,
+      "largest_fluid_fraction": 1.0,
+      "max_mass_imbalance_fraction": 2.996515053105526e-06,
+      "velocity_change": 9.01243e-07,
+      "port_area_mm2": 688.0
+    },
+    {
+      "pitch_mm": 1.5,
+      "conductance_reduction_percent": 25.41429822430379,
+      "stand_conductance_scaled": 632.1282250434806,
+      "empty_conductance_scaled": 847.5193099938892,
+      "voxel_stand_volume_under30_mm3": 64604.25,
+      "CAD_volume_under30_mm3": 64117.93147213966,
+      "voxel_volume_error_percent": 0.758475073500553,
+      "fluid_components": 1,
+      "largest_fluid_fraction": 1.0,
+      "max_mass_imbalance_fraction": 2.762110420666403e-07,
+      "velocity_change": 7.8129319745866e-07,
+      "port_area_mm2": 711.0
+    }
+  ],
+  "offset_port_60mm": {
+    "grid_mm": 3,
+    "nominal_sampled_area_mm2": 720.0,
+    "unblocked_area_mm2": 594.0,
+    "conductance_reduction_percent": 53.72792337208596,
+    "mass_imbalance_fraction": 6.043085359622997e-06
+  },
+  "pressure_reversal_flux_magnitude_change_percent": 0.006969878114149175,
+  "duct_benchmark_relative_error": 0.0005758533925520615,
+  "spatial_convergence_established": false,
+  "actual_console_port_map_verified": false,
+  "actual_fan_operating_point_or_temperature_predicted": false
+}

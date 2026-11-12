@@ -1,0 +1,15 @@
+{
+  "input": "surf_xfine.stl",
+  "mode": "direct",
+  "base_size_mm": 2.2,
+  "tets": 296577,
+  "nodes": 608679,
+  "element_types": [
+    11
+  ],
+  "quality_measure": "gamma (inscribed/circumscribed radius ratio) of the straight-sided tetrahedra before mid-side nodes are added",
+  "min_gamma": 0.09298261748161285,
+  "p1_gamma": 0.22567983613555576,
+  "tets_gamma_below_0.05": 0,
+  "seconds": 7.933923006057739
+}

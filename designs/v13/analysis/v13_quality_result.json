@@ -1,0 +1,68 @@
+{
+  "surface_mesh": "designs/v13/analysis/v13_quality_mesh.npz",
+  "nodes": 214538,
+  "tets": 684668,
+  "solid_volume_mm3": 73895.2337919325,
+  "fixed_node_count": 10076,
+  "regularized_contact_tolerance_mm": 0.3,
+  "upper_shell_patch_rule": "x > 40, 15 < y < 100, z > 36 mm; local stand push, not console-top force",
+  "material_assumption": {
+    "E_MPa": 1200.0,
+    "nu": 0.35,
+    "model": "Isotropic homogeneous linear elastic. Not measured printed properties."
+  },
+  "boundary": "Complete stand on a regularized geometry: feet within0.2mm of minimum Z are clamped; seat faces within0.3mm of Z30, nearly horizontal and inside reference core, carry pressure. Isotropic small-displacement screen; no slip/lift-off or material failure.",
+  "seat_area_mm2": 264.7694031493173,
+  "results": {
+    "vertical_1g": {
+      "iterations": 582,
+      "relative_residual": 1.3573048810790618e-08,
+      "max_displacement_mm": 0.14910471624575777,
+      "max_seat_down_mm": 0.14689342144375675,
+      "peak_von_mises_MPa": 21.607521088937382,
+      "volume_weighted_p95_von_mises_MPa": 0.41153355010893417,
+      "peak_element_center_mm": [
+        -20.983097076416016,
+        -45.289228439331055,
+        21.13861322402954
+      ],
+      "support_reaction_N": [
+        -6.544809139086283e-11,
+        1.2213252631454452e-09,
+        31.39199999974995
+      ],
+      "support_reaction_moment_Nmm": [
+        230.47708313581444,
+        297.49010877323116,
+        -2.4012528873748128e-08
+      ],
+      "applied_force_N": [
+        0,
+        0,
+        -31.392
+      ],
+      "seat_pressure_area_mm2": 264.7694031493173,
+      "vertical_load_centroid_mm": [
+        -9.476621712153685,
+        7.341905045658933,
+        30.122638369739544
+      ],
+      "load_moment_about_origin_Nmm": [
+        -230.47708319332568,
+        -297.49010878792814,
+        0.0
+      ],
+      "side_patch_area_mm2": 0.0,
+      "side_patch_centroid_mm": null,
+      "compliance_Nmm": 2.193307893017445,
+      "solve_seconds": 92.38626623153687
+    },
+    "vertical_3g_linear_scaling": {
+      "max_displacement_mm": 0.4473141487372733,
+      "max_seat_down_mm": 0.4406802643312703,
+      "peak_von_mises_MPa": 64.82256326681215,
+      "volume_weighted_p95_von_mises_MPa": 1.2346006503268026
+    }
+  },
+  "mesh_provenance_note": "Solved from /tmp/v13_quality_mesh.npz then copied byte-for-byte into analysis/v13_quality_mesh.npz."
+}

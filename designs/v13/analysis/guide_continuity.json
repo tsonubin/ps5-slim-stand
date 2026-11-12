@@ -1,0 +1,40 @@
+{
+  "scope": "Analytic outer upper/lower perimeter guides. C-infinity finite Fourier series; triangulation, section transitions and aperture boundaries are not certified globally G2.",
+  "height_intent": "Nearly level upper rim, planar lower contact ring; preserve irregular cell web and overall lower silhouette.",
+  "guides": {
+    "upper": {
+      "z_range_mm": [
+        38.02983855982441,
+        40.69987886207318
+      ],
+      "previous_z_range_mm": [
+        33.95393609304065,
+        48.04168734200325
+      ],
+      "maximum_plan_change_mm": 1.0979871913563375,
+      "maximum_curvature_per_mm": 0.15197165111186148,
+      "previous_maximum_curvature_per_mm": 0.2040563427265009,
+      "max_adjacent_curvature_difference_at_14400_segments": 0.0011885441971957456,
+      "seam_position_error_mm": 1.173793810965865e-14,
+      "seam_first_derivative_error": 1.4299689796649584e-13,
+      "seam_second_derivative_error": 2.672398837588967e-13
+    },
+    "lower": {
+      "z_range_mm": [
+        0.0,
+        0.0
+      ],
+      "previous_z_range_mm": [
+        0.0,
+        0.0
+      ],
+      "maximum_plan_change_mm": 1.6192673911886497,
+      "maximum_curvature_per_mm": 0.049397273210425856,
+      "previous_maximum_curvature_per_mm": 0.20684583923779154,
+      "max_adjacent_curvature_difference_at_14400_segments": 0.00020574731524967277,
+      "seam_position_error_mm": 1.7689909706552192e-14,
+      "seam_first_derivative_error": 2.842170943040401e-14,
+      "seam_second_derivative_error": 4.0076437005177746e-13
+    }
+  }
+}

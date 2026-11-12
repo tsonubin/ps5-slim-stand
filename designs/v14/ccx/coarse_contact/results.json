@@ -1,0 +1,330 @@
+{
+  "mesh": "mesh_coarse.msh",
+  "mode": "contact",
+  "nodes": 211050,
+  "tets": 101577,
+  "E_MPa": 1650.0,
+  "nu": 0.4,
+  "weight_N": 31.392000000000003,
+  "fixed_nodes": 1839,
+  "seat_pressure_area_mm2": 691.999039832602,
+  "pad_contact_surface_mm2": 898.726602518617,
+  "side_patch_area_mm2": 1034.328400192154,
+  "cases": {
+    "vertical_1g": {
+      "weight_point_xy_mm": [
+        -0.0008560269818883125,
+        3.417126866725808
+      ]
+    },
+    "eccentric_1g": {
+      "weight_point_xy_mm": [
+        9.999143973018112,
+        3.417126866725808
+      ]
+    },
+    "rim_side_10N": {
+      "weight_point_xy_mm": [
+        -0.0008560269818883125,
+        3.417126866725808
+      ]
+    }
+  },
+  "core_centroid_xy_mm": [
+    -0.0008560269818883125,
+    3.417126866725808
+  ],
+  "results": {
+    "eccentric_1g": {
+      "max_displacement_mm": 0.13433381434802036,
+      "max_displacement_at_mm": [
+        14.0,
+        12.8,
+        22.2
+      ],
+      "peak_von_mises_MPa": 4.705250904669165,
+      "peak_at_mm": [
+        16.1,
+        -52.8,
+        29.3
+      ],
+      "volume_weighted_p95_MPa": 0.5418480886080651,
+      "volume_weighted_p99.9_MPa": 1.5244062569696557,
+      "volume_above_2MPa_mm3": 17.226733849111252,
+      "zones": {
+        "pads_and_rib_crossings": {
+          "peak_MPa": 4.705250904669165,
+          "at_mm": [
+            16.1,
+            -52.8,
+            29.3
+          ]
+        },
+        "plus_x_wall_struts": {
+          "peak_MPa": 2.045158730579854,
+          "at_mm": [
+            64.5,
+            40.1,
+            6.9
+          ]
+        },
+        "within_1.5mm_of_clamped_base": {
+          "peak_MPa": 2.645335811929351,
+          "at_mm": [
+            8.2,
+            -118.7,
+            -0.1
+          ]
+        },
+        "everything_above_base_zone": {
+          "peak_MPa": 4.705250904669165,
+          "at_mm": [
+            16.1,
+            -52.8,
+            29.3
+          ]
+        }
+      },
+      "safety_factor_vs_48MPa_XY": 10.201368847805359,
+      "safety_factor_vs_42MPa_Z": 8.92619774182969,
+      "base_reaction_N": [
+        0.03109853,
+        -0.001060081,
+        31.392
+      ],
+      "pad_loads": {
+        "method": "CalculiX *CONTACT PRINT CF, one contact pair per pad",
+        "sum_N": 31.392001,
+        "pads": [
+          {
+            "centre_xy_mm": [
+              -16.5,
+              44.0
+            ],
+            "load_N": 4.90328,
+            "share": 0.15619520399480108
+          },
+          {
+            "centre_xy_mm": [
+              16.5,
+              44.0
+            ],
+            "load_N": 12.12345,
+            "share": 0.3861955152205812
+          },
+          {
+            "centre_xy_mm": [
+              -11.5,
+              -44.0
+            ],
+            "load_N": 4.987943,
+            "share": 0.15889216491806302
+          },
+          {
+            "centre_xy_mm": [
+              11.5,
+              -44.0
+            ],
+            "load_N": 9.377328,
+            "share": 0.2987171158665547
+          }
+        ]
+      },
+      "solver_iterations": 21
+    },
+    "rim_side_10N": {
+      "max_displacement_mm": 0.21741102739808302,
+      "max_displacement_at_mm": [
+        55.6,
+        69.5,
+        40.6
+      ],
+      "peak_von_mises_MPa": 5.940799687481476,
+      "peak_at_mm": [
+        60.9,
+        43.8,
+        29.6
+      ],
+      "volume_weighted_p95_MPa": 0.6079520499309038,
+      "volume_weighted_p99.9_MPa": 1.6710085618684598,
+      "volume_above_2MPa_mm3": 35.34047104143803,
+      "zones": {
+        "pads_and_rib_crossings": {
+          "peak_MPa": 4.073037248669137,
+          "at_mm": [
+            -17.7,
+            -46.4,
+            29.2
+          ]
+        },
+        "plus_x_wall_struts": {
+          "peak_MPa": 5.940799687481476,
+          "at_mm": [
+            60.9,
+            43.8,
+            29.6
+          ]
+        },
+        "within_1.5mm_of_clamped_base": {
+          "peak_MPa": 2.438484380743432,
+          "at_mm": [
+            79.7,
+            40.3,
+            -0.1
+          ]
+        },
+        "everything_above_base_zone": {
+          "peak_MPa": 5.940799687481476,
+          "at_mm": [
+            60.9,
+            43.8,
+            29.6
+          ]
+        }
+      },
+      "safety_factor_vs_48MPa_XY": 8.079720328080775,
+      "safety_factor_vs_42MPa_Z": 7.069755287070678,
+      "base_reaction_N": [
+        -9.999022,
+        4.73649e-05,
+        31.392
+      ],
+      "pad_loads": {
+        "method": "CalculiX *CONTACT PRINT CF, one contact pair per pad",
+        "sum_N": 31.392,
+        "pads": [
+          {
+            "centre_xy_mm": [
+              -16.5,
+              44.0
+            ],
+            "load_N": 7.077022,
+            "share": 0.2254403032619776
+          },
+          {
+            "centre_xy_mm": [
+              16.5,
+              44.0
+            ],
+            "load_N": 9.864255,
+            "share": 0.31422830657492357
+          },
+          {
+            "centre_xy_mm": [
+              -11.5,
+              -44.0
+            ],
+            "load_N": 8.817017,
+            "share": 0.2808682785423038
+          },
+          {
+            "centre_xy_mm": [
+              11.5,
+              -44.0
+            ],
+            "load_N": 5.633706,
+            "share": 0.17946311162079512
+          }
+        ]
+      },
+      "solver_iterations": 24
+    },
+    "vertical_1g": {
+      "max_displacement_mm": 0.11289885717990948,
+      "max_displacement_at_mm": [
+        13.4,
+        6.7,
+        22.6
+      ],
+      "peak_von_mises_MPa": 3.946256606250916,
+      "peak_at_mm": [
+        16.1,
+        -52.8,
+        29.3
+      ],
+      "volume_weighted_p95_MPa": 0.47970383112861736,
+      "volume_weighted_p99.9_MPa": 1.3190419820667234,
+      "volume_above_2MPa_mm3": 2.711571025781938,
+      "zones": {
+        "pads_and_rib_crossings": {
+          "peak_MPa": 3.946256606250916,
+          "at_mm": [
+            16.1,
+            -52.8,
+            29.3
+          ]
+        },
+        "plus_x_wall_struts": {
+          "peak_MPa": 1.8485825928353863,
+          "at_mm": [
+            64.5,
+            40.1,
+            6.9
+          ]
+        },
+        "within_1.5mm_of_clamped_base": {
+          "peak_MPa": 2.2449788274000873,
+          "at_mm": [
+            -4.3,
+            -118.9,
+            -0.0
+          ]
+        },
+        "everything_above_base_zone": {
+          "peak_MPa": 3.946256606250916,
+          "at_mm": [
+            16.1,
+            -52.8,
+            29.3
+          ]
+        }
+      },
+      "safety_factor_vs_48MPa_XY": 12.163425947508696,
+      "safety_factor_vs_42MPa_Z": 10.642997704070108,
+      "base_reaction_N": [
+        0.008106399,
+        -0.0004269283,
+        31.392
+      ],
+      "pad_loads": {
+        "method": "CalculiX *CONTACT PRINT CF, one contact pair per pad",
+        "sum_N": 31.392000000000003,
+        "pads": [
+          {
+            "centre_xy_mm": [
+              -16.5,
+              44.0
+            ],
+            "load_N": 7.87905,
+            "share": 0.25098910550458714
+          },
+          {
+            "centre_xy_mm": [
+              16.5,
+              44.0
+            ],
+            "load_N": 9.04779,
+            "share": 0.28821961009174313
+          },
+          {
+            "centre_xy_mm": [
+              -11.5,
+              -44.0
+            ],
+            "load_N": 7.822916,
+            "share": 0.24920094291539244
+          },
+          {
+            "centre_xy_mm": [
+              11.5,
+              -44.0
+            ],
+            "load_N": 6.642244,
+            "share": 0.21159034148827724
+          }
+        ]
+      },
+      "solver_iterations": 22
+    }
+  }
+}

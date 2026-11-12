@@ -1,0 +1,23 @@
+{
+  "iterations": 5000,
+  "relative_change": 9.626983687296e-07,
+  "link_flux_in": 0.0026759212024179,
+  "link_flux_out": 0.0026759280736252,
+  "name": "v13_stand_3mm_portcore",
+  "pitch_mm": 3.0,
+  "shape": [
+    12,
+    94,
+    64
+  ],
+  "fluid_nodes": 54618,
+  "port_area_mm2": 6327.0,
+  "qout_lattice": 0.0026759280736252,
+  "qin_lattice": 0.0026759212024179,
+  "mass_imbalance_fraction": 2.567784750076283e-06,
+  "max_speed_lattice": 8.788861123321112e-06,
+  "tau": 0.8,
+  "kinematic_viscosity_lattice": 0.1,
+  "density_difference": 1e-05,
+  "conductance_scaled": 2167.5017396364115
+}

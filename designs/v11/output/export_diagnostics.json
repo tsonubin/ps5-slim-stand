@@ -1,0 +1,20 @@
+[
+  {
+    "tolerance_mm": 0.004,
+    "faces_before_quantization": 2205760,
+    "merge_hints": 0,
+    "transitive_remap_chains_resolved": 0,
+    "float64_watertight": true,
+    "final_float32_watertight": true,
+    "float64_processing_enabled": true
+  },
+  {
+    "tolerance_mm": 0.008,
+    "faces_before_quantization": 88716,
+    "merge_hints": 0,
+    "transitive_remap_chains_resolved": 0,
+    "float64_watertight": true,
+    "final_float32_watertight": true,
+    "float64_processing_enabled": true
+  }
+]

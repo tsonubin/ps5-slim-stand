@@ -1,0 +1,8 @@
+{
+  "scope": "Polynomial smooth-min formula only; not geometry continuity certification",
+  "k_mm": 0.85,
+  "equal_distance_left_derivative": 0.500000294112457,
+  "equal_distance_right_derivative": 0.49999970588854303,
+  "maximum_distance_offset_mm": 0.2125,
+  "symmetry_and_inactive_region_passed": true
+}
