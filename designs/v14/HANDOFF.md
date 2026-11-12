@@ -13,7 +13,8 @@ docker compose -f designs/v14/docker/compose.yaml pull openfoam          # OpenF
 ```
 
 - `designs/v14/docker/Dockerfile.tools` (Python toolchain in a container) is written but **has never been built**; the native venv above is what was actually used.
-- Large solver files are git-ignored and must be regenerated: `analysis/regularized.stl`, `analysis/*.npz`, `ccx/*.msh`, `ccx/surf_*.stl`, `ccx/*/*.inp|frd|npz`, `openfoam/cases/`. The README "Reproduce" block gives the commands; `source/run_checks.sh` rebuilds `analysis/`.
+- **Git LFS** (`git lfs install && git lfs pull`) carries what is needed to continue without regenerating: `analysis/regularized.stl`, the two in-house meshes, `ccx/mesh_*.msh`, `ccx/surf_*.stl`, each CalculiX case's `model.npz` and `*_fields.npz` (displacement and von Mises per node), and the 2 mm and 1.5 mm table-sealed lattice-Boltzmann fields.
+- Still git-ignored and regenerated on demand: CalculiX `.inp` and `.frd` (about 2 GB; `build_ccx.py` and `run_ccx.sh` recreate them in minutes), in-house result arrays in `analysis/` (`source/run_checks.sh`), other airflow arrays, and `openfoam/cases/`.
 - The fan-made console model in `references/console-model/` is needed by most scripts.
 
 ## Finished

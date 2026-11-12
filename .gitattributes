@@ -1,0 +1,7 @@
+# v14 solver inputs and compact results kept in Git LFS so work can continue on another machine.
+designs/v14/ccx/*.msh filter=lfs diff=lfs merge=lfs -text
+designs/v14/ccx/*.stl filter=lfs diff=lfs merge=lfs -text
+designs/v14/ccx/**/*.npz filter=lfs diff=lfs merge=lfs -text
+designs/v14/analysis/*.stl filter=lfs diff=lfs merge=lfs -text
+designs/v14/analysis/*.npz filter=lfs diff=lfs merge=lfs -text
+designs/v14/airflow/*.npz filter=lfs diff=lfs merge=lfs -text
