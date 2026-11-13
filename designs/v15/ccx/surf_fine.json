@@ -1,0 +1,19 @@
+{
+  "input": "/Users/shay/Projects/oss/ps5-slim-stand/designs/v15/analysis/regularized.stl",
+  "tool": "MMG 5.8.0",
+  "base_edge_mm": 2.2,
+  "hausdorff_tolerance_mm": 0.35,
+  "faces": 135296,
+  "edge_mm_p5_p50_p95": [
+    0.686,
+    1.004,
+    1.459
+  ],
+  "triangle_quality_min_p1": [
+    0.5845048745352034,
+    0.832222453100726
+  ],
+  "volume_change_vs_input": -0.00857784204023715,
+  "max_sampled_deviation_mm": 0.915135220962924,
+  "p95_sampled_deviation_mm": 0.22900563498069948
+}

@@ -2,7 +2,7 @@
 
 Each design milestone has an annotated Git tag, published to `origin`. Tags mark reviewable design snapshots, not engineering approval or print qualification. Existing history has not been rewritten.
 
-**Only `designs/v14/` is kept in the working tree.** The folders listed for v5–v13 were removed from the branch after the v14 release; check out the tag to see them (the `v14` tag itself still contains all of them).
+**Only `designs/v15/` is kept in the working tree.** The folders listed for v5–v14 were removed from the branch; check out the tag to see them (the `v14` tag still contains all of v5–v14).
 
 | Tag | Commit | Authoritative design folder | Checkpoint provenance |
 |---|---|---|---|
@@ -15,7 +15,8 @@ Each design milestone has an annotated Git tag, published to `origin`. Tags mark
 | `v11` | `557163f` | `designs/v11/` | Dedicated v11 design commit |
 | `v12` | `ede01eb` | `designs/v12/` | Dedicated v12 design commit |
 | `v13` | `f5dd66f` | `designs/v13/` | Dedicated v13 design, stress and conditional airflow investigation commit |
-| `v14` | see `git rev-parse v14^{}` | `designs/v14/` | Dedicated v14 commit: convex wall, seat pads, blended rib feet, CalculiX and OpenFOAM studies. The GitHub release of the same name was withdrawn on 2026-11-12 and carries no print files |
+| `v14` | see `git rev-parse v14^{}` | `designs/v14/` | Dedicated v14 commit: convex wall, seat pads, blended rib feet, CalculiX and OpenFOAM studies. The GitHub release of the same name was withdrawn on 2026-11-12 and carries no print files: its seat pads and one rib sat under the console's vent row, and both tests assumed an underside the real console does not have |
+| `v15` | not tagged yet | `designs/v15/` | Seat moved onto the real underside measured from a phone scan of a CFI-2009; stress and airflow redone against it. To be tagged after review |
 
 The earlier work was committed in batches. In particular, `v7`, `v8`, and `v9` cannot honestly be presented as separate historical whole-repository checkpoints: those tags point to the first commit containing their preserved folders, which also contains later studies. Inspect the authoritative folder listed above. Tag annotations record this limitation.
 

@@ -1,0 +1,46 @@
+ Container docker-openfoam-run-6181b4757b52 Creating 
+ Container docker-openfoam-run-f240d8bec56b Creating 
+ Container docker-openfoam-run-f240d8bec56b Created 
+ Container docker-openfoam-run-6181b4757b52 Created 
+desk_q0.03 cells 522582 dp_total 7.565 Pa static 8.008 +- 0.000 imbalance 5.6e-09 {'x_min': 0.075, 'x_max': 0.045, 'y_min': 0.234, 'y_max': 0.645}
+hover_q0.03 cells 774050 dp_total 0.344 Pa static 0.787 +- 0.000 imbalance 3.1e-07 {'x_min': 0.311, 'x_max': 0.398, 'y_min': 0.083, 'y_max': 0.207}
+ Container docker-openfoam-run-9fa21385d495 Creating 
+ Container docker-openfoam-run-9fa21385d495 Created 
+stand_q0.03 cells 1248188 dp_total 0.350 Pa static 0.793 +- 0.000 imbalance 8.6e-08 {'x_min': 0.319, 'x_max': 0.394, 'y_min': 0.114, 'y_max': 0.173}
+ Container docker-openfoam-run-cbf754641a93 Creating 
+ Container docker-openfoam-run-f006ba048eb3 Creating 
+ Container docker-openfoam-run-f006ba048eb3 Created 
+ Container docker-openfoam-run-cbf754641a93 Created 
+hover_q0.06 cells 774050 dp_total 0.899 Pa static 2.670 +- 0.000 imbalance 1.3e-08 {'x_min': 0.309, 'x_max': 0.393, 'y_min': 0.089, 'y_max': 0.208}
+stand_q0.06 cells 1248188 dp_total 0.923 Pa static 2.693 +- 0.000 imbalance 4.8e-09 {'x_min': 0.316, 'x_max': 0.383, 'y_min': 0.117, 'y_max': 0.184}
+ Container docker-openfoam-run-cbb8fec6128e Creating 
+ Container docker-openfoam-run-af6edbcd7566 Creating 
+ Container docker-openfoam-run-cbb8fec6128e Created 
+ Container docker-openfoam-run-af6edbcd7566 Created 
+desk_q0.12 cells 522582 dp_total 81.994 Pa static 89.077 +- 0.681 imbalance 2.9e-04 {'x_min': 0.079, 'x_max': 0.05, 'y_min': 0.202, 'y_max': 0.669}
+hover_q0.12 cells 774050 dp_total 2.556 Pa static 9.639 +- 0.019 imbalance 2.2e-07 {'x_min': 0.308, 'x_max': 0.389, 'y_min': 0.093, 'y_max': 0.209}
+ Container docker-openfoam-run-546193a8c824 Creating 
+ Container docker-openfoam-run-da22d4c965e3 Creating 
+ Container docker-openfoam-run-546193a8c824 Created 
+ Container docker-openfoam-run-da22d4c965e3 Created 
+desk_q0.06_s2.0 cells 474039 dp_total 38.568 Pa static 40.339 +- 0.004 imbalance 5.5e-05 {'x_min': 0.078, 'x_max': 0.047, 'y_min': 0.225, 'y_max': 0.65}
+stand_q0.12 cells 1248188 dp_total 2.587 Pa static 9.670 +- 0.009 imbalance 1.9e-07 {'x_min': 0.312, 'x_max': 0.377, 'y_min': 0.12, 'y_max': 0.192}
+ Container docker-openfoam-run-fb2257e621d7 Creating 
+ Container docker-openfoam-run-e4549b722fa8 Creating 
+ Container docker-openfoam-run-fb2257e621d7 Created 
+ Container docker-openfoam-run-e4549b722fa8 Created 
+desk_q0.06_s3.5 cells 598360 dp_total 11.749 Pa static 13.520 +- 0.056 imbalance 1.5e-04 {'x_min': 0.077, 'x_max': 0.048, 'y_min': 0.21, 'y_max': 0.665}
+stand_q0.06_s2.0 cells 1205399 dp_total 0.950 Pa static 2.721 +- 0.001 imbalance 1.8e-08 {'x_min': 0.315, 'x_max': 0.386, 'y_min': 0.116, 'y_max': 0.184}
+ Container docker-openfoam-run-e80d852d8926 Creating 
+ Container docker-openfoam-run-d80051879dd7 Creating 
+ Container docker-openfoam-run-e80d852d8926 Created 
+ Container docker-openfoam-run-d80051879dd7 Created 
+desk_q0.06_h1.8 cells 1276402 dp_total 25.331 Pa static 27.079 +- 0.020 imbalance 8.0e-06 {'x_min': 0.078, 'x_max': 0.048, 'y_min': 0.218, 'y_max': 0.656}
+stand_q0.06_s3.5 cells 1318282 dp_total 0.913 Pa static 2.684 +- 0.000 imbalance 4.4e-08 {'x_min': 0.318, 'x_max': 0.379, 'y_min': 0.119, 'y_max': 0.184}
+ Container docker-openfoam-run-7297e3301194 Creating 
+ Container docker-openfoam-run-372d6afc1adc Creating 
+ Container docker-openfoam-run-372d6afc1adc Created 
+ Container docker-openfoam-run-7297e3301194 Created 
+hover_q0.06_h1.8 cells 1739712 dp_total 0.791 Pa static 2.539 +- 0.000 imbalance 9.9e-08 {'x_min': 0.309, 'x_max': 0.394, 'y_min': 0.089, 'y_max': 0.208}
+stand_q0.06_h1.8 cells 2662435 dp_total 0.812 Pa static 2.560 +- 0.000 imbalance 1.1e-07 {'x_min': 0.316, 'x_max': 0.383, 'y_min': 0.117, 'y_max': 0.184}
+airflow_openfoam.png

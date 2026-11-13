@@ -9,7 +9,7 @@ The smooth-shaded overviews use vertex normals only where the averaged corner no
 From the repository root, after the geometry is generated:
 
 ```sh
-.venv-cad/bin/python designs/v14/source/render_clean.py
+.venv-cad/bin/python designs/v15/source/render_clean.py
 ```
 
 Dependencies: NumPy, trimesh, Pillow and a C++17 compiler named `clang++`. The scripts use the supplied console reference mesh for visual assembly. The resulting pictures do not establish physical fit, printability or strength.

@@ -170,6 +170,16 @@ Do not claim: a cooling prediction (all OpenFOAM flow rates are assumptions; rea
 
 The user asked for v14 to be tagged and released (tag `v14`); the print files were removed from that release the same day, after photos of a real CFI-2009 showed the seat layout and both simulated tests rest on a wrong underside (see the warning at the top of the READMEs).
 
-## Only v14 kept (2026-11-12)
+## Only one version kept (2026-11-12)
 
 At the user's request the design folders for v5–v13 (`designs/imported`, `designs/v6` … `designs/v13`) were removed from the branch; tags v5–v13 were kept, so each version is still available at its tag. This supersedes the earlier instruction to preserve prior designs in the tree. Paths to those folders elsewhere in this file are historical. The few v13 files that v14's review scripts compare against now live in `designs/v14/baseline_v13/`. The top-level README was rewritten around v14 alone (specifications, design philosophy, stress test, airflow test, printing notes). The original uploads in `references/` were not touched.
+
+## v15 — seat on the real underside (2026-11-13)
+
+The user supplied two phone scans (Scaniverse) of their CFI-2009 standing base-up and asked for the seat to be redesigned from them, scaled to the console's published size, and for stress and airflow to be redone. `designs/v14` was renamed `designs/v15` on branch `design/v15-real-underside`; v14 remains at its tag. Read `designs/v15/README.md` first.
+
+What the scan showed: the white covers end 2–3 mm below the black base (the console stands on the cover bottoms), the black base has 18 vent slots at x 12–20 mm, y −43 to +87 mm, and it is a wedge, not the symmetric block of the fan-made model. v14's disc-side pads and rib were under the vent row.
+
+What v15 does: four coplanar pads under the covers, one lengthwise rib moved under the disc-drive cover, cross ribs moved to y ≈ ±64 mm. The derived underside data is in `references/console-scan/`; the raw scans are deliberately not in the repository because they show the user's room. The in-house first-order stress screen and the lattice-Boltzmann airflow screen were dropped from v15; CalculiX and OpenFOAM are the only solvers now.
+
+Open with the user: a ruler reading of the step between covers and black base; whether the console stands on a table without rocking; tagging and releasing v15 after review.

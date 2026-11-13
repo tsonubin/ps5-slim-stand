@@ -1,0 +1,6 @@
+eccentric_1g U 0.1885 peak 3.76 at [45.6, -107.0, -0.0] p95 0.519 p99.9 1.63 {'pads_and_rib_crossings': 0.14, 'plus_x_wall_struts': 3.42, 'within_1.5mm_of_clamped_base': 3.76, 'everything_above_base_zone': 3.42} R [0.02051386, 0.07774109, 31.0604] 
+rim_side_10N U 0.3217 peak 6.51 at [61.4, 57.3, 24.2] p95 0.560 p99.9 1.97 {'pads_and_rib_crossings': 0.26, 'plus_x_wall_struts': 6.51, 'within_1.5mm_of_clamped_base': 2.24, 'everything_above_base_zone': 6.51} R [-10.16043, 0.06351843, 31.12533] 
+vertical_1g U 0.1203 peak 2.68 at [68.9, 59.4, 4.7] p95 0.353 p99.9 1.08 {'pads_and_rib_crossings': 0.21, 'plus_x_wall_struts': 2.68, 'within_1.5mm_of_clamped_base': 2.52, 'everything_above_base_zone': 2.68} R [-0.1604302, 0.06351843, 31.12533] 
+ccx_coarse_pressure_eccentric_1g_stress.png
+ccx_coarse_pressure_rim_side_10N_stress.png
+ccx_coarse_pressure_vertical_1g_stress.png

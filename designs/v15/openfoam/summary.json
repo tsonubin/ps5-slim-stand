@@ -1,0 +1,899 @@
+{
+  "scope": "OpenFOAM v2412 (simpleFoam, k-omega SST). Air leaves only through the 18 vent slots measured on a scanned CFI-2009 underside. Flow rates are ASSUMED. Pressure drop is room total pressure minus outlet total pressure and includes the loss of the slots themselves, which is the same in all three set-ups.",
+  "sweep": [
+    {
+      "flow_m3_per_min": 0.03,
+      "slot_speed_m_per_s": 0.8575625482539726,
+      "desk_Pa": 7.564866339446108,
+      "hover_Pa": 0.34435247846695605,
+      "stand_Pa": 0.3500017080168954,
+      "stand_minus_hover_Pa": 0.00564922954993935,
+      "stand_over_hover": 1.0164053692167092,
+      "desk_over_stand": 21.613798350609574,
+      "oscillation_std_Pa": {
+        "desk": 1.3655303302439825e-05,
+        "hover": 2.5034358493705557e-06,
+        "stand": 1.7122331573044397e-06
+      },
+      "mass_imbalance_fraction": 3.1100000005834794e-07
+    },
+    {
+      "flow_m3_per_min": 0.06,
+      "slot_speed_m_per_s": 1.7151250965079452,
+      "desk_Pa": 23.655957277387827,
+      "hover_Pa": 0.898962053620188,
+      "stand_Pa": 0.9225387332777637,
+      "stand_minus_hover_Pa": 0.023576679657575705,
+      "stand_over_hover": 1.0262265571306717,
+      "desk_over_stand": 25.64223747369244,
+      "oscillation_std_Pa": {
+        "desk": 0.003649140923847932,
+        "hover": 0.0004293966807522559,
+        "stand": 0.0003605008187539895
+      },
+      "mass_imbalance_fraction": 2.5615799999819527e-06
+    },
+    {
+      "flow_m3_per_min": 0.12,
+      "slot_speed_m_per_s": 3.4302501930158904,
+      "desk_Pa": 81.99375147247592,
+      "hover_Pa": 2.5558930426371154,
+      "stand_Pa": 2.5869218033116588,
+      "stand_minus_hover_Pa": 0.03102876067454341,
+      "stand_over_hover": 1.0121400857379104,
+      "desk_over_stand": 31.69548896588651,
+      "oscillation_std_Pa": {
+        "desk": 0.6808868487284854,
+        "hover": 0.019294329681395463,
+        "stand": 0.008628182245214144
+      },
+      "mass_imbalance_fraction": 0.00029047113636344185
+    }
+  ],
+  "power_law_fit_dp_equals_k_Q_to_n": {
+    "desk": {
+      "exponent": 1.719063736274792,
+      "Pa_at_0.06_m3_per_min": 24.481659190095122
+    },
+    "hover": {
+      "exponent": 1.4459347493207748,
+      "Pa_at_0.06_m3_per_min": 0.9249020661864212
+    },
+    "stand": {
+      "exponent": 1.4429012888793649,
+      "Pa_at_0.06_m3_per_min": 0.9417725432771792
+    }
+  },
+  "variations_at_0.06_m3_per_min": {
+    "desk_q0.06_s2.0": {
+      "what": "desk, black base recessed 2.0 mm instead of 2.5",
+      "cells": 474039,
+      "baseline_cells": 522582,
+      "pressure_drop_total_Pa": 38.567952616761396,
+      "baseline_Pa": 23.655957277387827,
+      "change": 0.6303695582688422
+    },
+    "desk_q0.06_s3.5": {
+      "what": "desk, recessed 3.5 mm",
+      "cells": 598360,
+      "baseline_cells": 522582,
+      "pressure_drop_total_Pa": 11.748676779858366,
+      "baseline_Pa": 23.655957277387827,
+      "change": -0.5033522997148524
+    },
+    "stand_q0.06_s2.0": {
+      "what": "stand, recessed 2.0 mm",
+      "cells": 1205399,
+      "baseline_cells": 1248188,
+      "pressure_drop_total_Pa": 0.950255669394733,
+      "baseline_Pa": 0.9225387332777637,
+      "change": 0.03004419773085476
+    },
+    "stand_q0.06_s3.5": {
+      "what": "stand, recessed 3.5 mm",
+      "cells": 1318282,
+      "baseline_cells": 1248188,
+      "pressure_drop_total_Pa": 0.9133629786795814,
+      "baseline_Pa": 0.9225387332777637,
+      "change": -0.009946199836597724
+    },
+    "stand_q0.06_h1.8": {
+      "what": "stand, base cell 1.8 mm instead of 2.5",
+      "cells": 2662435,
+      "baseline_cells": 1248188,
+      "pressure_drop_total_Pa": 0.8123135477601244,
+      "baseline_Pa": 0.9225387332777637,
+      "change": -0.11948027930058958
+    },
+    "hover_q0.06_h1.8": {
+      "what": "hover, base cell 1.8 mm",
+      "cells": 1739712,
+      "baseline_cells": 774050,
+      "pressure_drop_total_Pa": 0.7913703554116391,
+      "baseline_Pa": 0.898962053620188,
+      "change": -0.11968436017434658
+    },
+    "desk_q0.06_h1.8": {
+      "what": "desk, base cell 1.8 mm",
+      "cells": 1276402,
+      "baseline_cells": 522582,
+      "pressure_drop_total_Pa": 25.331202952563476,
+      "baseline_Pa": 23.655957277387827,
+      "change": 0.07081707392061354
+    }
+  },
+  "inflow_share_by_side": {
+    "desk": {
+      "x_min": 0.07724325301287592,
+      "x_max": 0.04742071817408436,
+      "y_min": 0.21697070845053787,
+      "y_max": 0.6583638823847756
+    },
+    "hover": {
+      "x_min": 0.3094015061539507,
+      "x_max": 0.39310434696367375,
+      "y_min": 0.08902091379686104,
+      "y_max": 0.20847284618439957
+    },
+    "stand": {
+      "x_min": 0.31602437612780343,
+      "x_max": 0.3831482524953947,
+      "y_min": 0.11678909656746167,
+      "y_max": 0.1840378945471796
+    }
+  },
+  "cases": {
+    "desk_q0.03": {
+      "case": "desk_q0.03",
+      "kind": "desk",
+      "cover_bottom_height_mm": 0.0,
+      "black_base_recess_mm": 2.5,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.03,
+      "flow_m3_per_s": 0.0005,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": null,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 0.8455765775288026,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 522582,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 36.837822,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.00058304785,
+      "outlet_speed_m_per_s": 0.8575625482539726,
+      "outlet_static_p_Pa": -8.007585280995151,
+      "outlet_static_p_std_Pa": 1.3655303302439825e-05,
+      "pressure_drop_total_Pa": 7.564866339446108,
+      "pressure_drop_static_Pa": 8.007585280995151,
+      "inflow_through_sides_m3_per_s": 0.0004999999971969697,
+      "mass_imbalance_fraction": 5.606060537663438e-09,
+      "final_initial_residuals": {
+        "Ux": 3.5903513e-05,
+        "Uy": 1.501214e-05,
+        "Uz": 5.9834856e-05,
+        "p": 8.8942335e-07,
+        "k": 7.7017373e-06,
+        "omega": 5.3939821e-07
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.07543366115541128,
+        "x_max": 0.044663946249644725,
+        "y_min": 0.23448438177338632,
+        "y_max": 0.6454164281677978
+      },
+      "time_folder": "1000"
+    },
+    "desk_q0.06": {
+      "case": "desk_q0.06",
+      "kind": "desk",
+      "cover_bottom_height_mm": 0.0,
+      "black_base_recess_mm": 2.5,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.06,
+      "flow_m3_per_s": 0.001,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": null,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 1.691153155057605,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 522582,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 36.837809,
+      "iterations": 1500,
+      "averaging_window_iterations": [
+        1005,
+        1500
+      ],
+      "outlet_area_m2": 0.00058304785,
+      "outlet_speed_m_per_s": 1.7151250965079452,
+      "outlet_static_p_Pa": -25.426833043584,
+      "outlet_static_p_std_Pa": 0.003649140923847932,
+      "pressure_drop_total_Pa": 23.655957277387827,
+      "pressure_drop_static_Pa": 25.426833043584,
+      "inflow_through_sides_m3_per_s": 0.00099999743842,
+      "mass_imbalance_fraction": 2.5615799999819527e-06,
+      "final_initial_residuals": {
+        "Ux": 0.00027256875,
+        "Uy": 0.00010184768,
+        "Uz": 0.00022348102,
+        "p": 5.8710788e-06,
+        "k": 5.7036457e-05,
+        "omega": 1.0558186e-05
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.07724325301287592,
+        "x_max": 0.04742071817408436,
+        "y_min": 0.21697070845053787,
+        "y_max": 0.6583638823847756
+      },
+      "time_folder": "1500"
+    },
+    "desk_q0.06_h1.8": {
+      "case": "desk_q0.06_h1.8",
+      "kind": "desk",
+      "cover_bottom_height_mm": 0.0,
+      "black_base_recess_mm": 2.5,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.06,
+      "flow_m3_per_s": 0.001,
+      "base_cell_mm": 1.8,
+      "stand_refinement_level": null,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 1.691153155057605,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 1276402,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 36.844168,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.000586920951,
+      "outlet_speed_m_per_s": 1.703806957812961,
+      "outlet_static_p_Pa": -27.078783758557577,
+      "outlet_static_p_std_Pa": 0.020215581959397187,
+      "pressure_drop_total_Pa": 25.331202952563476,
+      "pressure_drop_static_Pa": 27.078783758557577,
+      "inflow_through_sides_m3_per_s": 0.0009999919742424244,
+      "mass_imbalance_fraction": 8.02575757566891e-06,
+      "final_initial_residuals": {
+        "Ux": 0.0013361609,
+        "Uy": 0.00041177048,
+        "Uz": 0.0017913099,
+        "p": 5.7487272e-05,
+        "k": 0.00048405314,
+        "omega": 5.7356686e-05
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.078480790182408,
+        "x_max": 0.047511802369863146,
+        "y_min": 0.2183066794892823,
+        "y_max": 0.6556977922834181
+      },
+      "time_folder": "1000"
+    },
+    "desk_q0.06_s2.0": {
+      "case": "desk_q0.06_s2.0",
+      "kind": "desk",
+      "cover_bottom_height_mm": 0.0,
+      "black_base_recess_mm": 2.0,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.06,
+      "flow_m3_per_s": 0.001,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": null,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 1.691153155057605,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 474039,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 42.768889,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.00058304785,
+      "outlet_speed_m_per_s": 1.7151250965079452,
+      "outlet_static_p_Pa": -40.33882838295757,
+      "outlet_static_p_std_Pa": 0.0044501235339107,
+      "pressure_drop_total_Pa": 38.567952616761396,
+      "pressure_drop_static_Pa": 40.33882838295757,
+      "inflow_through_sides_m3_per_s": 0.000999944723121212,
+      "mass_imbalance_fraction": 5.527687878801625e-05,
+      "final_initial_residuals": {
+        "Ux": 0.00067984607,
+        "Uy": 0.0002413135,
+        "Uz": 0.00036345086,
+        "p": 8.3489922e-06,
+        "k": 0.00012051586,
+        "omega": 1.9789277e-05
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.07792504265057248,
+        "x_max": 0.04728853823909331,
+        "y_min": 0.22459819816812135,
+        "y_max": 0.6501867765053817
+      },
+      "time_folder": "1000"
+    },
+    "desk_q0.06_s3.5": {
+      "case": "desk_q0.06_s3.5",
+      "kind": "desk",
+      "cover_bottom_height_mm": 0.0,
+      "black_base_recess_mm": 3.5,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.06,
+      "flow_m3_per_s": 0.001,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": null,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 1.691153155057605,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 598360,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 34.277822,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.00058304785,
+      "outlet_speed_m_per_s": 1.7151250965079452,
+      "outlet_static_p_Pa": -13.519552546054541,
+      "outlet_static_p_std_Pa": 0.05552614209155178,
+      "pressure_drop_total_Pa": 11.748676779858366,
+      "pressure_drop_static_Pa": 13.519552546054541,
+      "inflow_through_sides_m3_per_s": 0.0010001487758787876,
+      "mass_imbalance_fraction": 0.00014877587878759507,
+      "final_initial_residuals": {
+        "Ux": 0.004106121,
+        "Uy": 0.0014846017,
+        "Uz": 0.0036568245,
+        "p": 0.00015009212,
+        "k": 0.0014217332,
+        "omega": 0.00017506895
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.07673074975068728,
+        "x_max": 0.047524190390669886,
+        "y_min": 0.21028161228881484,
+        "y_max": 0.665462130429479
+      },
+      "time_folder": "1000"
+    },
+    "desk_q0.12": {
+      "case": "desk_q0.12",
+      "kind": "desk",
+      "cover_bottom_height_mm": 0.0,
+      "black_base_recess_mm": 2.5,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.12,
+      "flow_m3_per_s": 0.002,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": null,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 3.38230631011521,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 522582,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 36.837809,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.00058304785,
+      "outlet_speed_m_per_s": 3.4302501930158904,
+      "outlet_static_p_Pa": -89.07725453726061,
+      "outlet_static_p_std_Pa": 0.6808868487284854,
+      "pressure_drop_total_Pa": 81.99375147247592,
+      "pressure_drop_static_Pa": 89.07725453726061,
+      "inflow_through_sides_m3_per_s": 0.002000580942272727,
+      "mass_imbalance_fraction": 0.00029047113636344185,
+      "final_initial_residuals": {
+        "Ux": 0.0091428795,
+        "Uy": 0.0039457116,
+        "Uz": 0.0071069129,
+        "p": 0.0001230784,
+        "k": 0.0026834992,
+        "omega": 0.00055224928
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.07887543284679668,
+        "x_max": 0.04968956646248933,
+        "y_min": 0.20202015645919813,
+        "y_max": 0.6694128493501363
+      },
+      "time_folder": "1000"
+    },
+    "hover_q0.03": {
+      "case": "hover_q0.03",
+      "kind": "hover",
+      "cover_bottom_height_mm": 30.0,
+      "black_base_recess_mm": 2.5,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.03,
+      "flow_m3_per_s": 0.0005,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": null,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 0.8455765775288026,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 774050,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 40.757902,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.00058304785,
+      "outlet_speed_m_per_s": 0.8575625482539726,
+      "outlet_static_p_Pa": -0.787071420016,
+      "outlet_static_p_std_Pa": 2.5034358493705557e-06,
+      "pressure_drop_total_Pa": 0.34435247846695605,
+      "pressure_drop_static_Pa": 0.787071420016,
+      "inflow_through_sides_m3_per_s": 0.0005000001555,
+      "mass_imbalance_fraction": 3.1100000005834794e-07,
+      "final_initial_residuals": {
+        "Ux": 0.00038909344,
+        "Uy": 0.00080733792,
+        "Uz": 4.6625726e-05,
+        "p": 2.7819839e-06,
+        "k": 0.0001717457,
+        "omega": 1.2932632e-06
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.3109244671560893,
+        "x_max": 0.398496974941469,
+        "y_min": 0.08340862242468615,
+        "y_max": 0.20716956955029553
+      },
+      "time_folder": "1000"
+    },
+    "hover_q0.06": {
+      "case": "hover_q0.06",
+      "kind": "hover",
+      "cover_bottom_height_mm": 30.0,
+      "black_base_recess_mm": 2.5,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.06,
+      "flow_m3_per_s": 0.001,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": null,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 1.691153155057605,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 774050,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 40.757902,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.00058304785,
+      "outlet_speed_m_per_s": 1.7151250965079452,
+      "outlet_static_p_Pa": -2.669837819816364,
+      "outlet_static_p_std_Pa": 0.0004293966807522559,
+      "pressure_drop_total_Pa": 0.898962053620188,
+      "pressure_drop_static_Pa": 2.669837819816364,
+      "inflow_through_sides_m3_per_s": 0.0009999999868181818,
+      "mass_imbalance_fraction": 1.3181818267135603e-08,
+      "final_initial_residuals": {
+        "Ux": 0.002975477,
+        "Uy": 0.0034940971,
+        "Uz": 0.00056872616,
+        "p": 3.356187e-05,
+        "k": 0.00053491213,
+        "omega": 8.7797652e-06
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.3094015061539507,
+        "x_max": 0.39310434696367375,
+        "y_min": 0.08902091379686104,
+        "y_max": 0.20847284618439957
+      },
+      "time_folder": "1000"
+    },
+    "hover_q0.06_h1.8": {
+      "case": "hover_q0.06_h1.8",
+      "kind": "hover",
+      "cover_bottom_height_mm": 30.0,
+      "black_base_recess_mm": 2.5,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.06,
+      "flow_m3_per_s": 0.001,
+      "base_cell_mm": 1.8,
+      "stand_refinement_level": null,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 1.691153155057605,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 1739712,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 40.235206,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.000586920947,
+      "outlet_speed_m_per_s": 1.7038069694247937,
+      "outlet_static_p_Pa": -2.5389511852260602,
+      "outlet_static_p_std_Pa": 8.703234950373562e-05,
+      "pressure_drop_total_Pa": 0.7913703554116391,
+      "pressure_drop_static_Pa": 2.5389511852260602,
+      "inflow_through_sides_m3_per_s": 0.0010000000990303029,
+      "mass_imbalance_fraction": 9.903030283829606e-08,
+      "final_initial_residuals": {
+        "Ux": 0.0011937973,
+        "Uy": 0.0010951608,
+        "Uz": 0.00021052904,
+        "p": 1.8274603e-05,
+        "k": 0.00025627994,
+        "omega": 4.2065355e-06
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.30903605177303356,
+        "x_max": 0.393686801525958,
+        "y_min": 0.08878581750427884,
+        "y_max": 0.20848978236492166
+      },
+      "time_folder": "1000"
+    },
+    "hover_q0.12": {
+      "case": "hover_q0.12",
+      "kind": "hover",
+      "cover_bottom_height_mm": 30.0,
+      "black_base_recess_mm": 2.5,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.12,
+      "flow_m3_per_s": 0.002,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": null,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 3.38230631011521,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 774050,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 40.757902,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.00058304785,
+      "outlet_speed_m_per_s": 3.4302501930158904,
+      "outlet_static_p_Pa": -9.639396107421819,
+      "outlet_static_p_std_Pa": 0.019294329681395463,
+      "pressure_drop_total_Pa": 2.5558930426371154,
+      "pressure_drop_static_Pa": 9.639396107421819,
+      "inflow_through_sides_m3_per_s": 0.0019999995651515156,
+      "mass_imbalance_fraction": 2.1742424223883394e-07,
+      "final_initial_residuals": {
+        "Ux": 0.0086267614,
+        "Uy": 0.0088141778,
+        "Uz": 0.0023522924,
+        "p": 0.00010042681,
+        "k": 0.0031279351,
+        "omega": 5.4997061e-05
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.30788190388270525,
+        "x_max": 0.3892982293538317,
+        "y_min": 0.09338302800947547,
+        "y_max": 0.20943645772840594
+      },
+      "time_folder": "1000"
+    },
+    "stand_q0.03": {
+      "case": "stand_q0.03",
+      "kind": "stand",
+      "cover_bottom_height_mm": 30.0,
+      "black_base_recess_mm": 2.5,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.03,
+      "flow_m3_per_s": 0.0005,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": 2,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 0.8455765775288026,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 1248188,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 47.866853,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.00058304785,
+      "outlet_speed_m_per_s": 0.8575625482539726,
+      "outlet_static_p_Pa": -0.7927206495659394,
+      "outlet_static_p_std_Pa": 1.7122331573044397e-06,
+      "pressure_drop_total_Pa": 0.3500017080168954,
+      "pressure_drop_static_Pa": 0.7927206495659394,
+      "inflow_through_sides_m3_per_s": 0.0005000000430909091,
+      "mass_imbalance_fraction": 8.618181819228243e-08,
+      "final_initial_residuals": {
+        "Ux": 0.00034986035,
+        "Uy": 0.00063554207,
+        "Uz": 4.790013e-05,
+        "p": 3.5979491e-06,
+        "k": 0.00014263091,
+        "omega": 4.1595001e-07
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.31870584865059803,
+        "x_max": 0.39433339578445636,
+        "y_min": 0.1139469230863376,
+        "y_max": 0.17301348678886158
+      },
+      "time_folder": "1000"
+    },
+    "stand_q0.06": {
+      "case": "stand_q0.06",
+      "kind": "stand",
+      "cover_bottom_height_mm": 30.0,
+      "black_base_recess_mm": 2.5,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.06,
+      "flow_m3_per_s": 0.001,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": 2,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 1.691153155057605,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 1248188,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 47.866853,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.00058304785,
+      "outlet_speed_m_per_s": 1.7151250965079452,
+      "outlet_static_p_Pa": -2.6934144994739393,
+      "outlet_static_p_std_Pa": 0.0003605008187539895,
+      "pressure_drop_total_Pa": 0.9225387332777637,
+      "pressure_drop_static_Pa": 2.6934144994739393,
+      "inflow_through_sides_m3_per_s": 0.0009999999951666666,
+      "mass_imbalance_fraction": 4.833333386300431e-09,
+      "final_initial_residuals": {
+        "Ux": 0.0029251333,
+        "Uy": 0.0039351469,
+        "Uz": 0.00073290219,
+        "p": 4.6320188e-05,
+        "k": 0.00061812958,
+        "omega": 3.249361e-06
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.31602437612780343,
+        "x_max": 0.3831482524953947,
+        "y_min": 0.11678909656746167,
+        "y_max": 0.1840378945471796
+      },
+      "time_folder": "1000"
+    },
+    "stand_q0.06_h1.8": {
+      "case": "stand_q0.06_h1.8",
+      "kind": "stand",
+      "cover_bottom_height_mm": 30.0,
+      "black_base_recess_mm": 2.5,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.06,
+      "flow_m3_per_s": 0.001,
+      "base_cell_mm": 1.8,
+      "stand_refinement_level": 2,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 1.691153155057605,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 2662435,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 47.535351,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.000586920947,
+      "outlet_speed_m_per_s": 1.7038069694247937,
+      "outlet_static_p_Pa": -2.5598943775745453,
+      "outlet_static_p_std_Pa": 0.00022859794584738135,
+      "pressure_drop_total_Pa": 0.8123135477601244,
+      "pressure_drop_static_Pa": 2.5598943775745453,
+      "inflow_through_sides_m3_per_s": 0.001000000111,
+      "mass_imbalance_fraction": 1.1099999999014676e-07,
+      "final_initial_residuals": {
+        "Ux": 0.0010087689,
+        "Uy": 0.00096825589,
+        "Uz": 0.00022721833,
+        "p": 1.6541916e-05,
+        "k": 0.00024020393,
+        "omega": 1.1544215e-06
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.31554892449722477,
+        "x_max": 0.383495107886063,
+        "y_min": 0.11709419788734143,
+        "y_max": 0.18386022042840067
+      },
+      "time_folder": "1000"
+    },
+    "stand_q0.06_s2.0": {
+      "case": "stand_q0.06_s2.0",
+      "kind": "stand",
+      "cover_bottom_height_mm": 30.0,
+      "black_base_recess_mm": 2.0,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.06,
+      "flow_m3_per_s": 0.001,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": 2,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 1.691153155057605,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 1205399,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 47.866853,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.00058304785,
+      "outlet_speed_m_per_s": 1.7151250965079452,
+      "outlet_static_p_Pa": -2.721131435590909,
+      "outlet_static_p_std_Pa": 0.0006341828042420229,
+      "pressure_drop_total_Pa": 0.950255669394733,
+      "pressure_drop_static_Pa": 2.721131435590909,
+      "inflow_through_sides_m3_per_s": 0.0010000000183333331,
+      "mass_imbalance_fraction": 1.833333311551666e-08,
+      "final_initial_residuals": {
+        "Ux": 0.0029562871,
+        "Uy": 0.0035020142,
+        "Uz": 0.0007275222,
+        "p": 4.1588414e-05,
+        "k": 0.00058879867,
+        "omega": 3.4772541e-06
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.3146983796780073,
+        "x_max": 0.38572129120545323,
+        "y_min": 0.11574907750871556,
+        "y_max": 0.1838308728181168
+      },
+      "time_folder": "1000"
+    },
+    "stand_q0.06_s3.5": {
+      "case": "stand_q0.06_s3.5",
+      "kind": "stand",
+      "cover_bottom_height_mm": 30.0,
+      "black_base_recess_mm": 3.5,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.06,
+      "flow_m3_per_s": 0.001,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": 2,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 1.691153155057605,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 1318282,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 47.866868,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.00058304785,
+      "outlet_speed_m_per_s": 1.7151250965079452,
+      "outlet_static_p_Pa": -2.684238744875757,
+      "outlet_static_p_std_Pa": 0.00025952632604294047,
+      "pressure_drop_total_Pa": 0.9133629786795814,
+      "pressure_drop_static_Pa": 2.684238744875757,
+      "inflow_through_sides_m3_per_s": 0.0010000000439393938,
+      "mass_imbalance_fraction": 4.3939393790104475e-08,
+      "final_initial_residuals": {
+        "Ux": 0.0022453232,
+        "Uy": 0.0026692,
+        "Uz": 0.00062127848,
+        "p": 3.2859341e-05,
+        "k": 0.00051339574,
+        "omega": 3.0205278e-06
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.31820030590576276,
+        "x_max": 0.37856154343344933,
+        "y_min": 0.11887960524381719,
+        "y_max": 0.18435816358475784
+      },
+      "time_folder": "1000"
+    },
+    "stand_q0.12": {
+      "case": "stand_q0.12",
+      "kind": "stand",
+      "cover_bottom_height_mm": 30.0,
+      "black_base_recess_mm": 2.5,
+      "vent_slots": 18,
+      "flow_m3_per_min": 0.12,
+      "flow_m3_per_s": 0.002,
+      "base_cell_mm": 2.5,
+      "stand_refinement_level": 2,
+      "vent_slot_area_m2": 0.0005913124999999999,
+      "mean_outlet_speed_m_per_s": 3.38230631011521,
+      "nu_m2_per_s": 1.516e-05,
+      "rho_kg_per_m3": 1.204,
+      "turbulence": "kOmegaSST, inlet k 3.75e-3 m2/s2 and omega 22 1/s (assumed)",
+      "cells": 1248188,
+      "checkMesh": "OK",
+      "max_non_orthogonality_deg": 47.866853,
+      "iterations": 1000,
+      "averaging_window_iterations": [
+        675,
+        1000
+      ],
+      "outlet_area_m2": 0.00058304785,
+      "outlet_speed_m_per_s": 3.4302501930158904,
+      "outlet_static_p_Pa": -9.670424868096362,
+      "outlet_static_p_std_Pa": 0.008628182245214144,
+      "pressure_drop_total_Pa": 2.5869218033116588,
+      "pressure_drop_static_Pa": 9.670424868096362,
+      "inflow_through_sides_m3_per_s": 0.001999999621666667,
+      "mass_imbalance_fraction": 1.8916666648903513e-07,
+      "final_initial_residuals": {
+        "Ux": 0.0066405588,
+        "Uy": 0.0058774168,
+        "Uz": 0.0016600945,
+        "p": 9.3330134e-05,
+        "k": 0.0024269023,
+        "omega": 1.267733e-05
+      },
+      "inflow_share_by_side": {
+        "x_min": 0.3118969975634033,
+        "x_max": 0.37682058493894227,
+        "y_min": 0.11963784037052858,
+        "y_max": 0.19164420888972994
+      },
+      "time_folder": "1000"
+    }
+  }
+}

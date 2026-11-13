@@ -1,0 +1,160 @@
+
+ total force (fx,fy,fz) for set BASE and time  0.5000000E+00
+
+        4.831205E-16 -1.946360E-15  1.569600E+01
+
+
+ statistics for slave set PAD1, master set MASTER and time  0.5000000E+00
+
+   total surface force (fx,fy,fz) and moment about the origin (mx,my,mz)
+
+   -6.321955E-17  1.463758E-17 -2.036839E+00 -1.233504E+02 -7.925312E+01  3.385752E-15
+
+   center of gravity and mean normal
+
+   -3.836484E+01  6.021432E+01  3.030738E+01  1.299010E-17 -1.922113E-19  1.000000E+00
+
+   moment about the center of gravity(mx,my,mz)
+
+   -7.035190E-01 -1.110132E+00  1.405985E-16
+
+   area,  normal force (+ = tension) and shear force (size)
+
+    6.653625E-01 -2.036839E+00  3.942471E-17
+
+
+ statistics for slave set PAD2, master set MASTER and time  0.5000000E+00
+
+   total surface force (fx,fy,fz) and moment about the origin (mx,my,mz)
+
+    7.136904E-17 -5.723070E-17 -5.950165E+00 -3.962701E+02  2.663108E+02 -7.354268E-15
+
+   center of gravity and mean normal
+
+    4.492810E+01  6.546407E+01  3.029232E+01 -5.717481E-18  1.837979E-17  1.000000E+00
+
+   moment about the center of gravity(mx,my,mz)
+
+   -6.748025E+00 -1.018786E+00 -1.108927E-16
+
+   area,  normal force (+ = tension) and shear force (size)
+
+    6.122980E-01 -5.950165E+00  6.413041E-17
+
+
+ statistics for slave set PAD3, master set MASTER and time  0.5000000E+00
+
+   total surface force (fx,fy,fz) and moment about the origin (mx,my,mz)
+
+   -9.254168E-17  1.532340E-16 -3.264095E+00  2.047079E+02 -8.757769E+01 -9.521654E-15
+
+   center of gravity and mean normal
+
+   -2.625111E+01 -6.605119E+01  3.030370E+01  1.731225E-17 -2.381968E-17  1.000000E+00
+
+   moment about the center of gravity(mx,my,mz)
+
+   -1.088945E+01 -1.891558E+00  6.133972E-16
+
+   area,  normal force (+ = tension) and shear force (size)
+
+    4.607511E-01 -3.264095E+00  8.364358E-17
+
+
+ statistics for slave set PAD4, master set MASTER and time  0.5000000E+00
+
+   total surface force (fx,fy,fz) and moment about the origin (mx,my,mz)
+
+   -3.109471E-17  1.113871E-16 -4.444901E+00  3.148930E+02  1.827524E+02  2.402082E-15
+
+   center of gravity and mean normal
+
+    4.062186E+01 -7.093290E+01  3.028983E+01 -2.100107E-17 -2.382594E-17  1.000000E+00
+
+   moment about the center of gravity(mx,my,mz)
+
+   -3.967621E-01  2.192249E+00  8.296723E-17
+
+   area,  normal force (+ = tension) and shear force (size)
+
+    3.598997E-01 -4.444901E+00  1.245631E-16
+
+ total force (fx,fy,fz) for set BASE and time  0.1000000E+01
+
+        5.855703E-03 -5.767197E-04  3.139200E+01
+
+
+ statistics for slave set PAD1, master set MASTER and time  0.1000000E+01
+
+   total surface force (fx,fy,fz) and moment about the origin (mx,my,mz)
+
+   -7.614157E-04  7.499074E-05 -4.081895E+00 -2.471988E+02 -1.588739E+02  4.319243E-02
+
+   center of gravity and mean normal
+
+   -3.836637E+01  6.021433E+01  3.030580E+01  1.865349E-04 -1.837155E-05  1.000000E+00
+
+   moment about the center of gravity(mx,my,mz)
+
+   -1.407960E+00 -2.243330E+00  2.214203E-04
+
+   area,  normal force (+ = tension) and shear force (size)
+
+    6.653772E-01 -4.081895E+00  2.396703E-15
+
+
+ statistics for slave set PAD2, master set MASTER and time  0.1000000E+01
+
+   total surface force (fx,fy,fz) and moment about the origin (mx,my,mz)
+
+   -2.218475E-03  2.184944E-04 -1.189309E+01 -7.920097E+02  5.321545E+02  1.575139E-01
+
+   center of gravity and mean normal
+
+    4.492164E+01  6.545384E+01  3.027563E+01  1.865349E-04 -1.837155E-05  1.000000E+00
+
+   moment about the center of gravity(mx,my,mz)
+
+   -1.355499E+01 -2.035252E+00  2.491088E-03
+
+   area,  normal force (+ = tension) and shear force (size)
+
+    6.139153E-01 -1.189309E+01  2.046096E-15
+
+
+ statistics for slave set PAD3, master set MASTER and time  0.1000000E+01
+
+   total surface force (fx,fy,fz) and moment about the origin (mx,my,mz)
+
+   -1.218748E-03  1.200327E-04 -6.533618E+00  4.097462E+02 -1.753411E+02 -7.965324E-02
+
+   center of gravity and mean normal
+
+   -2.624993E+01 -6.605448E+01  3.029705E+01  1.865349E-04 -1.837155E-05  1.000000E+00
+
+   moment about the center of gravity(mx,my,mz)
+
+   -2.182492E+01 -3.797204E+00  4.001349E-03
+
+   area,  normal force (+ = tension) and shear force (size)
+
+    4.604111E-01 -6.533618E+00  1.981830E-15
+
+
+ statistics for slave set PAD4, master set MASTER and time  0.1000000E+01
+
+   total surface force (fx,fy,fz) and moment about the origin (mx,my,mz)
+
+   -1.657064E-03  1.632019E-04 -8.883402E+00  6.292860E+02  3.651365E+02 -1.106757E-01
+
+   center of gravity and mean normal
+
+    4.061529E+01 -7.092821E+01  3.027249E+01  1.865349E-04 -1.837155E-05  1.000000E+00
+
+   moment about the center of gravity(mx,my,mz)
+
+   -7.928520E-01  4.384746E+00  2.284491E-04
+
+   area,  normal force (+ = tension) and shear force (size)
+
+    3.599124E-01 -8.883402E+00  7.600529E-16

@@ -1,0 +1,145 @@
+{
+ "sweep": [
+  {
+   "flow_m3_per_min": 0.03,
+   "slot_speed_m_per_s": 0.8575625482539726,
+   "desk_Pa": 7.564866339446108,
+   "hover_Pa": 0.34435247846695605,
+   "stand_Pa": 0.3500017080168954,
+   "stand_minus_hover_Pa": 0.00564922954993935,
+   "stand_over_hover": 1.0164053692167092,
+   "desk_over_stand": 21.613798350609574,
+   "oscillation_std_Pa": {
+    "desk": 1.3655303302439825e-05,
+    "hover": 2.5034358493705557e-06,
+    "stand": 1.7122331573044397e-06
+   },
+   "mass_imbalance_fraction": 3.1100000005834794e-07
+  },
+  {
+   "flow_m3_per_min": 0.06,
+   "slot_speed_m_per_s": 1.7151250965079452,
+   "desk_Pa": 23.655957277387827,
+   "hover_Pa": 0.898962053620188,
+   "stand_Pa": 0.9225387332777637,
+   "stand_minus_hover_Pa": 0.023576679657575705,
+   "stand_over_hover": 1.0262265571306717,
+   "desk_over_stand": 25.64223747369244,
+   "oscillation_std_Pa": {
+    "desk": 0.003649140923847932,
+    "hover": 0.0004293966807522559,
+    "stand": 0.0003605008187539895
+   },
+   "mass_imbalance_fraction": 2.5615799999819527e-06
+  },
+  {
+   "flow_m3_per_min": 0.12,
+   "slot_speed_m_per_s": 3.4302501930158904,
+   "desk_Pa": 81.99375147247592,
+   "hover_Pa": 2.5558930426371154,
+   "stand_Pa": 2.5869218033116588,
+   "stand_minus_hover_Pa": 0.03102876067454341,
+   "stand_over_hover": 1.0121400857379104,
+   "desk_over_stand": 31.69548896588651,
+   "oscillation_std_Pa": {
+    "desk": 0.6808868487284854,
+    "hover": 0.019294329681395463,
+    "stand": 0.008628182245214144
+   },
+   "mass_imbalance_fraction": 0.00029047113636344185
+  }
+ ],
+ "power_law_fit_dp_equals_k_Q_to_n": {
+  "desk": {
+   "exponent": 1.719063736274792,
+   "Pa_at_0.06_m3_per_min": 24.481659190095122
+  },
+  "hover": {
+   "exponent": 1.4459347493207748,
+   "Pa_at_0.06_m3_per_min": 0.9249020661864212
+  },
+  "stand": {
+   "exponent": 1.4429012888793649,
+   "Pa_at_0.06_m3_per_min": 0.9417725432771792
+  }
+ },
+ "variations_at_0.06_m3_per_min": {
+  "desk_q0.06_s2.0": {
+   "what": "desk, black base recessed 2.0 mm instead of 2.5",
+   "cells": 474039,
+   "baseline_cells": 522582,
+   "pressure_drop_total_Pa": 38.567952616761396,
+   "baseline_Pa": 23.655957277387827,
+   "change": 0.6303695582688422
+  },
+  "desk_q0.06_s3.5": {
+   "what": "desk, recessed 3.5 mm",
+   "cells": 598360,
+   "baseline_cells": 522582,
+   "pressure_drop_total_Pa": 11.748676779858366,
+   "baseline_Pa": 23.655957277387827,
+   "change": -0.5033522997148524
+  },
+  "stand_q0.06_s2.0": {
+   "what": "stand, recessed 2.0 mm",
+   "cells": 1205399,
+   "baseline_cells": 1248188,
+   "pressure_drop_total_Pa": 0.950255669394733,
+   "baseline_Pa": 0.9225387332777637,
+   "change": 0.03004419773085476
+  },
+  "stand_q0.06_s3.5": {
+   "what": "stand, recessed 3.5 mm",
+   "cells": 1318282,
+   "baseline_cells": 1248188,
+   "pressure_drop_total_Pa": 0.9133629786795814,
+   "baseline_Pa": 0.9225387332777637,
+   "change": -0.009946199836597724
+  },
+  "stand_q0.06_h1.8": {
+   "what": "stand, base cell 1.8 mm instead of 2.5",
+   "cells": 2662435,
+   "baseline_cells": 1248188,
+   "pressure_drop_total_Pa": 0.8123135477601244,
+   "baseline_Pa": 0.9225387332777637,
+   "change": -0.11948027930058958
+  },
+  "hover_q0.06_h1.8": {
+   "what": "hover, base cell 1.8 mm",
+   "cells": 1739712,
+   "baseline_cells": 774050,
+   "pressure_drop_total_Pa": 0.7913703554116391,
+   "baseline_Pa": 0.898962053620188,
+   "change": -0.11968436017434658
+  },
+  "desk_q0.06_h1.8": {
+   "what": "desk, base cell 1.8 mm",
+   "cells": 1276402,
+   "baseline_cells": 522582,
+   "pressure_drop_total_Pa": 25.331202952563476,
+   "baseline_Pa": 23.655957277387827,
+   "change": 0.07081707392061354
+  }
+ },
+ "inflow_share_by_side": {
+  "desk": {
+   "x_min": 0.07724325301287592,
+   "x_max": 0.04742071817408436,
+   "y_min": 0.21697070845053787,
+   "y_max": 0.6583638823847756
+  },
+  "hover": {
+   "x_min": 0.3094015061539507,
+   "x_max": 0.39310434696367375,
+   "y_min": 0.08902091379686104,
+   "y_max": 0.20847284618439957
+  },
+  "stand": {
+   "x_min": 0.31602437612780343,
+   "x_max": 0.3831482524953947,
+   "y_min": 0.11678909656746167,
+   "y_max": 0.1840378945471796
+  }
+ }
+}
+airflow_openfoam.png

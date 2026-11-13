@@ -1,0 +1,5 @@
+# CalculiX CrunchiX 2.20 (Debian bookworm package) for the v15 stress runs.
+FROM debian:bookworm-slim
+RUN apt-get update && apt-get install -y --no-install-recommends calculix-ccx && rm -rf /var/lib/apt/lists/*
+WORKDIR /work
+ENTRYPOINT ["ccx"]

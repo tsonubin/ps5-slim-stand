@@ -1,0 +1,16 @@
+rim_side_10N Total CalculiX Time: 16.110591
+vertical_1g Total CalculiX Time: 16.130889
+eccentric_1g Total CalculiX Time: 16.097139
+rim_side_10N *ERROR in e_c3d: nonpositive jacobian *ERROR in e_c3d: nonpositive jacobian
+eccentric_1g *ERROR in e_c3d: nonpositive jacobian *ERROR in e_c3d: nonpositive jacobian
+vertical_1g *ERROR in e_c3d: nonpositive jacobian *ERROR in e_c3d: nonpositive jacobian
+vertical_1g Total CalculiX Time: 52.846337
+eccentric_1g Total CalculiX Time: 52.893444
+rim_side_10N Total CalculiX Time: 52.971194
+eccentric_1g Total CalculiX Time: 97.212797
+rim_side_10N Total CalculiX Time: 101.728462
+vertical_1g Total CalculiX Time: 93.705532
+vertical_1g *ERROR in e_c3d: nonpositive jacobian *ERROR in e_c3d: nonpositive jacobian
+rim_side_10N *ERROR in e_c3d: nonpositive jacobian *ERROR in e_c3d: nonpositive jacobian
+eccentric_1g *ERROR in e_c3d: nonpositive jacobian *ERROR in e_c3d: nonpositive jacobian
+stress-done
